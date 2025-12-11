@@ -1,7 +1,7 @@
-# ENS v2 Marketplace
+# ENSv2Marketplace
 
 ## About
-ENS v2 Marketplace is part of the **BuyETHAddress** vision — building one of the most utility-driven ENS portfolios in Web3. With over 1,300 domains focused on real-world use cases, this project is designed to showcase, lease, and expand the role of ENS in digital identity.
+ENSv2Marketplace is part of the **BuyETHAddress** vision — building one of the most utility-driven ENS portfolios in Web3. With over 1,300 domains focused on real-world use cases, this project is designed to showcase, lease, and expand the role of ENS in digital identity.
 
 ## Philosophy
 Our mission is to unlock the full utility of ENS domains through innovative marketplace features:
