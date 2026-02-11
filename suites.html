@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Infrastructure Suites | ENSV2 Marketplace - 60+ Complete Subdomain Packages</title>
+<meta name="description" content="60+ curated infrastructure suites for subdomain leasing. Complete brand consistency for Web3 protocols. ZK Infrastructure, DeFi, AI Agents, and more.">
+<style>
+:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#b8964f; --premium:#c0c0c0; --premiumDark:#8c8c8c; --brandFrom:#5bb1ff; --brandTo:#8b5cf6; --glow:#6df7ff; }
+*{box-sizing:border-box} 
+html,body{height:100%;margin:0;padding:0} 
+body{background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+
+nav{background:#0d0f14;border-bottom:1px solid #1a1f2e;padding:0}
+nav .wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:40px;padding:16px 20px}
+nav a{color:#b8c5d6;text-decoration:none;font-weight:600;font-size:16px;transition:color 0.2s,transform 0.2s;display:inline-block}
+nav a:hover{color:#fff;transform:translateY(-2px)}
+nav a.active{color:var(--accent);font-weight:700}
+
+header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
+.wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
+header .wrap{display:flex;flex-direction:column;align-items:center}
+
+.badge{display:flex;align-items:center;gap:8px;background:#141a1f;border:1px solid #22304a;color:#fff;padding:6px 10px;border-radius:999px}
+.badge .check{display:inline-block;width:18px;height:18px;border-radius:50%;background:#22c55e;position:relative}
+.badge .check:after{content:'';position:absolute;left:3px;top:3px;width:9px;height:5px;border:2px solid #0b0c10;border-top:none;border-right:none;transform:rotate(-45deg)}
+.badge .vbold{font-weight:800}
+
+.brandblock{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.tagline{font-size:18px;color:#dffbff;text-shadow:0 0 12px rgba(109,247,255,.45)}
+.lease-callout{font-size:40px;font-style:italic;background:linear-gradient(90deg,#5bb1ff,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:600;margin-top:-4px}
+
+.cta{margin:14px 0 16px}
+.cta a{display:inline-block;background:var(--accent);color:#fff;font-weight:800;border-radius:10px;padding:10px 16px;text-decoration:none;border:1px solid #8a6a2f;transition:all 0.2s}
+.cta a:hover{background:#9a7a3f;transform:translateY(-2px)}
+
+main{padding:40px 20px 80px}
+main .wrap{max-width:1000px}
+
+.suite-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:30px}
+.suite-card{background:var(--card);border:1px solid var(--edge);border-radius:16px;padding:24px;padding-bottom:50px;position:relative;transition:all 0.3s ease}
+.suite-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 12px 24px rgba(184,150,79,0.2)}
+.suite-title{font-size:22px;font-weight:800;color:#fff;margin:0 0 8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.suite-title .icon{font-size:24px}
+.suite-desc{color:var(--muted);font-size:14px;margin:0 0 16px;line-height:1.6}
+.suite-domains{list-style:none;padding:0;margin:16px 0}
+.suite-domains li{padding:8px 12px;margin:6px 0;background:#0f1420;border:1px solid #1c2230;border-radius:8px;color:var(--text);font-weight:600;font-size:14px;transition:all 0.2s;display:flex;justify-content:space-between;align-items:center}
+.suite-domains li:hover{background:#1a2338;border-color:#3a4a6a}
+.suite-domains .domain-price{color:var(--accent);font-size:13px;font-weight:700}
+.suite-price{font-size:18px;font-weight:800;color:var(--accent);margin:16px 0 12px}
+.suite-cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:10px;padding:10px 20px;text-decoration:none;border:1px solid #8a6a2f;transition:all 0.2s;width:100%;text-align:center}
+.suite-cta:hover{background:#9a7a3f;transform:translateY(-2px)}
+.badge-featured{display:inline-block;background:linear-gradient(135deg,#b8964f,#9a7a3f);color:#fff;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.badge-hot{display:inline-block;background:linear-gradient(135deg,#c0c0c0,#8c8c8c);color:#fff;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+
+.intro{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:30px;margin-bottom:30px;text-align:center}
+.intro h2{color:var(--accent);margin:0 0 8px;font-size:2rem}
+.intro .last-updated{color:var(--muted);font-size:13px;font-style:italic;margin:8px 0 16px}
+.intro p{color:var(--text);line-height:1.8;margin:0;font-size:16px}
+
+footer{background:var(--card);border-top:1px solid var(--edge);padding:40px 20px;margin-top:60px}
+footer .wrap{max-width:900px;text-align:center}
+footer h3{color:var(--accent);margin:0 0 16px}
+footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
+
+@keyframes gradientShift {0%{background-position:0% center}50%{background-position:100% center}100%{background-position:0% center}}
+@keyframes gradientShiftVertical {0%{background-position:center 0%}50%{background-position:center 100%}100%{background-position:center 0%}}
+
+@media(max-width:960px){.suite-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.suite-card{padding:20px;padding-bottom:50px}.suite-title{font-size:18px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="nav-home">Home</a>
+    <a href="suites.html" class="nav-suites active">Suites</a>
+    <a href="subdomain-leasing.html" class="nav-subdomain">Subdomain Leasing</a>
+    <a href="featured.html" class="nav-featured">Featured Names</a>
+    <a href="faq.html" class="nav-faq">FAQ</a>
+    <a href="mission.html" class="nav-mission">Mission</a>
+    <a href="roadmap.html" class="nav-roadmap">Roadmap</a>
+    <a href="about.html" class="nav-about">About</a>
+    <a href="consignment.html" class="nav-consignment">Consignment</a>
+    <a href="resources.html" class="nav-resources">Resources</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="brandblock">
+      <div style="position:relative;text-align:center">
+        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:-100px;top:50px">
+          <span class="check"></span>
+          <div>
+            <div class="vbold">Verified</div>
+            <div style="color:#ffffff">Secured by Ledger</div>
+          </div>
+        </div>
+        <div>
+          <div style="display:inline-block;position:relative">
+            <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:8rem;letter-spacing:0.5px;color:#b8964f;margin:0">
+              ENSV2
+            </h1>
+            <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
+          </div>
+          <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">
+            Marketplace
+          </h2>
+          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Official Enterprise-grade Real World utility ENS domains</div>
+          <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">Subdomain leasing coming soon with Namechain</div>
+          <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
+          <div style="font-size:14px;color:#9aa0a6;font-style:italic;margin-top:4px">(Namechain subdomain leasing launching soon)</div>
+        </div>
+      </div>
+      <div class="tagline">Own your identity. Own your name.</div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <h2>Infrastructure Suites</h2>
+    <div class="last-updated">Last Updated: January 2026</div>
+    <p>Browse 60+ complete infrastructure suites designed for subdomain leasing. Each suite provides brand consistency across multiple domains for Web3 protocols, AI systems, DeFi platforms, and enterprise applications.</p>
+  </div>
+
+  <div class="suite-grid">
+
+    <!-- Suite #1: ZK Infrastructure Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔐</span>
+        ZK Infrastructure Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Complete zero-knowledge proof infrastructure. Verifiers, compliance, bridges, and ZK primitives.</div>
+      <ul class="suite-domains">
+        <li>zkagent.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>zkbridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>zkcompliancesuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>zkidentitysuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>zkprivatecompliance.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>zkprivatefinance.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>zkrollups.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>zkvalidator.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>zkverifiersuite.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $10,100/year (9 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #2: DeFi Primitives Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">💎</span>
+        DeFi Primitives Suite
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Core DeFi infrastructure. Lending, staking, yield, and protocol governance systems.</div>
+      <ul class="suite-domains">
+        <li>deficompliance.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>defisuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>lendingsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>liquiditysuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>stakingsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>yieldsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $6,400/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #3: AI Agent Ecosystem -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🤖</span>
+        AI Agent Ecosystem
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Complete AI agent infrastructure. Agent registries, orchestrators, coordinators, and validators.</div>
+      <ul class="suite-domains">
+        <li>agentcoordinator.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>agentexecutor.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>agentorchestrator.eth <span class="domain-price">$1,300/yr</span></li>
+        <li>agentregistry.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>agentsuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>agentvalidator.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>autonomousagents.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $8,200/year (7 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #4: Compliance & Regulatory Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⚖️</span>
+        Compliance & Regulatory Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Enterprise compliance infrastructure. KYC, AML, transaction monitoring, and regulatory reporting.</div>
+      <ul class="suite-domains">
+        <li>amlcompliance.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>compliancebridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>complianceledger.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>complianceregistry.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>compliancesuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>kyccompliance.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>transactionmonitor.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $8,100/year (7 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #5: Cross-Chain Bridge Network -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🌉</span>
+        Cross-Chain Bridge Network
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Multi-chain bridging infrastructure. Asset bridges, validators, and cross-chain messaging.</div>
+      <ul class="suite-domains">
+        <li>assetbridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>bridgevalidator.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>crosschainbridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>messagingbridge.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>omnichainbridge.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $5,300/year (5 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #6: Oracle Network Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔮</span>
+        Oracle Network Platform
+        
+      </div>
+      <div class="suite-desc">Decentralized oracle infrastructure. Price feeds, data aggregation, and off-chain computation.</div>
+      <ul class="suite-domains">
+        <li>dataoracle.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>oraclevalidator.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>priceoracle.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #7: Identity & Authentication Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🆔</span>
+        Identity & Authentication Suite
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Decentralized identity infrastructure. DIDs, verifiable credentials, authentication, and identity verification.</div>
+      <ul class="suite-domains">
+        <li>authsuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>identitybridge.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>identityregistry.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>identitysuite.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>identityvalidator.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>identityverifier.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $6,300/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #8: Payment & Settlement Layer -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">💳</span>
+        Payment & Settlement Layer
+        
+      </div>
+      <div class="suite-desc">Payment infrastructure for Web3. Instant settlements, cross-chain payments, and merchant tools.</div>
+      <ul class="suite-domains">
+        <li>instantsettlement.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>paymentsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>settlementbridge.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #9: Tokenization Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🪙</span>
+        Tokenization Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Real-world asset tokenization. Securities, commodities, real estate, and tokenized assets.</div>
+      <ul class="suite-domains">
+        <li>assetcompliance.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>assetledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>assetsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>assettoken.eth <span class="domain-price">$900/yr</span></li>
+        <li>realestatetokens.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>securitytoken.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $6,000/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #10: Validator & Staking Infrastructure -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⛏️</span>
+        Validator & Staking Infrastructure
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Complete validator infrastructure. Staking pools, validator services, slashing protection, and rewards.</div>
+      <ul class="suite-domains">
+        <li>validatornetwork.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>validatorregistry.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>validatorsuite.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,300/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #11: DAO Governance Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🏛️</span>
+        DAO Governance Platform
+        
+      </div>
+      <div class="suite-desc">DAO infrastructure and governance tools. Voting, proposals, treasury management, and delegation.</div>
+      <ul class="suite-domains">
+        <li>daocompliance.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>daogovernance.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>daoregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>daosuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,100/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #12: Data Availability Layer -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">📊</span>
+        Data Availability Layer
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Decentralized data availability. Storage, indexing, querying, and data verification.</div>
+      <ul class="suite-domains">
+        <li>databridge.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>dataledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>dataregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>datasuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,000/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #13: MEV Infrastructure -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⚡</span>
+        MEV Infrastructure
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">MEV extraction and protection. Searchers, builders, relays, and MEV-boost infrastructure.</div>
+      <ul class="suite-domains">
+        <li>mevprotection.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>mevrelay.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>mevsuite.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $2,900/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #14: Account Abstraction Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🎯</span>
+        Account Abstraction Suite
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Smart account infrastructure. Bundlers, paymasters, account factories, and session keys.</div>
+      <ul class="suite-domains">
+        <li>accountfactory.eth <span class="domain-price">$900/yr</span></li>
+        <li>bundlersuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>paymasterregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>smartaccounts.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,800/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #15: Modular Blockchain Stack -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🧩</span>
+        Modular Blockchain Stack
+        
+      </div>
+      <div class="suite-desc">Modular infrastructure components. Execution layers, consensus, data availability, and settlement.</div>
+      <ul class="suite-domains">
+        <li>consensuslayer.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>executionlayer.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>modularblockchain.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>settlementlayer.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,500/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #16: Decentralized Storage Network -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">💾</span>
+        Decentralized Storage Network
+        
+      </div>
+      <div class="suite-desc">Distributed file storage. IPFS, Arweave, data pinning, and permanent storage solutions.</div>
+      <ul class="suite-domains">
+        <li>storageledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>storageregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>storagesuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $2,900/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #17: DEX Infrastructure Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔄</span>
+        DEX Infrastructure Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Decentralized exchange infrastructure. AMMs, order books, liquidity routing, and swap aggregation.</div>
+      <ul class="suite-domains">
+        <li>ammprotocol.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>dexaggregator.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>dexsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>swapsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,100/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #18: Lending & Credit Markets -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🏦</span>
+        Lending & Credit Markets
+        
+      </div>
+      <div class="suite-desc">DeFi lending infrastructure. Collateralized lending, credit scoring, interest rate models, and liquidation.</div>
+      <ul class="suite-domains">
+        <li>borrowingsuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>creditsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>lendingledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>lendingregistry.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #19: Insurance & Risk Management -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🛡️</span>
+        Insurance & Risk Management
+        
+      </div>
+      <div class="suite-desc">DeFi insurance infrastructure. Coverage pools, claims processing, risk assessment, and parametric insurance.</div>
+      <ul class="suite-domains">
+        <li>insuranceledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>insuranceregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>insurancesuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>risksuite.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #20: Derivatives & Options Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">📈</span>
+        Derivatives & Options Platform
+        
+      </div>
+      <div class="suite-desc">On-chain derivatives infrastructure. Options, futures, perpetuals, and synthetic assets.</div>
+      <ul class="suite-domains">
+        <li>derivativesuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>futuresuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>optionssuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>perpetualssuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #21: Yield Optimization Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🌾</span>
+        Yield Optimization Platform
+        
+      </div>
+      <div class="suite-desc">Yield aggregation and optimization. Auto-compounding, yield farming strategies, and vault infrastructure.</div>
+      <ul class="suite-domains">
+        <li>yieldaggregator.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>yieldfarming.eth <span class="domain-price">$900/yr</span></li>
+        <li>yieldoptimizer.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>yieldvault.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,800/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #22: Stablecoin Infrastructure -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">💵</span>
+        Stablecoin Infrastructure
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Stablecoin issuance and management. Collateralized stablecoins, algorithmic stablecoins, and redemption mechanisms.</div>
+      <ul class="suite-domains">
+        <li>stablecoinbridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>stablecoinregistry.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>stablecoinsuite.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,300/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #23: Layer 2 Rollup Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⚙️</span>
+        Layer 2 Rollup Platform
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Layer 2 scaling infrastructure. Optimistic rollups, ZK rollups, sequencers, and fraud proofs.</div>
+      <ul class="suite-domains">
+        <li>layer2bridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>layer2registry.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>layer2suite.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>rollupvalidator.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,300/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #24: Interoperability Protocol -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔗</span>
+        Interoperability Protocol
+        
+      </div>
+      <div class="suite-desc">Cross-chain communication. Message passing, state verification, and chain abstraction.</div>
+      <ul class="suite-domains">
+        <li>interopbridge.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>interopregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>interopsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #25: Decentralized Compute Network -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🖥️</span>
+        Decentralized Compute Network
+        
+      </div>
+      <div class="suite-desc">Distributed computing infrastructure. GPU networks, verifiable computation, and off-chain compute.</div>
+      <ul class="suite-domains">
+        <li>computenetwork.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>computeregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>computesuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #26: Token Standards Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🎨</span>
+        Token Standards Suite
+        
+      </div>
+      <div class="suite-desc">Multi-standard token infrastructure. ERC-20, ERC-721, ERC-1155, and experimental token standards.</div>
+      <ul class="suite-domains">
+        <li>erc20suite.eth <span class="domain-price">$900/yr</span></li>
+        <li>erc721suite.eth <span class="domain-price">$900/yr</span></li>
+        <li>tokensuite.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $2,700/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #27: Smart Contract Security -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔒</span>
+        Smart Contract Security
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Contract security infrastructure. Auditing, monitoring, bug bounties, and formal verification.</div>
+      <ul class="suite-domains">
+        <li>auditsuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>contractauditor.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>securitymonitor.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>securitysuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #28: Multi-Sig & Treasury Management -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🔑</span>
+        Multi-Sig & Treasury Management
+        
+      </div>
+      <div class="suite-desc">Treasury and multi-signature infrastructure. Governance execution, role-based access, and spending limits.</div>
+      <ul class="suite-domains">
+        <li>multisigregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>multisigsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>treasurysuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #29: Gas Optimization Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⛽</span>
+        Gas Optimization Suite
+        
+      </div>
+      <div class="suite-desc">Gas efficiency infrastructure. Meta-transactions, gas relayers, and sponsored transactions.</div>
+      <ul class="suite-domains">
+        <li>gasfreeregistry.eth <span class="domain-price">$900/yr</span></li>
+        <li>gasoptimizer.eth <span class="domain-price">$900/yr</span></li>
+        <li>gasrelay.eth <span class="domain-price">$800/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $2,600/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #30: Reputation & Social Graph -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">⭐</span>
+        Reputation & Social Graph
+        
+      </div>
+      <div class="suite-desc">On-chain reputation systems. Credit scores, social graphs, attestations, and verifiable credentials.</div>
+      <ul class="suite-domains">
+        <li>reputationledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>reputationregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>reputationsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #31: Enterprise Integration Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🏢</span>
+        Enterprise Integration Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Enterprise Web3 infrastructure. API gateways, webhook services, and blockchain integration tools.</div>
+      <ul class="suite-domains">
+        <li>enterprisebridge.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>enterpriseledger.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>enterpriseregistry.eth <span class="domain-price">$1,200/yr</span></li>
+        <li>enterprisesuite.eth <span class="domain-price">$1,200/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,600/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #32: Supply Chain & Logistics -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">📦</span>
+        Supply Chain & Logistics
+        
+      </div>
+      <div class="suite-desc">Supply chain infrastructure. Provenance tracking, logistics coordination, and inventory management.</div>
+      <ul class="suite-domains">
+        <li>logisticsregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>logisticssuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>supplychainledger.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>supplychainregistry.eth <span class="domain-price">$1,100/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,200/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #33: Intellectual Property Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">©️</span>
+        Intellectual Property Suite
+        
+      </div>
+      <div class="suite-desc">IP management infrastructure. Copyright, patents, trademarks, and royalty distribution.</div>
+      <ul class="suite-domains">
+        <li>copyrightledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>copyrightregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>ipregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>royaltysuite.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #34: Content Creation & Monetization -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🎬</span>
+        Content Creation & Monetization
+        
+      </div>
+      <div class="suite-desc">Creator economy infrastructure. Content monetization, subscriptions, tipping, and NFT drops.</div>
+      <ul class="suite-domains">
+        <li>contentledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>contentregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>contentsuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>creatorsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,900/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #35: Prediction Markets Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🎲</span>
+        Prediction Markets Platform
+        
+      </div>
+      <div class="suite-desc">Decentralized prediction markets. Oracles, resolution mechanisms, and betting infrastructure.</div>
+      <ul class="suite-domains">
+        <li>predictionledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>predictionregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>predictionsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $2,900/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #36: Privacy-Preserving Transactions -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🕵️</span>
+        Privacy-Preserving Transactions
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">Privacy transaction infrastructure. Mixers, private transfers, stealth addresses, and confidential transactions.</div>
+      <ul class="suite-domains">
+        <li>privacybridge.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>privacyregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>privacysuite.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>privatetransfers.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,000/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #37: Environmental & Carbon Markets -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🌱</span>
+        Environmental & Carbon Markets
+        
+      </div>
+      <div class="suite-desc">Carbon credit infrastructure. Tokenized carbon offsets, renewable energy certificates, and sustainability tracking.</div>
+      <ul class="suite-domains">
+        <li>carbonledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>carbonregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>carbonsuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>sustainabilitysuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,800/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #38: Fractional Ownership Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🧮</span>
+        Fractional Ownership Platform
+        
+      </div>
+      <div class="suite-desc">Fractionalized asset infrastructure. NFT fractionalization, real estate shares, and collective ownership.</div>
+      <ul class="suite-domains">
+        <li>fractionalledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>fractionalregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>fractionalsuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #39: Decentralized Marketplace -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🛒</span>
+        Decentralized Marketplace
+        
+      </div>
+      <div class="suite-desc">P2P marketplace infrastructure. Escrow, reputation, dispute resolution, and payments.</div>
+      <ul class="suite-domains">
+        <li>marketplaceledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>marketplaceregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>marketplacesuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,000/year (3 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+    <!-- Suite #40: Automation & Bot Infrastructure -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🤖</span>
+        Automation & Bot Infrastructure
+        
+      </div>
+      <div class="suite-desc">Automated systems and bots. Keepers, MEV bots, trading bots, and automated operations.</div>
+      <ul class="suite-domains">
+        <li>automationprotocol.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>automationsuite.eth <span class="domain-price">$1,100/yr</span></li>
+        <li>keeperengine.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>liquidationbot.eth <span class="domain-price">$900/yr</span></li>
+        <li>marketmakerbot.eth <span class="domain-price">$900/yr</span></li>
+        <li>automatesuite.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $6,000/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+
+    <!-- Suite #41: Healthcare & Medical Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🏥</span>
+        Healthcare & Medical Suite
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Medical and healthcare infrastructure. Patient records, prescriptions, telemedicine, and healthcare payments.</div>
+      <ul class="suite-domains">
+        <li>healthregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>healthcompliance.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>healthidentity.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>ai4health.eth <span class="domain-price">$900/yr</span></li>
+        <li>healthmonitor.eth <span class="domain-price">$900/yr</span></li>
+        <li>pharmacysuite.eth <span class="domain-price">$800/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $5,600/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+
+    <!-- Suite #42: Gaming & Metaverse Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🎮</span>
+        Gaming & Metaverse Platform
+        <span class="badge-featured">Featured</span>
+      </div>
+      <div class="suite-desc">Web3 gaming infrastructure. NFT gaming, metaverse identity, virtual assets, and play-to-earn systems.</div>
+      <ul class="suite-domains">
+        <li>gameledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>gameregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>metaversecompliance.eth <span class="domain-price">$900/yr</span></li>
+        <li>metaverseidentity.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>metaverseledger.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>metaverseregistry.eth <span class="domain-price">$1,000/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $5,800/year (6 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+
+    <!-- Suite #43: NFT Infrastructure Suite -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">🖼️</span>
+        NFT Infrastructure Suite
+        <span class="badge-hot">Hot Topic</span>
+      </div>
+      <div class="suite-desc">NFT creation and marketplace infrastructure. Minting, trading, royalties, and provenance tracking.</div>
+      <ul class="suite-domains">
+        <li>nftledger.eth <span class="domain-price">$900/yr</span></li>
+        <li>nftsuite.eth <span class="domain-price">$900/yr</span></li>
+        <li>omnichainnft.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>nfttaxtools.eth <span class="domain-price">$800/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $3,600/year (4 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+
+    <!-- Suite #44: Social & Community Platform -->
+    <div class="suite-card">
+      <div class="suite-title">
+        <span class="icon">👥</span>
+        Social & Community Platform
+        
+      </div>
+      <div class="suite-desc">Decentralized social infrastructure. Social graphs, reputation, messaging, and community coordination.</div>
+      <ul class="suite-domains">
+        <li>communityidentity.eth <span class="domain-price">$900/yr</span></li>
+        <li>communityregistry.eth <span class="domain-price">$900/yr</span></li>
+        <li>socialregistry.eth <span class="domain-price">$1,000/yr</span></li>
+        <li>socialidentity.eth <span class="domain-price">$900/yr</span></li>
+        <li>socialledger.eth <span class="domain-price">$900/yr</span></li>
+      </ul>
+      <div class="suite-price">Suite Subdomain Total: $4,600/year (5 domains)</div>
+      <a href="mailto:buyethaddress@outlook.com" class="suite-cta">Inquire About Suite</a>
+    </div>
+
+
+    <!
