@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Subdomain Leasing | BuyETHaddress</title>
+<title>Subdomain Leasing | ENSV2 Marketplace</title>
 <meta name="description" content="Lease ENS subdomains at fixed USD rates. Professional infrastructure for Web3 identity without buying the full domain.">
 <!-- SHARED STYLES AND HEADER FOR ALL PAGES -->
 <style>
-:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#3b82f6; --premium:#c0c0c0; --premiumDark:#8c8c8c; --brandFrom:#5bb1ff; --brandTo:#8b5cf6; --glow:#6df7ff; }
+:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#b8964f; --premium:#c0c0c0; --premiumDark:#8c8c8c; --brandFrom:#5bb1ff; --brandTo:#8b5cf6; --glow:#6df7ff; }
 *{box-sizing:border-box} 
 html,body{height:100%;margin:0;padding:0} 
 body{background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
@@ -20,7 +20,7 @@ nav a:hover{color:#fff;transform:translateY(-2px)}
 nav a.active{color:var(--accent);font-weight:700}
 
 /* Header */
-header{position:sticky;top:0;z-index:20;background:#0b0c10;border-bottom:1px solid #161c27}
+header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
 .wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
 header .wrap{display:flex;flex-direction:column;align-items:center}
 
@@ -39,8 +39,8 @@ header .wrap{display:flex;flex-direction:column;align-items:center}
 
 /* CTA */
 .cta{margin:14px 0 16px}
-.cta a{display:inline-block;background:var(--accent);color:#fff;font-weight:800;border-radius:10px;padding:10px 16px;text-decoration:none;border:1px solid #2b65c7;transition:all 0.2s}
-.cta a:hover{background:#1d4ed8;transform:translateY(-2px)}
+.cta a{display:inline-block;background:var(--accent);color:#fff;font-weight:800;border-radius:10px;padding:10px 16px;text-decoration:none;border:1px solid #8a6a2f;transition:all 0.2s}
+.cta a:hover{background:#9a7a3f;transform:translateY(-2px)}
 
 /* Main content */
 main{padding:40px 20px 80px}
@@ -63,17 +63,17 @@ td{padding:12px;border:1px solid var(--edge);color:var(--text)}
 tr:nth-child(even){background:#12151d}
 
 /* Badges */
-.info-badge{display:inline-block;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:4px}
+.info-badge{display:inline-block;background:linear-gradient(135deg,#b8964f,#9a7a3f);color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:4px}
 
 /* Animations */
 @keyframes gradientShift {0%{background-position:0% center}50%{background-position:100% center}100%{background-position:0% center}}
 @keyframes gradientShiftVertical {0%{background-position:center 0%}50%{background-position:center 100%}100%{background-position:center 0%}}
 
 /* Footer */
-footer{background:var(--card);border-top:1px solid var(--edge);padding:40px 20px;margin-top:60px}
+footer{background:var(--card);border-top:1px solid var(--edge);padding:20px 20px;margin-top:30px}
 footer .wrap{max-width:900px;text-align:center}
 footer h3{color:var(--accent);margin:0 0 16px}
-footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
+footer p{color:var(--muted);line-height:1.7;margin:0 0 10px}
 
 .calculator {
   background: #1a1f2e;
@@ -171,7 +171,8 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     <a href="mission.html" class="nav-mission">Mission</a>
     <a href="roadmap.html" class="nav-roadmap">Roadmap</a>
     <a href="about.html" class="nav-about">About</a>
-    <a href="contact.html" class="nav-contact">Contact</a>
+    <a href="consignment.html" class="nav-consignment">Consignment</a>
+    <a href="resources.html" class="nav-resources">Resources</a>
   </div>
 </nav>
 
@@ -179,7 +180,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <div class="wrap">
     <div class="brandblock">
       <div style="position:relative;text-align:center">
-        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:0;top:160px">
+        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:-100px;top:50px">
           <span class="check"></span>
           <div>
             <div class="vbold">Verified</div>
@@ -187,31 +188,21 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
           </div>
         </div>
         <div>
-          <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:5.5rem;letter-spacing:0.5px;color:white;margin:0">
-            <span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">B</span><span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">uy</span>
-            <span style="background:linear-gradient(180deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:100% 200%;animation:gradientShiftVertical 3s ease-in-out infinite">ETH</span>
-            <span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">address</span>
-          </h1>
-          <div class="lease-callout">or Lease!</div>
-          <div style="font-size:18px;color:#22c55e;font-weight:700;margin-top:4px;text-shadow:0 0 8px rgba(34,197,94,0.3)">Never Connect Your Wallet</div>
+          <div style="display:inline-block;position:relative">
+            <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:8rem;letter-spacing:0.5px;color:#b8964f;margin:0">
+              ENSV2
+            </h1>
+            <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
+          </div>
+          <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">
+            Marketplace
+          </h2>
+          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Official Enterprise-grade Real World utility ENS domains</div>
+          <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">ENSv2 Hierarchical Subdomain System Coming 2026</div>
+          <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
         </div>
-
       </div>
       <div class="tagline">Own your identity. Own your name.</div>
-      <div style="margin:20px 0">
-        <div style="color:#cfe1ff;font-size:15px;margin-bottom:12px">📧 <strong>Contact us for domains or direct communication</strong></div>
-        <div style="display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px">
-          <a href="mailto:buyethaddress@outlook.com" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid #2b65c7;transition:all 0.2s">
-            <span>📧</span>
-            <span>buyethaddress@outlook.com</span>
-          </a>
-          <a href="https://discord.gg/n28Q5Y9h" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;background:#5865F2;color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid#4752C4;transition:all 0.2s">
-            <span>💬</span>
-            <span>Join Discord</span>
-          </a>
-        </div>
-        <div style="color:#9aa0a6;font-size:12px">⚠️ Emails with attachments will be deleted.</div>
-      </div>
     </div>
   </div>
 </header>
@@ -221,17 +212,16 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 
   <div class="content-section">
     <h2>🏢 ENS Subdomain Leasing</h2>
-    <p><strong>Rent professional Web3 subdomains under premium ENS names at fixed annual USD rates.</strong></p>
+    <p><strong>Lease professional Web3 subdomains under premium ENS names through trustless smart contracts.</strong></p>
     <p>ENS subdomains give you a recognized identity in the Web3 ecosystem without purchasing the full parent domain. Perfect for protocols, DAOs, infrastructure projects, and businesses building on Ethereum.</p>
     
     <h3>What ENSv2 Enables for Subdomain Leasing</h3>
-    <p>The upcoming <strong>ENSv2 and Namechain</strong> migration (launching Q1 2026) fundamentally changes how subdomains work:</p>
+    <p>The upcoming <strong>ENSv2</strong> migration (launching 2026) fundamentally changes how subdomains work:</p>
     <ul>
       <li><strong>Hierarchical Registries:</strong> Each .eth name gets its own smart contract registry, giving true ownership control at the subdomain level</li>
       <li><strong>Custom Permissions:</strong> Name owners can delegate subdomain issuance, set expiry rules, and create flexible renewal terms without parent intervention</li>
-      <li><strong>Trustless Rentals:</strong> Built-in "fuses" allow locking subdomain control for guaranteed renewal periods - tenants can't be rugged mid-lease</li>
-      <li><strong>99% Lower Gas Costs:</strong> Namechain L2 makes subdomain registration and renewals dramatically cheaper than Ethereum mainnet</li>
-      <li><strong>Stablecoin Payments:</strong> ENSv2 supports USD-denominated payments (USDC, etc.) eliminating ETH price volatility</li>
+      <li><strong>Trustless Leasing:</strong> Built-in "fuses" allow locking subdomain control for guaranteed renewal periods - tenants can't be rugged mid-lease</li>
+      <li><strong>99% Lower Gas Costs:</strong> ENSv2 on Ethereum L1 makes subdomain registration and renewals dramatically cheaper with recent gas limit increases</li>
       <li><strong>Cross-Chain Resolution:</strong> Universal Resolver lets your subdomain work seamlessly across Ethereum, L2s, and other chains</li>
     </ul>
     
@@ -239,9 +229,8 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     <ul>
       <li><strong>Lower barrier to entry:</strong> Access premium naming infrastructure at predictable annual rates</li>
       <li><strong>Established credibility:</strong> Operate under recognized parent domains like <code>agentsuite.eth</code>, <code>defisuite.eth</code>, or <code>cryptosuite.eth</code></li>
-      <li><strong>True control:</strong> With ENSv2's emancipation features, you control your subdomain records independently</li>
-      <li><strong>Flexible terms:</strong> Annual leasing with guaranteed renewal rights (no rug pulls)</li>
-      <li><strong>Upgrade path:</strong> Option to purchase the parent domain if you outgrow subdomain leasing</li>
+      <li><strong>True control:</strong> Full control including creating your own sub-subdomains, setting records, and transferring ownership</li>
+      <li><strong>Flexible terms:</strong> Annual leasing with guaranteed renewal rights (can't be rugged) - renewal pricing may adjust over time</li>
     </ul>
   </div>
 
@@ -261,7 +250,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
         <tr>
           <td>0.00 – 0.49</td>
           <td>$50/year</td>
-          <td><strong>Utility with no strategic leverage.</strong> These names don't control or define anything. They're tools, not infrastructure. Examples: small utilities, novelty names, experimental concepts. <em>They don't create revenue for the renter.</em></td>
+          <td><strong>Utility with no strategic leverage.</strong> These names don't control or define anything. They're tools, not infrastructure. Examples: small utilities, novelty names, experimental concepts. <em>They don't create revenue for the subdomain operator.</em></td>
         </tr>
         <tr>
           <td>0.50 – 0.99</td>
@@ -332,28 +321,9 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     </table>
     
     <div style="margin-top:20px">
-      <span class="info-badge">💵 USD Fixed Pricing</span>
+      <span class="info-badge">⛓️ Trustless Smart Contracts</span>
       <span class="info-badge">🔒 Ledger Secured</span>
       <span class="info-badge">⚡ ENSv2 Ready</span>
-    </div>
-  </div>
-
-  <div class="calculator">
-    <h3>💰 Subdomain Lease Cost Calculator</h3>
-    <p style="text-align:center;color:var(--muted);margin-bottom:20px">See projected annual lease costs based on parent domain listing price.<br/>Pricing structure will be finalized closer to ENSv2/Namechain launch.</p>
-    
-    <div class="calc-input">
-      <label for="domainPrice">Parent Domain Price:</label>
-      <input type="number" id="domainPrice" min="0" step="0.01" placeholder="0.00" />
-      <span style="color:var(--muted);font-weight:700">ETH</span>
-    </div>
-    
-    <div class="calc-results">
-      <div class="calc-result-card">
-        <h4>Annual Subdomain Lease</h4>
-        <div class="price">$<span id="annualCost">0</span><span class="usd">/year</span></div>
-        <div class="note">Fixed USD rate based on parent domain tier</div>
-      </div>
     </div>
   </div>
 
@@ -371,14 +341,12 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <div class="content-section">
     <h3>Terms & Conditions (Post-ENSv2)</h3>
     <ul>
-      <li><strong>Payment:</strong> Annual lease in USD stablecoin (USDC preferred) on Namechain L2</li>
-      <li><strong>Renewals:</strong> Guaranteed renewal rights at locked rates - parent cannot revoke if "CANNOT_UNWRAP" fuse is burned</li>
-      <li><strong>Control:</strong> Full subdomain control including resolver, records, and transfer rights (emancipated subname)</li>
-      <li><strong>Expiry Extension:</strong> You can extend your subdomain expiry independently if parent enables "CAN_EXTEND_EXPIRY"</li>
+      <li><strong>Payment:</strong> Annual lease in ETH or stablecoins (USDC) on Ethereum</li>
+      <li><strong>Renewals:</strong> Guaranteed renewal rights via fuses - parent cannot revoke subdomain if "PARENT_CANNOT_CONTROL" fuse is burned. Renewal pricing set by registrar contract.</li>
+      <li><strong>Control:</strong> Full subdomain control including resolver, records, transfer rights, and ability to create your own sub-subdomains (emancipated subname)</li>
+      <li><strong>Expiry Extension:</strong> Annual renewal required through registrar contract - CAN_EXTEND_EXPIRY fuse not burned to ensure renewals</li>
       <li><strong>No Royalties:</strong> Use subdomain for any business purpose without additional fees</li>
-      <li><strong>Cross-Chain:</strong> Subdomain resolves across Ethereum L1, Namechain, and other L2s via Universal Resolver</li>
-      <li><strong>Upgrade Path:</strong> Option to purchase parent domain at current listing price</li>
-      <li><strong>Termination:</strong> If renewal payment fails after 30-day grace period, parent may reclaim subdomain</li>
+      <li><strong>Cross-Chain:</strong> Subdomain resolves across Ethereum L1 and other L2s via Universal Resolver</li>
     </ul>
   </div>
 
@@ -386,12 +354,12 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     <h3>How It Works (After ENSv2 Launch)</h3>
     <ol style="padding-left:25px">
       <li>Browse available parent domains and current pricing</li>
-      <li>Contact us with desired subdomain name and parent domain</li>
-      <li>We configure the parent domain's registry contract with your custom subdomain settings</li>
-      <li>Pay annual lease fee in USDC on Namechain (99% cheaper gas than L1)</li>
-      <li>Receive emancipated subdomain with guaranteed renewal rights</li>
+      <li>Connect to our subname registrar smart contract for your chosen parent domain</li>
+      <li>Register your desired subdomain name through the contract</li>
+      <li>Pay annual lease fee in ETH on Ethereum (99% cheaper gas than before)</li>
+      <li>Receive emancipated subdomain with guaranteed renewal rights via burned fuses</li>
       <li>Set your subdomain resolver, records, and addresses - you have full control</li>
-      <li>Renew annually via automated contract or manual payment</li>
+      <li>Renew annually by calling the renewal function on the registrar contract</li>
       <li>Your subdomain resolves across all chains via ENSv2 Universal Resolver</li>
     </ol>
   </div>
@@ -404,79 +372,24 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <li><strong>Transparent On-Chain Terms:</strong> All permissions, expiry, and renewal rights visible in registry contract</li>
       <li><strong>Cross-Chain Portability:</strong> Your subdomain works everywhere via Universal Resolver</li>
       <li><strong>True Ownership:</strong> Emancipated subdomains give you independent control</li>
-      <li><strong>Upgrade Path:</strong> Purchase parent domain anytime to gain full control</li>
     </ul>
   </div>
 
-  <div style="text-align:center;margin-top:40px">
-    <a href="mailto:buyethaddress@outlook.com" style="display:inline-block;background:var(--accent);color:#fff;font-weight:800;border-radius:10px;padding:14px 28px;text-decoration:none;border:1px solid #2b65c7;transition:all 0.2s;font-size:18px">
-      Contact Us About Subdomain Leasing
-    </a>
-  </div>
 
 </div>
 </main>
 
 <footer>
   <div class="wrap">
-    <h3>BuyETHaddress</h3>
+    <h3>ENSV2 Marketplace</h3>
     <p>Premium ENS domain marketplace. All domains secured by Ledger hardware wallets.</p>
-    <p style="font-size:13px">© 2025 BuyETHaddress. Never connect your wallet.</p>
+    <p style="font-size:13px">© 2025 ensv2marketplace.eth - All ENS names verified and secured</p>
   </div>
 </footer>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.nav-subdomain').classList.add('active');
-  
-  const input = document.getElementById('domainPrice');
-  const annualCost = document.getElementById('annualCost');
-  
-  function calculate() {
-    const ethPrice = parseFloat(input.value) || 0;
-    let usdCost = 50; // default
-    
-    // Pricing tiers based on domain listing price
-    if (ethPrice < 0.5) {
-      usdCost = 50;
-    } else if (ethPrice < 1.0) {
-      usdCost = 100;
-    } else if (ethPrice < 2.0) {
-      usdCost = 200;
-    } else if (ethPrice < 3.0) {
-      usdCost = 300;
-    } else if (ethPrice < 4.0) {
-      usdCost = 400;
-    } else if (ethPrice < 5.0) {
-      usdCost = 500;
-    } else if (ethPrice < 6.0) {
-      usdCost = 600;
-    } else if (ethPrice < 7.0) {
-      usdCost = 700;
-    } else if (ethPrice < 8.0) {
-      usdCost = 800;
-    } else if (ethPrice < 9.0) {
-      usdCost = 900;
-    } else if (ethPrice < 10.0) {
-      usdCost = 1000;
-    } else if (ethPrice < 12.0) {
-      usdCost = 1200;
-    } else if (ethPrice < 15.0) {
-      usdCost = 1500;
-    } else {
-      usdCost = 2500;
-    }
-    
-    annualCost.textContent = usdCost;
-  }
-  
-  input.addEventListener('input', calculate);
-  
-  // Initialize
-  input.value = '2.5';
-  calculate();
 });
 </script>
-
 </body>
 </html>
