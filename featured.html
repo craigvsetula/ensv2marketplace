@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Featured Enterprise-grade Domains | ENSV2 Marketplace</title>
-<meta name="description" content="21 enterprise-grade ENS domains available for leasing. Featuring ultra enterprise-grade orchestrator domains, core infrastructure, and protocol-level names.">
+<title>Featured Premium Domains | BuyETHaddress - ENS Leasing Specialists</title>
+<meta name="description" content="21 premium ENS domains available for leasing. Featuring ultra-premium orchestrator domains, core infrastructure, and protocol-level names.">
 <style>
-:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#b8964f; --premium:#c0c0c0; --premiumDark:#8c8c8c; --brandFrom:#5bb1ff; --brandTo:#8b5cf6; --glow:#6df7ff; }
+:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#3b82f6; }
 *{box-sizing:border-box} 
 html,body{height:100%;margin:0;padding:0} 
 body{background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
@@ -19,7 +19,7 @@ nav a:hover{color:#fff;transform:translateY(-2px)}
 nav a.active{color:var(--accent);font-weight:700}
 
 /* Header */
-header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
+header{position:sticky;top:0;z-index:20;background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
 .wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
 header .wrap{display:flex;flex-direction:column;align-items:center}
 
@@ -44,9 +44,9 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 @keyframes gradientShiftVertical {0%{background-position:center 0%}50%{background-position:center 100%}100%{background-position:center 0%}}
 
 /* Hero Section */
-.hero{background:linear-gradient(135deg,rgba(184,150,79,0.15),rgba(154,122,63,0.15));border:2px solid var(--accent);border-radius:16px;padding:40px 30px;text-align:center;margin-bottom:40px}
+.hero{background:linear-gradient(135deg,rgba(59,130,246,0.15),rgba(139,92,246,0.15));border:2px solid var(--accent);border-radius:16px;padding:40px 30px;text-align:center;margin-bottom:40px}
 .hero h1{color:#fff;font-size:2.5rem;margin:0 0 12px;font-weight:800}
-.hero .subtitle{color:#9aa0a6;font-size:1.3rem;font-weight:700;margin:0 0 16px}
+.hero .subtitle{color:#22c55e;font-size:1.3rem;font-weight:700;margin:0 0 16px}
 .hero p{color:var(--text);font-size:1.1rem;line-height:1.7;margin:0;max-width:800px;margin:0 auto}
 
 /* Featured Cards Grid - BIGGER THAN INDEX */
@@ -71,7 +71,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 
 .domain-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(184,150,79,0.3);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.3);
   border-color: var(--accent);
 }
 
@@ -100,7 +100,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 .desc-name {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #b8964f;
+  color: #3b82f6;
   margin-bottom: 16px;
 }
 
@@ -114,41 +114,20 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 .desc-price {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #b8964f;
+  color: #3b82f6;
   margin-bottom: 10px;
 }
 
 .desc-sublease {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #9aa0a6;
+  color: #22c55e;
   margin-bottom: 10px;
 }
 
 .desc-cta {
   font-size: 13px;
   color: #9ca3af;
-}
-
-/* Lease Button */
-.lease-button {
-  background: linear-gradient(135deg, #b8964f, #9a7a3f);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 4px 12px rgba(184,150,79,0.4);
-  margin-top: 16px;
-}
-
-.lease-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(184,150,79,0.6);
-  background: linear-gradient(135deg, #d4af6a, #b8964f);
 }
 
 /* Image Container */
@@ -170,66 +149,47 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   object-fit: contain;
 }
 
-/* Price Badge - Top Right - TWICE AS BIG */
+/* Price Badge - Top Right - BIGGER */
 .price-badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  background: linear-gradient(135deg, #b8964f, #9a7a3f);
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: #fff;
-  padding: 12px 20px;
-  border-radius: 10px;
-  z-index: 3;
-  box-shadow: 0 4px 12px rgba(184,150,79,0.4);
-  border: 1px solid #8a6a2f;
-  line-height: 1.3;
-  text-align: center;
-  min-width: 110px;
-  min-height: 68px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.price-badge .price-line {
-  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 16px;
   font-weight: 800;
-}
-.price-badge .label-line {
-  font-size: 11px;
-  font-weight: 600;
-  opacity: 0.9;
-  margin-top: 2px;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  border: 1px solid #2563eb;
 }
 
-/* Sublease Badge - Top Left - SAME SIZE AS PRICE BADGE */
+/* Sublease Badge - Top Left - BIGGER */
 .sublease-badge {
   position: absolute;
-  top: 16px;
-  left: 16px;
-  background: linear-gradient(135deg, #9aa0a6, #6c757d);
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #fff;
-  padding: 12px 20px;
-  border-radius: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
   z-index: 3;
-  box-shadow: 0 4px 12px rgba(154,160,166,0.4);
-  border: 1px solid #495057;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  border: 1px solid #15803d;
   line-height: 1.3;
   text-align: center;
-  min-width: 110px;
-  min-height: 68px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .sublease-badge .price-line {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 800;
 }
 .sublease-badge .label-line {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 600;
   opacity: 0.9;
-  margin-top: 2px;
 }
 
 /* Domain Name Overlay */
@@ -292,8 +252,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     <a href="mission.html" class="nav-mission">Mission</a>
     <a href="roadmap.html" class="nav-roadmap">Roadmap</a>
     <a href="about.html" class="nav-about">About</a>
-    <a href="consignment.html" class="nav-consignment">Consignment</a>
-    <a href="resources.html" class="nav-resources">Resources</a>
+    <a href="contact.html" class="nav-contact">Contact</a>
   </div>
 </nav>
 
@@ -301,7 +260,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <div class="wrap">
     <div class="brandblock">
       <div style="position:relative;text-align:center">
-        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:-100px;top:50px">
+        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:0;top:160px">
           <span class="check"></span>
           <div>
             <div class="vbold">Verified</div>
@@ -309,22 +268,29 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
           </div>
         </div>
         <div>
-          <div style="display:inline-block;position:relative">
-            <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:8rem;letter-spacing:0.5px;color:#b8964f;margin:0">
-              ENSV2
-            </h1>
-            <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
-          </div>
-          <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">
-            Marketplace
-          </h2>
-          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Official Enterprise-grade Real World utility ENS domains</div>
-          <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">Subdomain leasing coming soon with Namechain</div>
-          <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
-          <div style="font-size:14px;color:#9aa0a6;font-style:italic;margin-top:4px">(Namechain subdomain leasing launching soon)</div>
+          <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:5.5rem;letter-spacing:0.5px;color:white;margin:0">
+            <span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">B</span><span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">uy</span>
+            <span style="background:linear-gradient(180deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:100% 200%;animation:gradientShiftVertical 3s ease-in-out infinite">ETH</span>
+            <span style="background:linear-gradient(90deg,#d4d4d4,#7a7a7a,#d4d4d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;background-size:200% 100%;animation:gradientShift 3s ease-in-out infinite">address</span>
+          </h1>
+          <div class="lease-callout">or Lease!</div>
+          <div style="font-size:18px;color:#22c55e;font-weight:700;margin-top:4px;text-shadow:0 0 8px rgba(34,197,94,0.3)">Never Connect Your Wallet</div>
         </div>
       </div>
       <div class="tagline">Own your identity. Own your name.</div>
+      <div style="margin:20px 0">
+        <div style="color:#cfe1ff;font-size:15px;margin-bottom:12px">📧 <strong>Contact for pricing and availability</strong></div>
+        <div style="display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap">
+          <a href="mailto:buyethaddress@outlook.com" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid #2b65c7;transition:all 0.2s">
+            <span>📧</span>
+            <span>buyethaddress@outlook.com</span>
+          </a>
+          <a href="https://discord.gg/n28Q5Y9h" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;background:#5865F2;color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid#4752C4;transition:all 0.2s">
+            <span>💬</span>
+            <span>Join Discord</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -332,66 +298,36 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <main>
   <div class="wrap">
     <div class="hero">
-      <h1>Featured Enterprise-grade Domains</h1>
-      <div class="subtitle">21 Ultra Enterprise-grade ENS Names</div>
-      <p>Our most exclusive collection featuring orchestrator-class infrastructure domains (up to 75 ETH) alongside enterprise-grade protocol and framework names. Each represents exceptional positioning for Web3 core infrastructure.</p>
+      <h1>Featured Premium Domains</h1>
+      <div class="subtitle">21 Ultra-Premium ENS Names</div>
+      <p>Our most exclusive collection featuring orchestrator-class infrastructure domains (up to 75 ETH) alongside premium protocol and framework names. Each represents exceptional positioning for Web3 core infrastructure.</p>
     </div>
 
     <div class="cards-grid">
 
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">namechainorchestrator.eth</div>
-          <div class="desc-text">Orchestrates ENS Namechain L2 operations—coordinates registry updates, resolution queries, and cross-chain name sync.</div>
-          <button class="lease-button" onclick="showLeasePopup('10,000')">Lease for $10,000/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="namechainorchestrator.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">75.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$10,000/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">namechainorchestrator.eth</div>
-          </div>
-        </div>
-      </div>
-
+      <!-- ULTRA-PREMIUM ORCHESTRATORS -->
+      
       <div class="domain-card">
         <!-- Hover Description Overlay -->
         <div class="domain-desc-hover">
           <div class="desc-name">bridgeorchestrator.eth</div>
           <div class="desc-text">Orchestrates cross-chain bridge operations—coordinates validators, manages message queues, and ensures atomic swaps.</div>
-          <button class="lease-button" onclick="showLeasePopup('10,000')">Lease for $10,000/year</button>
+          <div class="desc-price">75.0 ETH</div>
+          <div class="desc-sublease">$10,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="bridgeorchestrator.eth">
+          <img src="leaselogo.png" alt="bridgeorchestrator.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">75.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">75.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
             <div class="price-line">$10,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
@@ -404,61 +340,29 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <div class="domain-card">
         <!-- Hover Description Overlay -->
         <div class="domain-desc-hover">
-          <div class="desc-name">surgeprover.eth</div>
-          <div class="desc-text">Generates validity proofs for Surge rollup—core zkProof infrastructure ensuring trustless L1 settlement verification.</div>
-          <button class="lease-button" onclick="showLeasePopup('5,000')">Lease for $5,000/year</button>
+          <div class="desc-name">namechainorchestrator.eth</div>
+          <div class="desc-text">Orchestrates ENS Namechain L2 operations—coordinates registry updates, resolution queries, and cross-chain name sync.</div>
+          <div class="desc-price">75.0 ETH</div>
+          <div class="desc-sublease">$10,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="surgeprover.eth">
+          <img src="leaselogo.png" alt="namechainorchestrator.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">30.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">75.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
-            <div class="price-line">$5,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="price-line">$10,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
           <div class="domain-name-overlay">
-            <div class="domain-name">surgeprover.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">surgeverifier.eth</div>
-          <div class="desc-text">Cryptographic verification layer for Surge proofs—validates state transitions and ensures L2 security guarantees.</div>
-          <button class="lease-button" onclick="showLeasePopup('5,000')">Lease for $5,000/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="surgeverifier.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">30.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$5,000/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">surgeverifier.eth</div>
+            <div class="domain-name">namechainorchestrator.eth</div>
           </div>
         </div>
       </div>
@@ -468,23 +372,22 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
         <div class="domain-desc-hover">
           <div class="desc-name">basedorchestrator.eth</div>
           <div class="desc-text">Orchestrates Based sequencing and L1-driven ordering—coordinates validator participation and preconfirmation systems.</div>
-          <button class="lease-button" onclick="showLeasePopup('3,000')">Lease for $3,000/year</button>
+          <div class="desc-price">30.0 ETH</div>
+          <div class="desc-sublease">$3,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="basedorchestrator.eth">
+          <img src="leaselogo.png" alt="basedorchestrator.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">30.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">30.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
             <div class="price-line">$3,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
@@ -499,23 +402,22 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
         <div class="domain-desc-hover">
           <div class="desc-name">surgeorchestrator.eth</div>
           <div class="desc-text">Primary coordination layer for Surge network operations—manages validator sets, state sync, and multi-chain orchestration.</div>
-          <button class="lease-button" onclick="showLeasePopup('5,000')">Lease for $5,000/year</button>
+          <div class="desc-price">30.0 ETH</div>
+          <div class="desc-sublease">$5,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="surgeorchestrator.eth">
+          <img src="leaselogo.png" alt="surgeorchestrator.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">30.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">30.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
             <div class="price-line">$5,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
@@ -528,30 +430,29 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <div class="domain-card">
         <!-- Hover Description Overlay -->
         <div class="domain-desc-hover">
-          <div class="desc-name">federal-id.eth</div>
-          <div class="desc-text">Contracto identity systems for u.s. government authentication,clearance, and agency access control.</div>
-          <button class="lease-button" onclick="showLeasePopup('3,000')">Lease for $3,000/year</button>
+          <div class="desc-name">surgeprover.eth</div>
+          <div class="desc-text">Generates validity proofs for Surge rollup—core zkProof infrastructure ensuring trustless L1 settlement verification.</div>
+          <div class="desc-price">30.0 ETH</div>
+          <div class="desc-sublease">$5,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="federal-id.eth">
+          <img src="leaselogo.png" alt="surgeprover.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">25.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">30.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
-            <div class="price-line">$3,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="price-line">$5,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
           <div class="domain-name-overlay">
-            <div class="domain-name">federal-id.eth</div>
+            <div class="domain-name">surgeprover.eth</div>
           </div>
         </div>
       </div>
@@ -559,428 +460,55 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <div class="domain-card">
         <!-- Hover Description Overlay -->
         <div class="domain-desc-hover">
-          <div class="desc-name">national-id.eth</div>
-          <div class="desc-text">Global identity anchor used in KYC, SIM registration, travel, and onboarding across 100+ jurisdictions.</div>
-          <button class="lease-button" onclick="showLeasePopup('3,000')">Lease for $3,000/year</button>
+          <div class="desc-name">surgeverifier.eth</div>
+          <div class="desc-text">Cryptographic verification layer for Surge proofs—validates state transitions and ensures L2 security guarantees.</div>
+          <div class="desc-price">30.0 ETH</div>
+          <div class="desc-sublease">$5,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="national-id.eth">
+          <img src="leaselogo.png" alt="surgeverifier.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">25.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">30.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
-            <div class="price-line">$3,000/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="price-line">$5,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
           <div class="domain-name-overlay">
-            <div class="domain-name">national-id.eth</div>
+            <div class="domain-name">surgeverifier.eth</div>
           </div>
         </div>
       </div>
 
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">surgerouter.eth</div>
-          <div class="desc-text">Core routing primitive for Surge L2 infrastructure—handles cross-chain message flow and transaction orchestration logic.</div>
-          <button class="lease-button" onclick="showLeasePopup('2,500')">Lease for $2,500/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="surgerouter.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">20.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$2,500/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">surgerouter.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">identitygateway.eth</div>
-          <div class="desc-text">Identity infrastructure gateway for decentralized authentication, credential verification, and cross-system identity resolution.</div>
-          <button class="lease-button" onclick="showLeasePopup('2,000')">Lease for $2,000/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="identitygateway.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">20.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$2,000/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">identitygateway.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">stateid.eth</div>
-          <div class="desc-text">State-level identity primitive for licensing, benefits, and verification across U.S. government systems.</div>
-          <button class="lease-button" onclick="showLeasePopup('2,000')">Lease for $2,000/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="stateid.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">18.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$2,000/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">stateid.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">indexorchestrator.eth</div>
-          <div class="desc-text">Orchestrates data indexing workflows, search infrastructure, and query coordination across distributed databases and blockchain data.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,800')">Lease for $1,800/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="indexorchestrator.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">18.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,800/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">indexorchestrator.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">bridgeverifier.eth</div>
-          <div class="desc-text">Verifies cross-chain message authenticity and state proofs—ensures trustless bridge security via cryptographic validation.</div>
-          <button class="lease-button" onclick="showLeasePopup('2,000')">Lease for $2,000/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="bridgeverifier.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">16.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$2,000/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">bridgeverifier.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">transactionendpoint.eth</div>
-          <div class="desc-text">Core blockchain transaction intake endpoint for payment processing, settlement initiation, and cross-chain execution flows.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,600')">Lease for $1,600/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="transactionendpoint.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">15.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,600/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">transactionendpoint.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">accessgateway.eth</div>
-          <div class="desc-text">Access control gateway for permission management, authentication enforcement, and secure resource authorization at entry points.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,600')">Lease for $1,600/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="accessgateway.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">15.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,600/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">accessgateway.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">rolluporchestrator.eth</div>
-          <div class="desc-text">Rollup orchestration engine. L2 coordination, batch orchestration, cross-rollup transaction management.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,600')">Lease for $1,600/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="rolluporchestrator.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">15.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,600/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">rolluporchestrator.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">basedexecutor.eth</div>
-          <div class="desc-text">Executes transactions within Based rollup framework—processes L1-sequenced batches with Ethereum security guarantees.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,500')">Lease for $1,500/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="basedexecutor.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">14.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,500/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">basedexecutor.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">treasuryrouter.eth</div>
-          <div class="desc-text">Routes treasury operations, capital allocation, and institutional fund flows across protocols, chains, and financial systems.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,500')">Lease for $1,500/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="treasuryrouter.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">14.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,500/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">treasuryrouter.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">surgeaggregator.eth</div>
-          <div class="desc-text">Aggregates liquidity, data feeds, and state proofs across Surge ecosystem—central hub for cross-chain data synthesis.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,500')">Lease for $1,500/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="surgeaggregator.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">14.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,500/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">surgeaggregator.eth</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="domain-card">
-        <!-- Hover Description Overlay -->
-        <div class="domain-desc-hover">
-          <div class="desc-name">namechainexecutor.eth</div>
-          <div class="desc-text">Executes name registration and update transactions on Namechain—processes ENS record modifications and ownership transfers.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,500')">Lease for $1,500/year</button>
-        </div>
-        
-        <!-- Card Image -->
-        <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="namechainexecutor.eth">
-          
-          <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">14.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
-          
-          <!-- Sublease Badge (Top Left) -->
-          <div class="sublease-badge">
-            <div class="price-line">$1,500/yr</div>
-            <div class="label-line">Sub Domains</div>
-          </div>
-          
-          <!-- Domain Name Overlay -->
-          <div class="domain-name-overlay">
-            <div class="domain-name">namechainexecutor.eth</div>
-          </div>
-        </div>
-      </div>
-
+      <!-- EXISTING FEATURED DOMAINS -->
       <div class="domain-card">
         <!-- Hover Description Overlay -->
         <div class="domain-desc-hover">
           <div class="desc-name">slashing.eth</div>
-          <div class="desc-text">Protocol framing — premium utility for validator slashing logic, enforcement mechanisms, and network security economics.</div>
-          <button class="lease-button" onclick="showLeasePopup('1,100')">Lease for $1,100/year</button>
+          <div class="desc-text">Protocol framing — premium utility for validator slashing logic, enforcement mechanisms, and netw...</div>
+          <div class="desc-price">10.0 ETH</div>
+          <div class="desc-sublease">$1200/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
         </div>
         
         <!-- Card Image -->
         <div class="card-image">
-          <img src="ENSV2newLogo.png" alt="slashing.eth">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
           
           <!-- Price Badge (Top Right) -->
-          <div class="price-badge">
-            <div class="price-line">10.0 ETH</div>
-            <div class="label-line">Valuation</div>
-          </div>
+          <div class="price-badge">10.0 ETH</div>
           
           <!-- Sublease Badge (Top Left) -->
           <div class="sublease-badge">
-            <div class="price-line">$1,100/yr</div>
-            <div class="label-line">Sub Domains</div>
+            <div class="price-line">$1200/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
           </div>
           
           <!-- Domain Name Overlay -->
@@ -990,23 +518,442 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
         </div>
       </div>
 
-    </div
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">accountabstraction.eth</div>
+          <div class="desc-text">Full spelling of account abstraction — stronger institutional anchor than the shortened form.</div>
+          <div class="desc-price">10.0 ETH</div>
+          <div class="desc-sublease">$1,100/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">10.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,100/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">accountabstraction.eth</div>
+          </div>
+        </div>
+      </div>
 
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">cryptosuite.eth</div>
+          <div class="desc-text">All of crypto in one brand - monopoly potential</div>
+          <div class="desc-price">9.0 ETH</div>
+          <div class="desc-sublease">$1,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">9.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">cryptosuite.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">defisuite.eth</div>
+          <div class="desc-text">Suite branding — broad utility; fits bundling of DeFi dashboards, staking tools, and governance modules.</div>
+          <div class="desc-price">10.0 ETH</div>
+          <div class="desc-sublease">$1,100/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">10.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,100/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">defisuite.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">web3suite.eth</div>
+          <div class="desc-text">Suite framing — broad utility across Web3 tooling and infrastructure.</div>
+          <div class="desc-price">8.5 ETH</div>
+          <div class="desc-sublease">$900/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">8.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$900/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">web3suite.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">agentsuite.eth</div>
+          <div class="desc-text">Full platform branding — ideal for bundling agentic tools, infrastructure, and modular services.</div>
+          <div class="desc-price">11.0 ETH</div>
+          <div class="desc-sublease">$1,200/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">11.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,200/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">agentsuite.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">ethereumregistry.eth</div>
+          <div class="desc-text">Registry framing — high utility for indexing Ethereum assets, identities, contracts, or compliance records.</div>
+          <div class="desc-price">9.0 ETH</div>
+          <div class="desc-sublease">$1,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">9.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">ethereumregistry.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">validatorregistry.eth</div>
+          <div class="desc-text">Registry framing — strong utility for validator discovery and trust indexing.</div>
+          <div class="desc-price">10.0 ETH</div>
+          <div class="desc-sublease">$1,100/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">10.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,100/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">validatorregistry.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">liquidationbot.eth</div>
+          <div class="desc-text">Automated liquidation bot for DeFi lending. Monitor positions, execute liquidations, MEV extraction, risk management alerts.</div>
+          <div class="desc-price">8.5 ETH</div>
+          <div class="desc-sublease">$900/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">8.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$900/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">liquidationbot.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">p2pprotocol.eth</div>
+          <div class="desc-text">Peer-to-peer protocol infrastructure. Decentralized exchange standards, direct transfer protocols, trustless coordination layer.</div>
+          <div class="desc-price">9.0 ETH</div>
+          <div class="desc-sublease">$1,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">9.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">p2pprotocol.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">automationprotocol.eth</div>
+          <div class="desc-text">Protocol automation infrastructure. Smart contract execution, keeper networks, scheduled operations, autonomous task management.</div>
+          <div class="desc-price">10.5 ETH</div>
+          <div class="desc-sublease">$1,100/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">10.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,100/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">automationprotocol.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">privacyidentity.eth</div>
+          <div class="desc-text">Identity framing — strong utility for private identity systems, selective disclosure, or zero-knowledge credentials.</div>
+          <div class="desc-price">10.0 ETH</div>
+          <div class="desc-sublease">$1,100/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">10.0 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,100/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">privacyidentity.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">cloudinfrastructure.eth</div>
+          <div class="desc-text">Infrastructure framing — premium positioning for cloud platforms and services.</div>
+          <div class="desc-price">9.5 ETH</div>
+          <div class="desc-sublease">$1,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">9.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">cloudinfrastructure.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">ethereumframework.eth</div>
+          <div class="desc-text">Framework framing — strong utility for Ethereum-native developer frameworks, SDKs, or protocol scaffolding tools.</div>
+          <div class="desc-price">8.5 ETH</div>
+          <div class="desc-sublease">$900/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">8.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$900/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">ethereumframework.eth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <!-- Hover Description Overlay -->
+        <div class="domain-desc-hover">
+          <div class="desc-name">cryptotaxsuite.eth</div>
+          <div class="desc-text">Infrastructure anchor — fits bundling of crypto tax dashboards, audit tools, and modular filing systems.</div>
+          <div class="desc-price">9.5 ETH</div>
+          <div class="desc-sublease">$1,000/year subdomain lease</div>
+          <div class="desc-cta">Hover to see details • Click to inquire</div>
+        </div>
+        
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="leaselogo.png" alt="{domain['name']}.eth">
+          
+          <!-- Price Badge (Top Right) -->
+          <div class="price-badge">9.5 ETH</div>
+          
+          <!-- Sublease Badge (Top Left) -->
+          <div class="sublease-badge">
+            <div class="price-line">$1,000/yr</div>
+            <div class="label-line">SUBDOMAIN LEASE</div>
+          </div>
+          
+          <!-- Domain Name Overlay -->
+          <div class="domain-name-overlay">
+            <div class="domain-name">cryptotaxsuite.eth</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </main>
 
 <footer>
   <div class="wrap">
-    <h3>ENSV2 Marketplace</h3>
-    <p>Enterprise-grade ENS domain marketplace. All domains secured by Ledger hardware wallets.</p>
-    <p style="margin:8px 0">© 2025 ensv2marketplace.eth - All ENS names verified and secured</p>
+    <h3>Interested in a Featured Domain?</h3>
+    <p>These are our premium showcase names - each one represents exceptional positioning for Web3 infrastructure. Available for purchase or subdomain leasing.</p>
+    <div style="margin-top:30px">
+      <a href="/cdn-cgi/l/email-protection#2b495e524e5f434a4f4f594e58586b445e5f4744444005484446" style="display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:8px;padding:12px 20px;text-decoration:none;transition:all 0.2s">
+        Contact: buyethaddress@outlook.com
+      </a>
+    </div>
   </div>
 </footer>
 
-<script>
-function showLeasePopup(price) {
-  alert('Subdomain leasing coming soon!\n\nWaiting for Namechain to launch. Once available, you\'ll be able to lease subdomains for $' + price + '/year.\n\nIf you are interested in sub-leasing this domain, please send us an email at ensv2marketplace@outlook.com so we can convert to Namechain as soon as possible.\n\nThank you!');
-}
-</script>
-
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>
