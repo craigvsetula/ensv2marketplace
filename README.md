@@ -72,7 +72,7 @@ List Price (ETH)	Annual Lease	Strategic Value & Use Case
 
 
 **What ENSv2 Changes About Subdomain Leasing**
-ENSv2 moves ENS to Layer 2, dramatically reducing gas costs for subdomain creation and transfer. This changes the economics of every name in this portfolio:
+ENSv2 keeps ENS on Layer 1, reduced gas costs for subdomain creation and transfer. This changes the economics of every name in this portfolio:
 
 •Each .eth parent name gets its own smart contract registry, enabling true subdomain ownership with flexible terms
 •Low gas costs make leasing viable at smaller transaction sizes — opening the market to SMBs and individual developers
