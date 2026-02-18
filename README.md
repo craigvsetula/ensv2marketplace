@@ -13,12 +13,12 @@ This philosophy ensures BuyETHAddress is more than a portfolio — it’s a plat
   Organize and present 2,000+ ENS names by category (DeFi, AI, staking, finance, identity).  
 
 - **Phase 2: Leasing Model**  
-  Wait for namechain to launch
-  change all names over to ensv2 namehain
+  Wait for ENSV2 to launch
+  change all names over to ensv2 
 
 - **Phase 3: Community & Events**  
    Implement new features from ENS v2 (coming in 2026).  
-  Position BuyETHAddress as a leader in utility-driven ENS adoption.
+  Position ensv2marketplace as a leader in utility-driven ENS adoption.
    
 **ENS Name Pricing Guide**
 **How to Determine the Right Price for Any ENS Name**
@@ -123,5 +123,5 @@ Published by buyethaddress.com  |  ensv2marketplace.com
 ## Contact
 - 🌐 Website: [ensv2marketplace.com](https://www.ensv2marketplace.com)  
 - 📧 Email: ensv2marketplace@outlook.com  
-- 🛒 OpenSea: Active listings under BuyETHAddress  
+- 🛒 OpenSea: Active listings under BuyETHAddress/ensv2marketplace
 - 💬 Community: Discord & Reddit channels
