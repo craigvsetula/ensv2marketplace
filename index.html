@@ -400,7 +400,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 
 <nav>
   <div class="wrap">
-    <a href="/" class="nav-home active">Home</a>
+    <a href="index.html" class="nav-home active">Home</a>
     <a href="suites.html" class="nav-suites">Suites</a>
     <a href="subdomain-leasing.html" class="nav-subdomain">Subdomain Leasing</a>
     <a href="featured.html" class="nav-featured">Featured Names</a>
@@ -509,7 +509,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <div class="wrap">
   
   <!-- MAIN CATEGORY BUTTONS (Always visible) -->
-  <div class="main-cats">
+  <div class="main-cats" style="display:none">
     <span class="main-cat active" data-cat="all" data-count="2102">🔵 All (2102)</span>
     <span class="main-cat" data-cat="1" data-count="302">🤖 AI & Agents (302)</span>
     <span class="main-cat" data-cat="2" data-count="373">🔗 Blockchain Infrastructure (373)</span>
@@ -3019,16 +3019,13 @@ document.querySelectorAll('.main-cat').forEach(catEl => {
   catEl.addEventListener('click', () => {
     document.querySelectorAll('.main-cat').forEach(c => c.classList.remove('active'));
     catEl.classList.add('active');
-    
     const cat = catEl.dataset.cat;
-    
     if(cat === 'all' || !subcategories[cat] || Object.keys(subcategories[cat]).length === 0) {
       subCatsDiv.classList.remove('show');
       subCatsDiv.innerHTML = '';
     } else {
       subCatsDiv.innerHTML = '';
       const subs = subcategories[cat];
-      
       Object.entries(subs).sort((a, b) => a[0].localeCompare(b[0])).forEach(([subcode, subdata]) => {
         const btn = document.createElement('span');
         btn.className = 'sub-cat';
@@ -3042,32 +3039,24 @@ document.querySelectorAll('.main-cat').forEach(catEl => {
         });
         subCatsDiv.appendChild(btn);
       });
-      
       subCatsDiv.classList.add('show');
     }
-    
     filterCards(cat);
   });
 });
 
 function filterCards(cat) {
   let visibleCount = 0;
-  
   cards.forEach(card => {
     const cardCats = card.dataset.categories.split(',');
     let match = false;
-    
     if(cat === 'all') {
       match = true;
     } else if(/^\d+$/.test(cat)) {
-      match = cardCats.some(c => {
-        const mainCat = extractMainCategory(c);
-        return mainCat === cat;
-      });
+      match = cardCats.some(c => extractMainCategory(c) === cat);
     } else {
       match = cardCats.includes(cat);
     }
-    
     if(match) {
       card.classList.remove('hidden');
       visibleCount++;
@@ -3075,59 +3064,53 @@ function filterCards(cat) {
       card.classList.add('hidden');
     }
   });
-  
   document.getElementById('cardCount').textContent = visibleCount;
 }
-
-filterCards('all');
 
 const searchInput = document.getElementById('domainSearch');
 const searchResults = document.getElementById('searchResults');
 
 searchInput.addEventListener('input', (e) => {
   const searchTerm = e.target.value.toLowerCase().trim().replace('.eth', '');
-  
   if (searchTerm.length < 2) {
     searchResults.style.display = 'none';
     return;
   }
-  
   const matches = [];
   Object.keys(domainData).forEach(name => {
     if (name.toLowerCase().includes(searchTerm)) {
       matches.push({ name: name, price: domainData[name].price });
     }
   });
-  
   if (matches.length > 0) {
     searchResults.innerHTML = '<div style="color:#b8964f;font-weight:700;margin-bottom:12px">Found in our collection:</div>';
     matches.slice(0, 50).forEach(match => {
       const priceText = match.price > 0 ? `${match.price} ETH` : 'Make Offer';
-      searchResults.innerHTML += `
-        <div style="padding:10px;margin:4px 0;background:#0f1420;border-radius:8px;cursor:pointer;border:1px solid #25304a;transition:all 0.2s" 
-             onmouseover="this.style.background='#1a2338';this.style.borderColor='#3a4a6a'" 
-             onmouseout="this.style.background='#0f1420';this.style.borderColor='#25304a'"
-             onclick="
-              const t = '${match.name}';
-              document.querySelector('.main-cat[data-cat=\'all\']').click();
-              setTimeout(() => {
-                document.querySelectorAll('.domain-card').forEach(card => {
-                  const n = card.querySelector('.domain-name').textContent.replace('.eth','');
-                  if (n === t) {
-                    document.getElementById('searchResults').style.display='none';
-                    document.getElementById('domainSearch').value='';
-                    card.classList.remove('hidden');
-                    card.scrollIntoView({behavior:'smooth',block:'center'});
-                    card.style.transform='scale(1.05)';
-                    card.style.boxShadow='0 0 30px rgba(59,130,246,0.6)';
-                    setTimeout(()=>{card.style.transform='';card.style.boxShadow='';},2000);
-                  }
-                });
-              }, 100);">
-          <div style="font-weight:700;color:#fff">${match.name}.eth</div>
-          <div style="color:#b8964f;font-size:14px;margin-top:4px">${priceText}</div>
-        </div>
-      `;
+      const div = document.createElement('div');
+      div.style.cssText = 'padding:10px;margin:4px 0;background:#0f1420;border-radius:8px;cursor:pointer;border:1px solid #25304a;transition:all 0.2s';
+      div.dataset.name = match.name;
+      div.innerHTML = `<div style="font-weight:700;color:#fff">${match.name}.eth</div><div style="color:#b8964f;font-size:14px;margin-top:4px">${priceText}</div>`;
+      div.addEventListener('mouseover', function(){ this.style.background='#1a2338'; this.style.borderColor='#3a4a6a'; });
+      div.addEventListener('mouseout', function(){ this.style.background='#0f1420'; this.style.borderColor='#25304a'; });
+      div.addEventListener('click', function() {
+        var t = this.dataset.name;
+        document.querySelector('.main-cat[data-cat="all"]').click();
+        setTimeout(function() {
+          document.querySelectorAll('.domain-card').forEach(function(card) {
+            var n = card.querySelector('.domain-name').textContent.replace('.eth','');
+            if (n === t) {
+              document.getElementById('searchResults').style.display = 'none';
+              document.getElementById('domainSearch').value = '';
+              card.classList.remove('hidden');
+              card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              card.style.transform = 'scale(1.05)';
+              card.style.boxShadow = '0 0 30px rgba(59,130,246,0.6)';
+              setTimeout(function(){ card.style.transform=''; card.style.boxShadow=''; }, 2000);
+            }
+          });
+        }, 100);
+      });
+      searchResults.appendChild(div);
     });
     if (matches.length > 50) {
       searchResults.innerHTML += `<div style="color:#9aa0a6;margin-top:8px;font-size:13px">+${matches.length - 50} more results</div>`;
@@ -3136,7 +3119,7 @@ searchInput.addEventListener('input', (e) => {
   } else {
     searchResults.innerHTML = `
       <div style="color:#9aa0a6;margin-bottom:12px">Not in our collection</div>
-      <a href="https://app.ens.domains/search/${searchTerm}" target="_blank" rel="noopener noreferrer" 
+      <a href="https://app.ens.domains/search/${searchTerm}" target="_blank" rel="noopener noreferrer"
          style="display:inline-block;padding:12px 16px;background:#b8964f;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;transition:all 0.2s"
          onmouseover="this.style.background='#d4af6a'"
          onmouseout="this.style.background='#b8964f'">
@@ -3152,6 +3135,10 @@ document.addEventListener('click', (e) => {
     searchResults.style.display = 'none';
   }
 });
+
+function showLeasePopup(price) {
+  alert('Subdomain leasing coming soon!\n\nWaiting for ENSv2 to launch on Ethereum L1. Once available, you\'ll be able to lease subdomains for $' + price + '/year.\n\nIf you are interested in sub-leasing this domain, please send us an email at ensv2marketplace@outlook.com.\n\nThank you!');
+}
 
 </script>
 
