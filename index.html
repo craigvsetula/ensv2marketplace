@@ -462,9 +462,9 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <div style="margin:20px 0">
         <div style="color:#cfe1ff;font-size:15px;margin-bottom:12px">📧 <strong>Contact us for suites or direct communication</strong></div>
         <div style="display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px">
-          <a href="/cdn-cgi/l/email-protection#adc8c3dedb9fc0ccdfc6c8d9ddc1cccec8edc2d8d9c1c2c2c683cec2c0" style="display:inline-flex;align-items:center;gap:6px;background:#6c757d;color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid #5a6268;transition:all 0.2s">
+          <a href="mailto:ensv2marketplace@outlook.com" style="display:inline-flex;align-items:center;gap:6px;background:#6c757d;color:#fff;font-weight:700;border-radius:8px;padding:8px 14px;text-decoration:none;border:1px solid #5a6268;transition:all 0.2s">
             <span>📧</span>
-            <span><span class="__cf_email__" data-cfemail="ceaba0bdb8fca3afbca5abbabea2afadab8ea1bbbaa2a1a1a5e0ada1a3">[email&#160;protected]</span></span>
+            <span>ensv2marketplace@outlook.com</span>
           </a>
         </div>
         <div style="color:#9aa0a6;font-size:12px">⚠️ Emails with attachments will be deleted.</div>
@@ -509,7 +509,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <div class="wrap">
   
   <!-- MAIN CATEGORY BUTTONS (Always visible) -->
-  <div class="main-cats" style="display:none">
+  <div class="main-cats">
     <span class="main-cat active" data-cat="all" data-count="2102">🔵 All (2102)</span>
     <span class="main-cat" data-cat="1" data-count="302">🤖 AI & Agents (302)</span>
     <span class="main-cat" data-cat="2" data-count="373">🔗 Blockchain Infrastructure (373)</span>
@@ -550,7 +550,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <div class="wrap">
   <h3>About ENSV2™ Marketplace</h3>
   <p>We specialize in premium Ethereum Name Service domains across 24 categories including AI & Agents, Blockchain Infrastructure, DeFi, Privacy & ZK, Restaking, and more. All ENS names are stored in hardware wallets for maximum security. Subdomain leasing coming soon with ENSv2.</p>
-  <p style="margin:20px 0;font-size:16px"><strong>Contact us:</strong> <a href="/cdn-cgi/l/email-protection#cca9a2bfbafea1adbea7a9b8bca0adafa98ca3b9b8a0a3a3a7e2afa3a1" style="color:var(--accent);text-decoration:none;font-weight:700"><span class="__cf_email__" data-cfemail="781d160b0e4a15190a131d0c0814191b1d38170d0c14171713561b1715">[email&#160;protected]</span></a></p>
+  <p style="margin:20px 0;font-size:16px"><strong>Contact us:</strong> <a href="mailto:ensv2marketplace@outlook.com" style="color:var(--accent);text-decoration:none;font-weight:700">ensv2marketplace@outlook.com</a></p>
   <div style="color:var(--muted);font-size:13px">
     <p style="margin:8px 0">© 2025 ensv2marketplace.eth - All ENS names verified and secured</p>
   </div>
@@ -558,7 +558,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 </footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const domainData = {
   "000crypto": {"categories": ["22c"], "price": 5.5, "lease": 600, "desc": "Memorable numeric crypto branding. Perfect for token indices, DeFi platforms, or digital asset aggregators."},
   "000digital": {"categories": ["22c"], "price": 5.5, "lease": 600, "desc": "Premium numeric digital identity. Ideal for Web3 platforms, NFT collections, or crypto indexing services."},
@@ -2935,13 +2935,11 @@ const grid = document.getElementById('cardGrid');
 const cards = [];
 const subCatsDiv = document.getElementById('subCats');
 
-// Helper function to extract main category number from category code
 function extractMainCategory(catCode) {
   const match = catCode.match(/^(\d+)/);
   return match ? match[1] : null;
 }
 
-// Generate cards
 Object.keys(domainData).forEach(name => {
   const data = domainData[name];
   const cats = data.categories;
@@ -2955,10 +2953,8 @@ Object.keys(domainData).forEach(name => {
   
   const priceText = data.bundled ? data.bundled + ' Bundled' : (price > 0 ? `${price} ETH` : 'Make Offer');
   
-  // Calculate sublease price - use custom lease price if available
   let subleasePrice = '';
   if (data.lease) {
-    // Use custom lease price from spreadsheet
     const lease = data.lease;
     if (lease >= 1000) {
       subleasePrice = '$' + lease.toLocaleString() + '/yr';
@@ -2966,7 +2962,6 @@ Object.keys(domainData).forEach(name => {
       subleasePrice = '$' + lease + '/yr';
     }
   } else {
-    // Fallback to calculated price based on ETH value
     if (price >= 0 && price < 0.5) subleasePrice = '$50/yr';
     else if (price >= 0.5 && price < 1) subleasePrice = '$100/yr';
     else if (price >= 1 && price < 2) subleasePrice = '$200/yr';
@@ -2999,7 +2994,6 @@ Object.keys(domainData).forEach(name => {
     </div>
   `;
   
-  // Add description overlay if description exists
   if (desc) {
     const numericPrice = subleasePrice.replace(/[^0-9]/g, '');
     html += `
@@ -3021,7 +3015,6 @@ Object.keys(domainData).forEach(name => {
   cards.push(card);
 });
 
-// Main category click handler
 document.querySelectorAll('.main-cat').forEach(catEl => {
   catEl.addEventListener('click', () => {
     document.querySelectorAll('.main-cat').forEach(c => c.classList.remove('active'));
@@ -3029,12 +3022,10 @@ document.querySelectorAll('.main-cat').forEach(catEl => {
     
     const cat = catEl.dataset.cat;
     
-    // Show/hide subcategories
     if(cat === 'all' || !subcategories[cat] || Object.keys(subcategories[cat]).length === 0) {
       subCatsDiv.classList.remove('show');
       subCatsDiv.innerHTML = '';
     } else {
-      // Build subcategory buttons
       subCatsDiv.innerHTML = '';
       const subs = subcategories[cat];
       
@@ -3055,7 +3046,6 @@ document.querySelectorAll('.main-cat').forEach(catEl => {
       subCatsDiv.classList.add('show');
     }
     
-    // Filter cards
     filterCards(cat);
   });
 });
@@ -3070,13 +3060,11 @@ function filterCards(cat) {
     if(cat === 'all') {
       match = true;
     } else if(/^\d+$/.test(cat)) {
-      // Main category filter - check if any category starts with this number
       match = cardCats.some(c => {
         const mainCat = extractMainCategory(c);
         return mainCat === cat;
       });
     } else {
-      // Subcategory filter - exact match
       match = cardCats.includes(cat);
     }
     
@@ -3091,7 +3079,8 @@ function filterCards(cat) {
   document.getElementById('cardCount').textContent = visibleCount;
 }
 
-// Search functionality
+filterCards('all');
+
 const searchInput = document.getElementById('domainSearch');
 const searchResults = document.getElementById('searchResults');
 
@@ -3103,52 +3092,38 @@ searchInput.addEventListener('input', (e) => {
     return;
   }
   
-  // Search for exact or partial matches
   const matches = [];
   Object.keys(domainData).forEach(name => {
     if (name.toLowerCase().includes(searchTerm)) {
-      matches.push({
-        name: name,
-        price: domainData[name].price
-      });
+      matches.push({ name: name, price: domainData[name].price });
     }
   });
   
   if (matches.length > 0) {
-    // Show matches
     searchResults.innerHTML = '<div style="color:#b8964f;font-weight:700;margin-bottom:12px">Found in our collection:</div>';
     matches.slice(0, 50).forEach(match => {
-      const priceText = match.bundled ? match.bundled + ' Bundled' : (match.price > 0 ? `${match.price} ETH` : 'Make Offer');
+      const priceText = match.price > 0 ? `${match.price} ETH` : 'Make Offer';
       searchResults.innerHTML += `
         <div style="padding:10px;margin:4px 0;background:#0f1420;border-radius:8px;cursor:pointer;border:1px solid #25304a;transition:all 0.2s" 
              onmouseover="this.style.background='#1a2338';this.style.borderColor='#3a4a6a'" 
              onmouseout="this.style.background='#0f1420';this.style.borderColor='#25304a'"
              onclick="
-              const searchTerm = '${match.name}';
-              
-              // First, click 'All' to show all cards
-              document.querySelector('.main-cat[data-cat=\\'all\\']').click();
-              
-              // Small delay to let filter apply, then scroll
+              const t = '${match.name}';
+              document.querySelector('.main-cat[data-cat=\'all\']').click();
               setTimeout(() => {
-                const cards = document.querySelectorAll('.domain-card');
-                cards.forEach(card => {
-                  const cardName = card.querySelector('.domain-name').textContent.replace('.eth', '');
-                  if (cardName === searchTerm) {
-                    document.getElementById('searchResults').style.display = 'none';
-                    document.getElementById('domainSearch').value = '';
+                document.querySelectorAll('.domain-card').forEach(card => {
+                  const n = card.querySelector('.domain-name').textContent.replace('.eth','');
+                  if (n === t) {
+                    document.getElementById('searchResults').style.display='none';
+                    document.getElementById('domainSearch').value='';
                     card.classList.remove('hidden');
-                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    card.style.transform = 'scale(1.05)';
-                    card.style.boxShadow = '0 0 30px rgba(59, 130, 246, 0.6)';
-                    setTimeout(() => {
-                      card.style.transform = '';
-                      card.style.boxShadow = '';
-                    }, 2000);
+                    card.scrollIntoView({behavior:'smooth',block:'center'});
+                    card.style.transform='scale(1.05)';
+                    card.style.boxShadow='0 0 30px rgba(59,130,246,0.6)';
+                    setTimeout(()=>{card.style.transform='';card.style.boxShadow='';},2000);
                   }
                 });
-              }, 100);
-            ">
+              }, 100);">
           <div style="font-weight:700;color:#fff">${match.name}.eth</div>
           <div style="color:#b8964f;font-size:14px;margin-top:4px">${priceText}</div>
         </div>
@@ -3159,15 +3134,26 @@ searchInput.addEventListener('input', (e) => {
     }
     searchResults.style.display = 'block';
   } else {
-    // Not found - offer to search ENS
     searchResults.innerHTML = `
       <div style="color:#9aa0a6;margin-bottom:12px">Not in our collection</div>
       <a href="https://app.ens.domains/search/${searchTerm}" target="_blank" rel="noopener noreferrer" 
-         style="display:inline-block;padding:12px 16px;
-                          background:#b8964f;
-              color:#fff;
-              text-decoration:none;
-              border-radius:6px;
-              font-weight:600;
-              transition:all 0.2s"
-         onmouseover="this.style.backgroun
+         style="display:inline-block;padding:12px 16px;background:#b8964f;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;transition:all 0.2s"
+         onmouseover="this.style.background='#d4af6a'"
+         onmouseout="this.style.background='#b8964f'">
+        Search on ENS.domains
+      </a>
+    `;
+    searchResults.style.display = 'block';
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#domainSearch') && !e.target.closest('#searchResults')) {
+    searchResults.style.display = 'none';
+  }
+});
+
+</script>
+
+</body>
+</html>
