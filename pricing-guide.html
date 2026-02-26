@@ -94,6 +94,19 @@ footer{background:var(--card);border-top:1px solid var(--edge);padding:40px 20px
 footer .wrap{max-width:900px;text-align:center}
 footer h3{color:var(--accent);margin:0 0 16px}
 footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
+
+/* Taxonomy */
+.tax-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.tax-cat{background:#0f1420;border:1px solid var(--edge);border-radius:8px;padding:12px 14px;cursor:pointer;user-select:none;position:relative;transition:border-color 0.15s}
+.tax-cat:hover{border-color:var(--accent)}
+.tax-cat-label{font-size:14px;color:#b8c5d6;line-height:1.5}
+.tax-cat-label strong{color:var(--accent)}
+.tax-count{color:var(--muted);font-size:12px}
+.tax-subs{display:none;margin:10px 0 2px 0;padding:10px 12px;background:#070910;border-radius:6px;border:1px solid #22304a;list-style:none}
+.tax-subs li{font-size:12px;color:#b8c5d6;padding:3px 0;border-bottom:1px solid #0f1420}
+.tax-subs li:last-child{border-bottom:none}
+.tax-cat.open .tax-subs{display:block}
+@media(max-width:600px){.tax-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -346,59 +359,132 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   </div>
 
   <!-- TAXONOMY -->
-  <div class="section">
+  <div class="section" id="taxonomy-section">
     <h2>🗂️ The 30-Category, 275-Subcategory Taxonomy</h2>
-    <p>Every name in the portfolio is assigned to one primary subcategory and up to two secondary subcategories. Categories are never forced — a name only receives a secondary category if there is a clear keyword match. Category assignment directly drives the base score. Higher-value infrastructure categories carry higher base scores than lifestyle or generic categories.</p>
-    <div class="cat-grid">
-      <div class="cat-item"><strong>Cat 1</strong> — AI & Agents (20 subcategories)</div>
-      <div class="cat-item"><strong>Cat 2</strong> — Blockchain Infrastructure (20 subcategories)</div>
-      <div class="cat-item"><strong>Cat 3</strong> — Developer Tools & Frameworks (16 subcategories)</div>
-      <div class="cat-item"><strong>Cat 4</strong> — Smart Contracts & Security (7 subcategories)</div>
-      <div class="cat-item"><strong>Cat 5</strong> — Data, Oracles & Analytics (9 subcategories)</div>
-      <div class="cat-item"><strong>Cat 6</strong> — Identity & Credentials (15 subcategories)</div>
-      <div class="cat-item"><strong>Cat 7</strong> — Privacy, Security & ZK (12 subcategories)</div>
-      <div class="cat-item"><strong>Cat 8</strong> — Payments, Finance & DeFi (18 subcategories)</div>
-      <div class="cat-item"><strong>Cat 9</strong> — Restaking, Staking & Slashing (10 subcategories)</div>
-      <div class="cat-item"><strong>Cat 10</strong> — Marketplaces & Exchanges (6 subcategories)</div>
-      <div class="cat-item"><strong>Cat 11</strong> — SaaS, Suites & Platforms (13 subcategories)</div>
-      <div class="cat-item"><strong>Cat 12</strong> — Governance, DAOs & Coordination (8 subcategories)</div>
-      <div class="cat-item"><strong>Cat 13</strong> — Social, Messaging & Community (4 subcategories)</div>
-      <div class="cat-item"><strong>Cat 14</strong> — Gaming, Metaverse & XR (4 subcategories)</div>
-      <div class="cat-item"><strong>Cat 15</strong> — Media, Content & IP (6 subcategories)</div>
-      <div class="cat-item"><strong>Cat 16</strong> — Enterprise, Compliance & Legal (12 subcategories)</div>
-      <div class="cat-item"><strong>Cat 17</strong> — Finance, Insurance & Risk (16 subcategories)</div>
-      <div class="cat-item"><strong>Cat 18</strong> — Energy, Climate & IoT (7 subcategories)</div>
-      <div class="cat-item"><strong>Cat 19</strong> — Healthcare & BioTech (4 subcategories)</div>
-      <div class="cat-item"><strong>Cat 20</strong> — Education & Credentials (3 subcategories)</div>
-      <div class="cat-item"><strong>Cat 21</strong> — Real-World Assets (5 subcategories)</div>
-      <div class="cat-item"><strong>Cat 22</strong> — Generic Premium Brand Words (3 subcategories)</div>
-      <div class="cat-item"><strong>Cat 23</strong> — Experimental & Emerging (6 subcategories)</div>
-      <div class="cat-item"><strong>Cat 24</strong> — Miscellaneous & Lifestyle (9 subcategories)</div>
-      <div class="cat-item"><strong>Cat 25</strong> — DePIN (8 subcategories)</div>
-      <div class="cat-item"><strong>Cat 26</strong> — Cross-chain & Interoperability (8 subcategories)</div>
-      <div class="cat-item"><strong>Cat 27</strong> — Supply Chain & Trade Finance (6 subcategories)</div>
-      <div class="cat-item"><strong>Cat 28</strong> — Consumer & Retail Web3 (5 subcategories)</div>
-      <div class="cat-item"><strong>Cat 29</strong> — AI Safety & Alignment (5 subcategories)</div>
-      <div class="cat-item"><strong>Cat 30</strong> — Space & Deep Tech (4 subcategories)</div>
+    <p>Every name in the portfolio is assigned to one primary subcategory and up to two secondary subcategories. Category assignment directly drives the base score. Higher-value infrastructure categories carry higher base scores than lifestyle or generic categories.</p>
+    <p style="color:var(--accent);font-weight:700;font-size:14px">⬇ Hold any category to reveal its subcategories — release to collapse</p>
+    <div class="tax-grid">
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 1</strong> — 🤖 AI & Agents <span class="tax-count">(19)</span></div>
+        <ul class="tax-subs"><li>AI Infrastructure & Models</li><li>AI Agent Networks & Registries</li><li>Agentic Systems & Operations</li><li>Agent Coordination & Control</li><li>Agent Marketplaces & Tooling</li><li>Autonomous Systems</li><li>AI Services & Applications</li><li>Neural Networks & Processing</li><li>AGI Frameworks</li><li>Autonomous Infrastructure Verbs</li><li>Agent Types - Data & Analytics</li><li>Agent Types - Workflow & Operations</li><li>Agent Types - Financial Services</li><li>Agent Types - Governance & Access</li><li>Agent Types - Messaging & Bridge</li><li>Agent Types - Compliance & Security</li><li>AI Processing Infrastructure</li><li>Curation & Social AI Systems</li><li>Coordination Mechanisms</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 2</strong> — 🔗 Blockchain Infrastructure <span class="tax-count">(18)</span></div>
+        <ul class="tax-subs"><li>Layer 1 Protocols</li><li>Layer 2 Solutions</li><li>Optimistic Rollups</li><li>ZK Rollups & Validity Proofs</li><li>Based Rollups</li><li>Application-Specific L2s</li><li>L2 Infrastructure & Operations</li><li>Rollup-as-a-Service</li><li>Sequencer Services</li><li>Validators & Nodes</li><li>Consensus & Security</li><li>Cross-chain & Bridges</li><li>Network Services</li><li>RPC Provider Services</li><li>MEV & Block Building</li><li>ENSv2 Infrastructure</li><li>Censorship Resistance</li><li>Account Abstraction</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 3</strong> — 🛠️ Developer Tools & Frameworks <span class="tax-count">(15)</span></div>
+        <ul class="tax-subs"><li>SDKs & Libraries</li><li>APIs & Gateways</li><li>Testing & Debugging</li><li>Deployment Tools</li><li>Code Development</li><li>Developer Workspaces</li><li>SDK & Client Management</li><li>Workflow & Pipeline Tools</li><li>Router Pattern Infrastructure</li><li>Executor Pattern Infrastructure</li><li>Orchestrator Pattern Infrastructure</li><li>Engine & Processor Infrastructure</li><li>Gateway, Hub & Endpoint Infra</li><li>Handler & Dispatcher Infrastructure</li><li>Manager & Controller Infrastructure</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 4</strong> — 📜 Smart Contracts & Security <span class="tax-count">(7)</span></div>
+        <ul class="tax-subs"><li>Contract Development</li><li>Security Audits</li><li>Audit Services by Type</li><li>Contract Deployment</li><li>Contract Standards</li><li>Verification Services</li><li>Contract Management & Execution</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 5</strong> — 📊 Data, Oracles & Analytics <span class="tax-count">(9)</span></div>
+        <ul class="tax-subs"><li>Oracle Networks & Feeds</li><li>Data Indexing & Query</li><li>Analytics & Dashboards</li><li>Data Aggregation</li><li>Data Services & APIs</li><li>Data Transport Infrastructure</li><li>Metrics & Performance Tracking</li><li>Index Infrastructure</li><li>Oracle Validators & Provers</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 6</strong> — 🆔 Identity & Credentials <span class="tax-count">(15)</span></div>
+        <ul class="tax-subs"><li>Decentralized Identity</li><li>Credentials & Attestations</li><li>KYC & Compliance Identity</li><li>Identity Verification</li><li>Reputation Systems</li><li>Registry Services</li><li>Rights & Access Control</li><li>Jurisdictional Identity</li><li>Credential Management Systems</li><li>Government & Healthcare IDs</li><li>Reputation Scoring & Attestation</li><li>Trust & Enforcement Infrastructure</li><li>Domain-Specific Identity Systems</li><li>Domain-Specific Ledgers</li><li>Certification & Verification Services</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 7</strong> — 🔒 Privacy, Security & ZK <span class="tax-count">(14)</span></div>
+        <ul class="tax-subs"><li>Zero-Knowledge Proofs</li><li>ZK Infrastructure</li><li>zkVM Infrastructure</li><li>zkWasm Infrastructure</li><li>ZK Protocols & General</li><li>zkEVM Infrastructure</li><li>Prover Services & Proof Generation</li><li>Privacy Protocols</li><li>Encryption & Key Management</li><li>Post-Quantum Cryptography</li><li>Confidential Computing</li><li>RLN Rate-Limit Nullifiers</li><li>ZK General Infrastructure</li><li>Censorship Resistance & Mempools</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 8</strong> — 💸 Payments, Finance & DeFi <span class="tax-count">(18)</span></div>
+        <ul class="tax-subs"><li>Lending & Borrowing</li><li>DEXs & Trading</li><li>Liquidity & Yield</li><li>Liquidity Provision</li><li>Yield Farming & Optimization</li><li>Stablecoins & Payments</li><li>Derivatives & Perpetuals</li><li>Payment Rails & Settlement</li><li>DeFi Automation & Bots</li><li>Streaming Infrastructure</li><li>Intents & Order Flow</li><li>Intents & Order Flow</li><li>Stablecoin Infrastructure</li><li>Swap & Collateral Infrastructure</li><li>Trading & Market Making</li><li>Portfolio & Fund Management</li><li>Payment Protocols & P2P</li><li>Payment Central Services</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 9</strong> — ⛏️ Restaking, Staking & Slashing <span class="tax-count">(10)</span></div>
+        <ul class="tax-subs"><li>Restaking Protocols</li><li>Liquid Restaking</li><li>Restaking Infrastructure</li><li>Security Services</li><li>Slashing Protection</li><li>Validator Services</li><li>Restaking Coordination</li><li>Staking Coordination</li><li>Liquidation Infrastructure</li><li>Keeper & Health Monitoring</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 10</strong> — 🏪 Marketplaces & Exchanges <span class="tax-count">(6)</span></div>
+        <ul class="tax-subs"><li>NFT Marketplaces</li><li>DEX Platforms</li><li>P2P & OTC</li><li>Exchange Infrastructure</li><li>Trading Tools</li><li>ENS Registry & Renewal Infra</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 11</strong> — 🚀 SaaS, Suites & Platforms <span class="tax-count">(13)</span></div>
+        <ul class="tax-subs"><li>Enterprise SaaS</li><li>Business SaaS</li><li>Developer SaaS</li><li>Vertical-Specific SaaS</li><li>Industry-Specific Suites</li><li>Platform Infrastructure</li><li>Cloud Platform Services</li><li>Workspace & Collaboration</li><li>Business Automation</li><li>HR & Workforce Management</li><li>HR Operations & Payroll</li><li>Employee Benefits & Programs</li><li>Loyalty & Rewards Programs</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 12</strong> — 🗳️ Governance, DAOs & Coordination <span class="tax-count">(8)</span></div>
+        <ul class="tax-subs"><li>DAO Frameworks</li><li>Voting & Proposals</li><li>Treasury Management</li><li>Governance Tools</li><li>Coordination Platforms</li><li>Governance Infrastructure</li><li>Treasury Coordination</li><li>Rules & Membership Systems</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 13</strong> — 👥 Social, Messaging & Community <span class="tax-count">(4)</span></div>
+        <ul class="tax-subs"><li>Social Networks</li><li>Messaging & Communication</li><li>Community Tools</li><li>Content & Publishing</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 14</strong> — 🎮 Gaming, Metaverse & XR <span class="tax-count">(4)</span></div>
+        <ul class="tax-subs"><li>Gaming Infrastructure</li><li>Metaverse Platforms</li><li>Gaming Finance & Assets</li><li>Game Development Tools</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 15</strong> — 🎬 Media, Content & IP <span class="tax-count">(6)</span></div>
+        <ul class="tax-subs"><li>Content Creation & Publishing</li><li>IP & Licensing</li><li>NFTs & Collectibles</li><li>Media Distribution</li><li>Creator Tools</li><li>Creative AI Tools</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 16</strong> — 🏢 Enterprise, Compliance & Legal <span class="tax-count">(13)</span></div>
+        <ul class="tax-subs"><li>Enterprise Solutions</li><li>Compliance & Regulatory</li><li>Enterprise SaaS & Biz Tools</li><li>Institutional Finance & Treasury</li><li>AML/KYC Services</li><li>Press & Communications</li><li>AML Infrastructure</li><li>KYC Infrastructure</li><li>Fintech Compliance</li><li>Audit & Verification Infra</li><li>Tax & Accounting Infrastructure</li><li>Legal Infrastructure</li><li>Jurisdictional Compliance</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 17</strong> — 🛡️ Finance, Insurance & Risk <span class="tax-count">(17)</span></div>
+        <ul class="tax-subs"><li>Insurance & Coverage</li><li>Risk Management & Fraud</li><li>Banking & Lending Platforms</li><li>Treasury & Capital Management</li><li>Treasury Operations</li><li>Capital Management</li><li>Retirement Plans & Admin</li><li>401k & Defined Contribution</li><li>IRA & Individual Retirement</li><li>Benefits Administration</li><li>Investment & Asset Management</li><li>Risk Infrastructure</li><li>Account & Wallet Management</li><li>Custody Services</li><li>Settlement & Clearing Infra</li><li>Banking Operations</li><li>Digital Banking Charters</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 18</strong> — 🌍 Energy, Climate & IoT <span class="tax-count">(8)</span></div>
+        <ul class="tax-subs"><li>Water Infrastructure</li><li>Water DePIN Systems</li><li>Water Treatment & Compliance</li><li>Climate & Carbon Solutions</li><li>Energy DePIN Systems</li><li>IoT & Environmental Monitoring</li><li>Air Quality DePIN Systems</li><li>Industrial IoT & Supply Chain</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 19</strong> — ⚕️ Healthcare & BioTech <span class="tax-count">(4)</span></div>
+        <ul class="tax-subs"><li>Medical Infrastructure & Systems</li><li>Clinical & Patient Services</li><li>Healthcare Compliance & Identity</li><li>Healthcare Finance & Benefits</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 20</strong> — 🎓 Education & Credentials <span class="tax-count">(3)</span></div>
+        <ul class="tax-subs"><li>Educational Platforms & Learning</li><li>Credentials & Verification</li><li>Academic Identity & Documentation</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 21</strong> — 🏛️ Real-World Assets <span class="tax-count">(5)</span></div>
+        <ul class="tax-subs"><li>Asset Tokenization & Management</li><li>Real Estate & Property Tech</li><li>RWA Infrastructure & Workflows</li><li>Rental & Leasing Infrastructure</li><li>Property Management</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 22</strong> — 💎 Generic Premium Brand Words <span class="tax-count">(3)</span></div>
+        <ul class="tax-subs"><li>Luxury & Premium Brands</li><li>Suite/Platform Generic Terms</li><li>Wealth & Finance Generics</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 23</strong> — 🔬 Experimental & Emerging <span class="tax-count">(6)</span></div>
+        <ul class="tax-subs"><li>AI/Agentic Convergence</li><li>Omnichain Infrastructure</li><li>Post-Quantum & Advanced Crypto</li><li>AGI & Advanced AI Systems</li><li>Consumer Crypto & Travel</li><li>ERC Standards & New Protocols</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 24</strong> — 📦 Miscellaneous & Lifestyle <span class="tax-count">(8)</span></div>
+        <ul class="tax-subs"><li>Sports & Gaming</li><li>Lifestyle & Wellness</li><li>Food & Beverage</li><li>Automotive & Transportation</li><li>Jewelry & Luxury Goods</li><li>Brand & Vanity Terms</li><li>Transfer Infrastructure</li><li>General Utilities</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 25</strong> — 🔌 DePIN <span class="tax-count">(8)</span></div>
+        <ul class="tax-subs"><li>Compute & Storage DePIN</li><li>Wireless & Connectivity DePIN</li><li>Mobility & Transportation DePIN</li><li>Energy & Power DePIN</li><li>Environmental Sensors DePIN</li><li>Data & Bandwidth Markets</li><li>DePIN Coordination & Tokenomics</li><li>Physical Infrastructure Protocols</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 26</strong> — 🌐 Cross-chain & Interoperability <span class="tax-count">(8)</span></div>
+        <ul class="tax-subs"><li>Bridge Protocols</li><li>Cross-chain Messaging</li><li>Chain Abstraction</li><li>Omnichain Infrastructure</li><li>Cross-chain Liquidity</li><li>Interoperability Standards</li><li>Cross-chain Identity</li><li>Multi-chain Governance</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 27</strong> — 📦 Supply Chain & Trade Finance <span class="tax-count">(6)</span></div>
+        <ul class="tax-subs"><li>Supply Chain Tracking & Provenance</li><li>Trade Finance & Letters of Credit</li><li>Freight & Logistics</li><li>Customs & Compliance</li><li>Inventory & Warehouse Management</li><li>Supplier & Vendor Management</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 28</strong> — 🛒 Consumer & Retail Web3 <span class="tax-count">(5)</span></div>
+        <ul class="tax-subs"><li>Crypto Payments at Point of Sale</li><li>E-commerce & Shopping</li><li>Consumer Loyalty & Rewards</li><li>Consumer Identity & Wallets</li><li>Retail Finance & BNPL</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 29</strong> — 🤖 AI Safety & Alignment <span class="tax-count">(5)</span></div>
+        <ul class="tax-subs"><li>AI Model Auditing & Safety</li><li>AI Governance & Policy</li><li>Responsible AI Infrastructure</li><li>AI Transparency & Explainability</li><li>AI Risk Assessment</li></ul>
+      </div>
+      <div class="tax-cat" onmousedown="showSubs(this)" onmouseup="hideSubs(this)" onmouseleave="hideSubs(this)" ontouchstart="showSubs(this)" ontouchend="hideSubs(this)">
+        <div class="tax-cat-label"><strong>Cat 30</strong> — 🚀 Space & Deep Tech <span class="tax-count">(10)</span></div>
+        <ul class="tax-subs"><li>Satellite Data & Infrastructure</li><li>Aerospace DePIN</li><li>Scientific Compute & Research</li><li>Deep Tech Protocols</li><li>Agentic Consumer Services</li><li>Transportation & Mobility RWAs</li><li>Aviation & Airspace DePIN</li><li>AI-Driven Compliance Systems</li><li>Data Availability Layer</li><li>Intent Infrastructure</li></ul>
+      </div>
     </div>
-  </div>
-
-  <!-- DESCRIPTIONS -->
-  <div class="section">
-    <h2>📝 Automated Name Descriptions</h2>
-    <p>Every name in the portfolio has a 120–150 character description generated automatically from its primary subcategory and the name itself. Descriptions follow a consistent template structure based on what that subcategory of name actually does — not generic filler text.</p>
-    <ul class="bullet-list">
-      <li>The primary subcategory determines the template — each of the 275 subcategories has its own description pattern</li>
-      <li>The name is embedded directly into the description as name.eth</li>
-      <li>Secondary categories are referenced if the description needs additional context</li>
-      <li>All descriptions are trimmed to a maximum of 150 characters</li>
-    </ul>
-    <h3>Example descriptions by tier</h3>
-    <div class="example-desc"><span class="name">orchestrator.eth</span> <span class="score">(Score 15)</span> — Orchestrator pattern infrastructure namespace. orchestrator.eth coordinates multi-system operations, manages workflow sequencing, and controls execution across protocols.</div>
-    <div class="example-desc"><span class="name">auditengine.eth</span> <span class="score">(Score 11)</span> — Audit service namespace. auditengine.eth delivers specialized smart contract auditing, automated scanning, and security certification for DeFi and Web3 protocols.</div>
-    <div class="example-desc"><span class="name">401kadmin.eth</span> <span class="score">(Score 9)</span> — Retirement plans namespace. 401kadmin.eth enables crypto-native retirement plan management, contribution tracking, and plan administration.</div>
-    <div class="example-desc"><span class="name">3pointshot.eth</span> <span class="score">(Score 2)</span> — Sports and gaming brand namespace. 3pointshot.eth anchors Web3 sports branding, fan engagement infrastructure, and gaming identity for blockchain-native platforms.</div>
-    <p style="margin-top:16px">Descriptions are used on the portfolio website, marketplace listings, and communications with potential buyers or lessees. They answer the first question any serious buyer asks: <strong>what does this name do?</strong></p>
   </div>
 
   <!-- CTA -->
@@ -419,5 +505,14 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   </div>
 </footer>
 
+
+<script>
+function showSubs(el) {
+  el.classList.add('open');
+}
+function hideSubs(el) {
+  el.classList.remove('open');
+}
+</script>
 </body>
 </html>
