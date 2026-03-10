@@ -1,7 +1,5 @@
 // ENSv2 Marketplace domain data
 const domainData = {
-  "000crypto": {"categories": ["22c"], "price": 5.5, "lease": 750, "desc": "Wealth and finance brand namespace. 000crypto.eth anchors financial brand identity, wealth management positioning, and premium finance naming in Web3."},
-  "000digital": {"categories": ["22c"], "price": 5.5, "lease": 750, "desc": "Wealth and finance brand namespace. 000digital.eth anchors financial brand identity, wealth management positioning, and premium finance naming in W..."},
   "401kadmin": {"categories": ["17e", "17e1", "16c"], "price": 10.5, "lease": 3000, "desc": "Retirement plans and administration namespace. 401kadmin.eth enables crypto-native retirement plan management, contribution tracking, and plan admi..."},
   "401kbitcoin": {"categories": ["17e1", "8d", "21a"], "price": 10.5, "lease": 3000, "desc": "401k and defined contribution namespace. 401kbitcoin.eth powers Bitcoin and crypto 401k plans, contribution management, and defined contribution pl..."},
   "401kcrypto": {"categories": ["17e1", "8d", "21a"], "price": 10.5, "lease": 3000, "desc": "401k and defined contribution namespace. 401kcrypto.eth powers Bitcoin and crypto 401k plans, contribution management, and defined contribution pla..."},
@@ -58,14 +56,14 @@ const domainData = {
   "agentaggregator": {"categories": ["1d"], "price": 13.0, "lease": 3500, "desc": "Agent coordination and control namespace. agentaggregator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dec..."},
   "agentarbiter": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentarbiter.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decent..."},
   "agentcache": {"categories": ["1o", "3o"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. agentcache.eth manages pipeline execution, task sequencing, and operational automation for autonomous a..."},
-  "agentchannel": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentchannel.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decent..."},
+  "agentchannel": {"categories": ["1d"], "price": 7.5, "lease": 800, "desc": "Messaging and communication namespace. agentchannel.eth enables encrypted messaging, decentralized communication, and P2P messaging infrastructure ..."},
   "agentcommander": {"categories": ["1d"], "price": 9.5, "lease": 1500, "desc": "Agent coordination and control namespace. agentcommander.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dece..."},
   "agentcoordinator": {"categories": ["1d"], "price": 11.5, "lease": 2500, "desc": "Agent coordination and control namespace. agentcoordinator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across de..."},
   "agentdirector": {"categories": ["1d"], "price": 9.5, "lease": 1500, "desc": "Agent coordination and control namespace. agentdirector.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decen..."},
   "agentdispatcher": {"categories": ["3q", "1d"], "price": 10.5, "lease": 2000, "desc": "Handler and dispatcher infrastructure namespace. agentdispatcher.eth manages event handling, request dispatching, and message routing across decent..."},
-  "agentdisputes": {"categories": ["1e", "12d"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. agentdisputes.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and..."},
+  "agentdisputes": {"categories": ["1e", "12d"], "price": 6.5, "lease": 600, "desc": "Smart contract development namespace. agentdisputes.eth anchors contract authoring, Solidity development, and on-chain code management for protocol..."},
   "agentexecutor": {"categories": ["3m", "1d"], "price": 15.0, "lease": 5000, "desc": "Executor pattern infrastructure namespace. agentexecutor.eth handles task execution, contract calls, and automated operations as a core primitive i..."},
-  "agentgovenor": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentgovenor.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decent..."},
+  "agentgovenor": {"categories": ["1d"], "price": 9.5, "lease": 1500, "desc": "Governance and access agent namespace. agentgovenor.eth manages on-chain voting, access control, compliance enforcement, and governance automation."},
   "agenthiring": {"categories": ["1e", "1c", "11f"], "price": 9.5, "lease": 2250, "desc": "AI agent marketplace and tooling identity. agenthiring.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and m..."},
   "agenticaggregator": {"categories": ["1c"], "price": 13.0, "lease": 3500, "desc": "Agentic system identity for Web3 operations. agenticaggregator.eth supports autonomous workflows, agent pipeline management, and on-chain task exec..."},
   "agenticaisuite": {"categories": ["1c", "23a", "11b"], "price": 11.5, "lease": 2500, "desc": "Agentic system identity for Web3 operations. agenticaisuite.eth supports autonomous workflows, agent pipeline management, and on-chain task executi..."},
@@ -76,14 +74,14 @@ const domainData = {
   "agenticcontroller": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticcontroller.eth supports autonomous workflows, agent pipeline management, and on-chain task exec..."},
   "agenticcoordinator": {"categories": ["1d"], "price": 13.0, "lease": 3500, "desc": "Agent coordination and control namespace. agenticcoordinator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across ..."},
   "agenticdirector": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticdirector.eth supports autonomous workflows, agent pipeline management, and on-chain task execut..."},
-  "agenticexecutor": {"categories": ["1d", "3m"], "price": 20.0, "lease": 7500, "desc": "Agent coordination and control namespace. agenticexecutor.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dec..."},
+  "agenticexecutor": {"categories": ["1d", "3m"], "price": 15.0, "lease": 5000, "desc": "Executor pattern infrastructure namespace. agenticexecutor.eth handles task execution, contract calls, and automated operations as a core primitive..."},
   "agenticgateway": {"categories": ["1c"], "price": 11.5, "lease": 2500, "desc": "Agentic system identity for Web3 operations. agenticgateway.eth supports autonomous workflows, agent pipeline management, and on-chain task executi..."},
   "agenticindexer": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticindexer.eth supports autonomous workflows, agent pipeline management, and on-chain task executi..."},
   "agenticless": {"categories": ["1c", "11e", "2a"], "price": 13.0, "lease": 3500, "desc": "Agentic system identity for Web3 operations. agenticless.eth supports autonomous workflows, agent pipeline management, and on-chain task execution ..."},
   "agenticnode": {"categories": ["1c"], "price": 10.5, "lease": 2000, "desc": "Agentic system identity for Web3 operations. agenticnode.eth supports autonomous workflows, agent pipeline management, and on-chain task execution ..."},
   "agenticoperator": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticoperator.eth supports autonomous workflows, agent pipeline management, and on-chain task execut..."},
   "agenticoptimizer": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticoptimizer.eth supports autonomous workflows, agent pipeline management, and on-chain task execu..."},
-  "agenticorchestrator": {"categories": ["1d", "3n"], "price": 28.0, "lease": 10000, "desc": "Agent coordination and control namespace. agenticorchestrator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across..."},
+  "agenticorchestrator": {"categories": ["1d", "3n"], "price": 28.0, "lease": 10000, "desc": "Orchestrator pattern infrastructure namespace. agenticorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and contro..."},
   "agenticpipeline": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticpipeline.eth supports autonomous workflows, agent pipeline management, and on-chain task execut..."},
   "agenticplanner": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticplanner.eth supports autonomous workflows, agent pipeline management, and on-chain task executi..."},
   "agenticresolver": {"categories": ["1c", "8i"], "price": 13.0, "lease": 3500, "desc": "Agentic system identity for Web3 operations. agenticresolver.eth supports autonomous workflows, agent pipeline management, and on-chain task execut..."},
@@ -92,26 +90,26 @@ const domainData = {
   "agenticsentinel": {"categories": ["16q", "1c", "1s"], "price": 15.0, "lease": 5000, "desc": "Web3 infrastructure namespace for agenticsentinel.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentra..."},
   "agenticstream": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agenticstream.eth supports autonomous workflows, agent pipeline management, and on-chain task executio..."},
   "agenticzero": {"categories": ["1c"], "price": 10.5, "lease": 2000, "desc": "Agentic system identity for Web3 operations. agenticzero.eth supports autonomous workflows, agent pipeline management, and on-chain task execution ..."},
-  "agentindexer": {"categories": ["1n", "5b"], "price": 8.5, "lease": 1000, "desc": "AI data agent namespace. agentindexer.eth powers intelligent indexing, on-chain analytics, and data-driven agent operations across decentralized pr..."},
+  "agentindexer": {"categories": ["1n", "5b"], "price": 8.5, "lease": 1000, "desc": "Data indexing and query namespace. agentindexer.eth indexes on-chain data, enables efficient querying, and provides structured blockchain data acce..."},
   "agentmarketplace": {"categories": ["1e", "10a"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. agentmarketplace.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, ..."},
   "agentnetworkhub": {"categories": ["1b", "23b"], "price": 9.5, "lease": 1500, "desc": "On-chain AI agent registry namespace. agentnetworkhub.eth enables verifiable agent identity, network enrollment, and multi-agent coordination acros..."},
-  "agentoptimizer": {"categories": ["1c"], "price": 8.5, "lease": 1000, "desc": "Agentic system identity for Web3 operations. agentoptimizer.eth supports autonomous workflows, agent pipeline management, and on-chain task executi..."},
+  "agentoptimizer": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agent coordination and control namespace. agentoptimizer.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dece..."},
   "agentorchestrator": {"categories": ["3n", "1d"], "price": 28.0, "lease": 10000, "desc": "Orchestrator pattern infrastructure namespace. agentorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and controls..."},
   "agentpipeline": {"categories": ["1o", "3h"], "price": 8.5, "lease": 1000, "desc": "AI workflow and operations agent namespace. agentpipeline.eth manages pipeline execution, task sequencing, and operational automation for autonomou..."},
   "agentplanner": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentplanner.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decent..."},
   "agentpool": {"categories": ["1b"], "price": 9.5, "lease": 1500, "desc": "On-chain AI agent registry namespace. agentpool.eth enables verifiable agent identity, network enrollment, and multi-agent coordination across dece..."},
-  "agentport": {"categories": ["1e", "3p"], "price": 8.5, "lease": 1500, "desc": "AI agent marketplace and tooling identity. agentport.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and mon..."},
+  "agentport": {"categories": ["1e", "3p"], "price": 9.5, "lease": 1500, "desc": "Gateway, hub, and endpoint infrastructure namespace. agentport.eth serves as the entry point and routing hub for protocol traffic, API calls, and s..."},
   "agentprocessor": {"categories": ["1o", "11c"], "price": 8.5, "lease": 1000, "desc": "AI workflow and operations agent namespace. agentprocessor.eth manages pipeline execution, task sequencing, and operational automation for autonomo..."},
   "agentprofile": {"categories": ["1b", "6a", "6e"], "price": 11.5, "lease": 2500, "desc": "On-chain AI agent registry namespace. agentprofile.eth enables verifiable agent identity, network enrollment, and multi-agent coordination across d..."},
   "agentreasoner": {"categories": ["1a", "1h", "1g"], "price": 9.5, "lease": 1500, "desc": "On-chain AI infrastructure identity for agentreasoner.eth. Powers AI model deployment, protocol integration, and machine learning platform operatio..."},
   "agentrouter": {"categories": ["3k", "2e"], "price": 13.0, "lease": 3500, "desc": "Router pattern infrastructure namespace. agentrouter.eth directs transaction flow, message routing, and protocol traffic across decentralized syste..."},
   "agentscheduler": {"categories": ["1d", "3q"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentscheduler.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dece..."},
-  "agentsentinel": {"categories": ["1c", "1s"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agentsentinel.eth supports autonomous workflows, agent pipeline management, and on-chain task executio..."},
+  "agentsentinel": {"categories": ["1c", "1s"], "price": 8.5, "lease": 1000, "desc": "Compliance and security agent namespace. agentsentinel.eth powers AML monitoring, KYC enforcement, fraud detection, and regulatory compliance autom..."},
   "agentstream": {"categories": ["1c"], "price": 9.5, "lease": 1500, "desc": "Agentic system identity for Web3 operations. agentstream.eth supports autonomous workflows, agent pipeline management, and on-chain task execution ..."},
   "agentstrust": {"categories": ["6u"], "price": 10.5, "lease": 2000, "desc": "Web3 infrastructure namespace for agentstrust.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentralize..."},
   "agentsuite": {"categories": ["1c", "11b"], "price": 10.5, "lease": 2000, "desc": "Agentic system identity for Web3 operations. agentsuite.eth supports autonomous workflows, agent pipeline management, and on-chain task execution a..."},
   "agentsupervisor": {"categories": ["1d"], "price": 9.5, "lease": 1500, "desc": "Agent coordination and control namespace. agentsupervisor.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across dec..."},
-  "agentswitch": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. agentswitch.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decentr..."},
+  "agentswitch": {"categories": ["1d"], "price": 9.5, "lease": 1500, "desc": "Router pattern infrastructure namespace. agentswitch.eth directs transaction flow, message routing, and protocol traffic across decentralized syste..."},
   "agenttoolbox": {"categories": ["1e"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. agenttoolbox.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and ..."},
   "agenttoolkit": {"categories": ["1e"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. agenttoolkit.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and ..."},
   "agenttrading": {"categories": ["8g", "1c"], "price": 8.5, "lease": 1000, "desc": "DeFi automation and bots namespace. agenttrading.eth powers automated DeFi strategies, liquidation bots, and on-chain automation for decentralized ..."},
@@ -129,8 +127,8 @@ const domainData = {
   "agiinfra": {"categories": ["1k", "23d"], "price": 15.0, "lease": 5000, "desc": "AGI framework namespace for advanced AI systems. agiinfra.eth anchors artificial general intelligence infrastructure, model coordination, and cogni..."},
   "agiinfrastructure": {"categories": ["1k", "23d"], "price": 11.5, "lease": 2500, "desc": "AGI framework namespace for advanced AI systems. agiinfrastructure.eth anchors artificial general intelligence infrastructure, model coordination, ..."},
   "agistack": {"categories": ["1k", "23d"], "price": 15.0, "lease": 5000, "desc": "AGI framework namespace for advanced AI systems. agistack.eth anchors artificial general intelligence infrastructure, model coordination, and cogni..."},
-  "agisuite": {"categories": ["1k", "11b", "23d"], "price": 20.0, "lease": 7500, "desc": "AGI framework namespace for advanced AI systems. agisuite.eth anchors artificial general intelligence infrastructure, model coordination, and cogni..."},
-  "ai-suite": {"categories": ["1c", "11b"], "price": 11.5, "lease": 2500, "desc": "Agentic system identity for Web3 operations. ai-suite.eth supports autonomous workflows, agent pipeline management, and on-chain task execution at ..."},
+  "agisuite": {"categories": ["1k", "11b", "23d"], "price": 13.0, "lease": 3500, "desc": "AGI framework namespace for advanced AI systems. agisuite.eth anchors artificial general intelligence infrastructure, model coordination, and cogni..."},
+  "ai-suite": {"categories": ["1c", "11b"], "price": 7.5, "lease": 1200, "desc": "AI service and application identity. ai-suite.eth powers end-user AI tools, chatbots, and intelligent applications built on blockchain infrastructure."},
   "ai2agent": {"categories": ["1b"], "price": 10.5, "lease": 2000, "desc": "On-chain AI agent registry namespace. ai2agent.eth enables verifiable agent identity, network enrollment, and multi-agent coordination across decen..."},
   "ai4defi": {"categories": ["1p", "8b"], "price": 11.5, "lease": 2500, "desc": "Financial AI agent namespace. ai4defi.eth enables intelligent trading, yield optimization, risk assessment, and automated financial operations on-c..."},
   "ai4gaming": {"categories": ["14a", "1g"], "price": 7.5, "lease": 1200, "desc": "Gaming infrastructure namespace. ai4gaming.eth powers game protocol operations, on-chain game logic, and Web3 gaming infrastructure for blockchain ..."},
@@ -159,7 +157,7 @@ const domainData = {
   "aiframework": {"categories": ["1a"], "price": 8.5, "lease": 1000, "desc": "On-chain AI infrastructure identity for aiframework.eth. Powers AI model deployment, protocol integration, and machine learning platform operations..."},
   "aigovenor": {"categories": ["29b", "12d"], "price": 11.5, "lease": 2500, "desc": "AI governance and policy namespace. aigovenor.eth coordinates AI governance frameworks, policy enforcement, and regulatory compliance for AI system..."},
   "aigym": {"categories": ["1a"], "price": 9.5, "lease": 1500, "desc": "On-chain AI infrastructure identity for aigym.eth. Powers AI model deployment, protocol integration, and machine learning platform operations on We..."},
-  "aiindexer": {"categories": ["1n", "5b"], "price": 8.5, "lease": 1000, "desc": "AI data agent namespace. aiindexer.eth powers intelligent indexing, on-chain analytics, and data-driven agent operations across decentralized proto..."},
+  "aiindexer": {"categories": ["1n", "5b"], "price": 8.5, "lease": 1000, "desc": "Data indexing and query namespace. aiindexer.eth indexes on-chain data, enables efficient querying, and provides structured blockchain data access ..."},
   "aiinterpretability": {"categories": ["29d", "1a"], "price": 9.5, "lease": 1500, "desc": "AI transparency and explainability namespace. aiinterpretability.eth delivers explainable AI outputs, transparent model operations, and interpretab..."},
   "aimechanic": {"categories": ["1g"], "price": 6.5, "lease": 900, "desc": "AI service and application identity. aimechanic.eth powers end-user AI tools, chatbots, and intelligent applications built on blockchain infrastruc..."},
   "aimodelaudit": {"categories": ["16q", "29a", "4b"], "price": 15.0, "lease": 5000, "desc": "Web3 infrastructure namespace for aimodelaudit.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentraliz..."},
@@ -188,11 +186,11 @@ const domainData = {
   "aisecuritylab": {"categories": ["4b"], "price": 8.5, "lease": 1000, "desc": "Smart contract security audit namespace. aisecuritylab.eth provides audit infrastructure, vulnerability assessment, and security verification for b..."},
   "aisentinel": {"categories": ["16q", "1c", "1s"], "price": 15.0, "lease": 5000, "desc": "Web3 infrastructure namespace for aisentinel.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentralized..."},
   "aishopping": {"categories": ["1w", "1g", "10e"], "price": 11.5, "lease": 3750, "desc": "Web3 infrastructure namespace for aishopping.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentralized..."},
-  "aishoppingagent": {"categories": ["1e", "10e"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. aishoppingagent.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, a..."},
+  "aishoppingagent": {"categories": ["1e", "10e"], "price": 8.5, "lease": 1000, "desc": "Web3 infrastructure namespace for aishoppingagent.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentra..."},
   "aistackhub": {"categories": ["1a"], "price": 8.5, "lease": 1000, "desc": "On-chain AI infrastructure identity for aistackhub.eth. Powers AI model deployment, protocol integration, and machine learning platform operations ..."},
   "aistaker": {"categories": ["9f", "1p"], "price": 9.5, "lease": 1500, "desc": "Validator service namespace. aistaker.eth manages validator node operations, staking coordination, and validator infrastructure for Ethereum and L2..."},
   "aistandards": {"categories": ["29b", "16b"], "price": 11.5, "lease": 2500, "desc": "AI governance and policy namespace. aistandards.eth coordinates AI governance frameworks, policy enforcement, and regulatory compliance for AI syst..."},
-  "aiswitch": {"categories": ["1d"], "price": 11.5, "lease": 2500, "desc": "Agent coordination and control namespace. aiswitch.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across decentrali..."},
+  "aiswitch": {"categories": ["1d"], "price": 10.5, "lease": 2000, "desc": "Router pattern infrastructure namespace. aiswitch.eth directs transaction flow, message routing, and protocol traffic across decentralized systems ..."},
   "aitoolsuite": {"categories": ["1e"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. aitoolsuite.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and m..."},
   "aitradingagent": {"categories": ["1p", "8o", "8g"], "price": 10.5, "lease": 2000, "desc": "Financial AI agent namespace. aitradingagent.eth enables intelligent trading, yield optimization, risk assessment, and automated financial operatio..."},
   "aiworkspace": {"categories": ["1e"], "price": 7.5, "lease": 1200, "desc": "AI agent marketplace and tooling identity. aiworkspace.eth connects buyers and builders of autonomous agents, enabling discovery, deployment, and m..."},
@@ -266,7 +264,7 @@ const domainData = {
   "attestationplatform": {"categories": ["6b"], "price": 7.5, "lease": 800, "desc": "Credentials and attestations namespace. attestationplatform.eth issues, manages, and verifies on-chain credentials, attestations, and verifiable cl..."},
   "attestationshub": {"categories": ["6b"], "price": 7.5, "lease": 800, "desc": "Credentials and attestations namespace. attestationshub.eth issues, manages, and verifies on-chain credentials, attestations, and verifiable claims..."},
   "attestationsregistry": {"categories": ["6b"], "price": 7.5, "lease": 800, "desc": "Credentials and attestations namespace. attestationsregistry.eth issues, manages, and verifies on-chain credentials, attestations, and verifiable c..."},
-  "auditautonomous": {"categories": ["1f", "4b", "9d"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. auditautonomous.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
+  "auditautonomous": {"categories": ["1f", "4b", "9d"], "price": 9.5, "lease": 1500, "desc": "Smart contract security audit namespace. auditautonomous.eth provides audit infrastructure, vulnerability assessment, and security verification for..."},
   "auditcontroller": {"categories": ["16m", "3r"], "price": 9.5, "lease": 1500, "desc": "Audit and verification infrastructure namespace. auditcontroller.eth powers compliance audit systems, on-chain verification pipelines, and attestat..."},
   "auditcoordinator": {"categories": ["16m", "1d"], "price": 11.5, "lease": 2500, "desc": "Audit and verification infrastructure namespace. auditcoordinator.eth powers compliance audit systems, on-chain verification pipelines, and attesta..."},
   "auditendpoint": {"categories": ["3p", "16b"], "price": 10.5, "lease": 2000, "desc": "Gateway, hub, and endpoint infrastructure namespace. auditendpoint.eth serves as the entry point and routing hub for protocol traffic, API calls, a..."},
@@ -284,7 +282,7 @@ const domainData = {
   "auditservices": {"categories": ["4b"], "price": 8.5, "lease": 1000, "desc": "Smart contract security audit namespace. auditservices.eth provides audit infrastructure, vulnerability assessment, and security verification for b..."},
   "auditsuite": {"categories": ["4b"], "price": 9.5, "lease": 1500, "desc": "Smart contract security audit namespace. auditsuite.eth provides audit infrastructure, vulnerability assessment, and security verification for bloc..."},
   "authcontroller": {"categories": ["6g", "3r"], "price": 9.5, "lease": 1500, "desc": "Rights and access control namespace. authcontroller.eth manages permission systems, access rights, and authorization infrastructure for decentraliz..."},
-  "authenticationagent": {"categories": ["1o", "1f", "6d"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. authenticationagent.eth manages pipeline execution, task sequencing, and operational automation for aut..."},
+  "authenticationagent": {"categories": ["1o", "1f", "6d"], "price": 8.5, "lease": 1000, "desc": "KYC and compliance identity namespace. authenticationagent.eth delivers compliant identity verification, KYC workflows, and regulatory identity inf..."},
   "authenticationorchestrator": {"categories": ["3n", "1d"], "price": 20.0, "lease": 7500, "desc": "Orchestrator pattern infrastructure namespace. authenticationorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and..."},
   "authenticationprotocol": {"categories": ["6d", "2a", "7d"], "price": 8.5, "lease": 1000, "desc": "Identity verification namespace. authenticationprotocol.eth validates user identities, confirms credential authenticity, and manages verification w..."},
   "authenticationrouter": {"categories": ["3k", "2e"], "price": 11.5, "lease": 2500, "desc": "Router pattern infrastructure namespace. authenticationrouter.eth directs transaction flow, message routing, and protocol traffic across decentrali..."},
@@ -315,46 +313,46 @@ const domainData = {
   "autonomousagentic": {"categories": ["1f", "1c", "1d"], "price": 11.5, "lease": 2500, "desc": "Autonomous system namespace for Web3. autonomousagentic.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
   "autonomousaggregator": {"categories": ["1f"], "price": 11.5, "lease": 2500, "desc": "Autonomous system namespace for Web3. autonomousaggregator.eth enables self-executing operations, autonomous decision logic, and agent-driven proce..."},
   "autonomousaiagent": {"categories": ["1b", "1c", "1d"], "price": 11.5, "lease": 2500, "desc": "On-chain AI agent registry namespace. autonomousaiagent.eth enables verifiable agent identity, network enrollment, and multi-agent coordination acr..."},
-  "AutonomousAudit": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. AutonomousAudit.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
-  "autonomousaudittrail": {"categories": ["1f", "5c", "4e"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousaudittrail.eth enables self-executing operations, autonomous decision logic, and agent-driven proce..."},
+  "AutonomousAudit": {"categories": ["1f"], "price": 9.5, "lease": 1500, "desc": "Smart contract security audit namespace. autonomousaudit.eth provides audit infrastructure, vulnerability assessment, and security verification for..."},
+  "autonomousaudittrail": {"categories": ["1f", "5c", "4e"], "price": 9.5, "lease": 1500, "desc": "Smart contract security audit namespace. autonomousaudittrail.eth provides audit infrastructure, vulnerability assessment, and security verificatio..."},
   "AutonomousBridge": {"categories": ["2e", "1f", "23b"], "price": 11.5, "lease": 2500, "desc": "Cross-chain bridge and interoperability namespace. AutonomousBridge.eth enables asset transfers, message passing, and protocol interoperability acr..."},
-  "autonomouschannel": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomouschannel.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
+  "autonomouschannel": {"categories": ["1f"], "price": 7.5, "lease": 800, "desc": "Messaging and communication namespace. autonomouschannel.eth enables encrypted messaging, decentralized communication, and P2P messaging infrastruc..."},
   "autonomouscharter": {"categories": ["16r", "12a", "12d"], "price": 28.0, "lease": 10000, "desc": "Web3 infrastructure namespace for autonomouscharter.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decent..."},
-  "autonomouscommander": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomouscommander.eth enables self-executing operations, autonomous decision logic, and agent-driven proces..."},
-  "autonomouscontroller": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomouscontroller.eth enables self-executing operations, autonomous decision logic, and agent-driven proce..."},
-  "autonomousdao": {"categories": ["1f", "12a", "12d"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousdao.eth enables self-executing operations, autonomous decision logic, and agent-driven process auto..."},
-  "autonomousdirector": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomousdirector.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
+  "autonomouscommander": {"categories": ["1f"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. autonomouscommander.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across..."},
+  "autonomouscontroller": {"categories": ["1f"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. autonomouscontroller.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling acros..."},
+  "autonomousdao": {"categories": ["1f", "12a", "12d"], "price": 8.5, "lease": 1000, "desc": "DAO framework namespace. autonomousdao.eth provides foundational DAO infrastructure, governance frameworks, and autonomous organization tooling for..."},
+  "autonomousdirector": {"categories": ["1f"], "price": 10.5, "lease": 2000, "desc": "Agent coordination and control namespace. autonomousdirector.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across ..."},
   "autonomousexecutor": {"categories": ["3m", "1m"], "price": 20.0, "lease": 7500, "desc": "Executor pattern infrastructure namespace. autonomousexecutor.eth handles task execution, contract calls, and automated operations as a core primit..."},
-  "autonomousextension": {"categories": ["1m", "3m", "11c"], "price": 15.0, "lease": 5000, "desc": "Autonomous infrastructure verb namespace. autonomousextension.eth defines a core execution primitive — routing, orchestrating, or executing at the ..."},
-  "autonomousfirewall": {"categories": ["1f", "4b", "2d"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousfirewall.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
-  "autonomousgateway": {"categories": ["1f"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousgateway.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
+  "autonomousextension": {"categories": ["1m", "3m", "11c"], "price": 11.5, "lease": 2500, "desc": "Autonomous infrastructure verb namespace. autonomousextension.eth defines a core execution primitive — routing, orchestrating, or executing at the ..."},
+  "autonomousfirewall": {"categories": ["1f", "4b", "2d"], "price": 9.5, "lease": 1500, "desc": "Post-quantum cryptography namespace. autonomousfirewall.eth delivers quantum-resistant cryptographic infrastructure, lattice-based protocols, and f..."},
+  "autonomousgateway": {"categories": ["1f"], "price": 11.5, "lease": 2500, "desc": "Gateway, hub, and endpoint infrastructure namespace. autonomousgateway.eth serves as the entry point and routing hub for protocol traffic, API call..."},
   "autonomousgovernance": {"categories": ["12f", "1c", "4a"], "price": 10.5, "lease": 2000, "desc": "Governance infrastructure namespace. autonomousgovernance.eth powers on-chain governance contracts, voting infrastructure, and decentralized decisi..."},
-  "autonomousidentity": {"categories": ["1f", "6d"], "price": 9.5, "lease": 1500, "desc": "Autonomous system namespace for Web3. autonomousidentity.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
-  "autonomousindexer": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomousindexer.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
+  "autonomousidentity": {"categories": ["1f", "6d"], "price": 8.5, "lease": 1000, "desc": "Decentralized identity namespace. autonomousidentity.eth anchors self-sovereign identity, DID protocols, and Web3 identity management for individua..."},
+  "autonomousindexer": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Data indexing and query namespace. autonomousindexer.eth indexes on-chain data, enables efficient querying, and provides structured blockchain data..."},
   "autonomousinfra": {"categories": ["1f", "2c", "2f"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousinfra.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
   "autonomouskernel": {"categories": ["1f", "3a", "2a"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomouskernel.eth enables self-executing operations, autonomous decision logic, and agent-driven process a..."},
   "autonomouslogic": {"categories": ["1f", "1c", "3a"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomouslogic.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
   "autonomousmandate": {"categories": ["1q", "12d", "16b"], "price": 11.5, "lease": 2500, "desc": "Governance and access agent namespace. autonomousmandate.eth manages on-chain voting, access control, compliance enforcement, and governance automa..."},
   "autonomousmind": {"categories": ["1f", "1h", "23d"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousmind.eth enables self-executing operations, autonomous decision logic, and agent-driven process aut..."},
   "autonomousmodule": {"categories": ["1f", "3a", "11c"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousmodule.eth enables self-executing operations, autonomous decision logic, and agent-driven process a..."},
-  "autonomousnode": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomousnode.eth enables self-executing operations, autonomous decision logic, and agent-driven process aut..."},
+  "autonomousnode": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Validator and node infrastructure namespace. autonomousnode.eth powers consensus node operations, staking coordination, and network validation acro..."},
   "autonomousoperator": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomousoperator.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
   "AutonomousOptimizer": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. AutonomousOptimizer.eth enables self-executing operations, autonomous decision logic, and agent-driven proces..."},
-  "AutonomousOrchestrator": {"categories": ["1m", "3n"], "price": 28.0, "lease": 10000, "desc": "Autonomous infrastructure verb namespace. AutonomousOrchestrator.eth defines a core execution primitive — routing, orchestrating, or executing at t..."},
+  "AutonomousOrchestrator": {"categories": ["1m", "3n"], "price": 20.0, "lease": 7500, "desc": "Orchestrator pattern infrastructure namespace. autonomousorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and con..."},
   "autonomouspipeline": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomouspipeline.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
   "autonomousplugin": {"categories": ["1f", "3a", "11c"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousplugin.eth enables self-executing operations, autonomous decision logic, and agent-driven process a..."},
   "autonomouspolicy": {"categories": ["1q", "12d", "16b"], "price": 11.5, "lease": 2500, "desc": "Governance and access agent namespace. autonomouspolicy.eth manages on-chain voting, access control, compliance enforcement, and governance automat..."},
   "autonomousprotocol": {"categories": ["1f", "2a", "1c"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousprotocol.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
   "autonomousreason": {"categories": ["1f", "1c", "1k"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousreason.eth enables self-executing operations, autonomous decision logic, and agent-driven process a..."},
-  "autonomousreputation": {"categories": ["1f", "1a", "23a"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousreputation.eth enables self-executing operations, autonomous decision logic, and agent-driven proce..."},
-  "autonomousresolver": {"categories": ["1f", "8i"], "price": 11.5, "lease": 2500, "desc": "Autonomous system namespace for Web3. autonomousresolver.eth enables self-executing operations, autonomous decision logic, and agent-driven process..."},
+  "autonomousreputation": {"categories": ["1f", "1a", "23a"], "price": 8.5, "lease": 1000, "desc": "Reputation systems namespace. autonomousreputation.eth tracks on-chain reputation, scores trustworthiness, and manages reputation-based access for ..."},
+  "autonomousresolver": {"categories": ["1f", "8i"], "price": 11.5, "lease": 2500, "desc": "Registry services namespace. autonomousresolver.eth maintains authoritative on-chain registries for identities, credentials, assets, and protocol p..."},
   "autonomousrules": {"categories": ["1q", "4a", "12d"], "price": 11.5, "lease": 2500, "desc": "Governance and access agent namespace. autonomousrules.eth manages on-chain voting, access control, compliance enforcement, and governance automation."},
   "autonomousruntime": {"categories": ["1f", "3a", "2f"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousruntime.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
   "AutonomousScheduler": {"categories": ["1d", "3q"], "price": 11.5, "lease": 2500, "desc": "Agent coordination and control namespace. AutonomousScheduler.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across..."},
   "autonomoussentinel": {"categories": ["16q", "1f", "1s"], "price": 15.0, "lease": 5000, "desc": "Web3 infrastructure namespace for autonomoussentinel.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decen..."},
   "autonomousstack": {"categories": ["1f", "3a", "11c"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomousstack.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
-  "autonomoussuite": {"categories": ["1f"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomoussuite.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
-  "autonomoustrading": {"categories": ["1f", "8b", "8o"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. autonomoustrading.eth enables self-executing operations, autonomous decision logic, and agent-driven process ..."},
+  "autonomoussuite": {"categories": ["1f"], "price": 6.5, "lease": 900, "desc": "AI service and application identity. autonomoussuite.eth powers end-user AI tools, chatbots, and intelligent applications built on blockchain infra..."},
+  "autonomoustrading": {"categories": ["1f", "8b", "8o"], "price": 7.5, "lease": 800, "desc": "Trading tools namespace. autonomoustrading.eth delivers analytical tools, trading interfaces, and performance analytics for on-chain traders and De..."},
   "autonomoustrust": {"categories": ["6u", "2d", "6e"], "price": 13.0, "lease": 3500, "desc": "Web3 infrastructure namespace for autonomoustrust.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentra..."},
   "autonomuoslayer": {"categories": ["1f", "2b5"], "price": 8.5, "lease": 1000, "desc": "Autonomous system namespace for Web3. autonomuoslayer.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
   "autosettlement": {"categories": ["8f", "11a1", "2b3"], "price": 13.0, "lease": 3500, "desc": "Payment rails and settlement namespace. autosettlement.eth manages transaction settlement, payment clearing, and financial settlement infrastructur..."},
@@ -557,7 +555,7 @@ const domainData = {
   "compositionagent": {"categories": ["1o", "1f", "4a"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. compositionagent.eth manages pipeline execution, task sequencing, and operational automation for autono..."},
   "compositionframework": {"categories": ["3o"], "price": 7.5, "lease": 800, "desc": "Engine and processor infrastructure namespace. compositionframework.eth powers compute layers, processing pipelines, and runtime execution environm..."},
   "compoundengine": {"categories": ["8c2", "8g"], "price": 8.5, "lease": 1000, "desc": "Yield farming and optimization namespace. compoundengine.eth automates yield strategies, optimizes returns, and manages farming positions across De..."},
-  "computeaccelerator": {"categories": ["1h", "2d"], "price": 8.5, "lease": 1000, "desc": "Neural network and processing infrastructure. computeaccelerator.eth supports deep learning model operations, neural compute layers, and AI process..."},
+  "computeaccelerator": {"categories": ["1h", "2d"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. computeaccelerator.eth supports deep learning model operations, neural compute layers, and AI process..."},
   "computecluster": {"categories": ["1a", "2c"], "price": 8.5, "lease": 1000, "desc": "On-chain AI infrastructure identity for computecluster.eth. Powers AI model deployment, protocol integration, and machine learning platform operati..."},
   "computedepin": {"categories": ["25h"], "price": 9.5, "lease": 1500, "desc": "Physical infrastructure protocol namespace. computedepin.eth anchors decentralized physical network operations, hardware registries, and real-world..."},
   "computeframework": {"categories": ["25a", "3a"], "price": 10.5, "lease": 2000, "desc": "Compute and storage DePIN namespace. computeframework.eth coordinates decentralized compute nodes, distributed storage networks, and physical hardw..."},
@@ -573,9 +571,9 @@ const domainData = {
   "consensusnode": {"categories": ["2d"], "price": 8.5, "lease": 1000, "desc": "Consensus and security namespace. consensusnode.eth anchors finality mechanisms, security layer operations, and consensus protocol coordination acr..."},
   "consensusprotocol": {"categories": ["2d"], "price": 8.5, "lease": 1000, "desc": "Consensus and security namespace. consensusprotocol.eth anchors finality mechanisms, security layer operations, and consensus protocol coordination..."},
   "consumeragent": {"categories": ["1w", "28b"], "price": 9.5, "lease": 2250, "desc": "Web3 infrastructure namespace for consumeragent.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentrali..."},
-  "consumeridentity": {"categories": ["1w", "28d", "6a"], "price": 10.5, "lease": 3000, "desc": "Web3 infrastructure namespace for consumeridentity.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentr..."},
-  "consumerinfra": {"categories": ["1w", "28b", "28d"], "price": 10.5, "lease": 3000, "desc": "Web3 infrastructure namespace for consumerinfra.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentrali..."},
-  "consumerinfrastructure": {"categories": ["1w", "28b", "28d"], "price": 9.5, "lease": 2250, "desc": "Web3 infrastructure namespace for consumerinfrastructure.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across d..."},
+  "consumeridentity": {"categories": ["1w", "28d", "6a"], "price": 8.5, "lease": 1500, "desc": "Crypto point-of-sale payments namespace. consumeridentity.eth enables stablecoin and crypto payments at retail, powering merchant acceptance and co..."},
+  "consumerinfra": {"categories": ["1w", "28b", "28d"], "price": 7.5, "lease": 800, "desc": "Web3 e-commerce namespace. consumerinfra.eth powers blockchain-native shopping infrastructure, on-chain commerce, and decentralized retail operatio..."},
+  "consumerinfrastructure": {"categories": ["1w", "28b", "28d"], "price": 6.5, "lease": 600, "desc": "Web3 e-commerce namespace. consumerinfrastructure.eth powers blockchain-native shopping infrastructure, on-chain commerce, and decentralized retail..."},
   "consumeronboard": {"categories": ["28d", "6d"], "price": 8.5, "lease": 1000, "desc": "Consumer identity and wallet namespace. consumeronboard.eth manages consumer-facing wallet infrastructure, digital identity, and retail-grade onboa..."},
   "consumerprotocol": {"categories": ["1w", "28b", "8q"], "price": 10.5, "lease": 3000, "desc": "Web3 infrastructure namespace for consumerprotocol.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentr..."},
   "consumerwallet": {"categories": ["28d", "17k"], "price": 8.5, "lease": 1000, "desc": "Consumer identity and wallet namespace. consumerwallet.eth manages consumer-facing wallet infrastructure, digital identity, and retail-grade onboar..."},
@@ -1062,7 +1060,7 @@ const domainData = {
   "gascharge": {"categories": ["2f"], "price": 7.5, "lease": 800, "desc": "Blockchain network services namespace. gascharge.eth manages RPC endpoints, node connectivity, and network infrastructure for decentralized protoco..."},
   "gasoptimization": {"categories": ["2f", "8f"], "price": 7.5, "lease": 800, "desc": "Blockchain network services namespace. gasoptimization.eth manages RPC endpoints, node connectivity, and network infrastructure for decentralized p..."},
   "gassponsorship": {"categories": ["2m", "8f", "8d"], "price": 10.5, "lease": 2000, "desc": "Account abstraction namespace. gassponsorship.eth enables smart account operations, paymaster services, and ERC-4337 infrastructure for next-genera..."},
-  "gatewayagent": {"categories": ["1f", "3b"], "price": 11.5, "lease": 2500, "desc": "Autonomous system namespace for Web3. gatewayagent.eth enables self-executing operations, autonomous decision logic, and agent-driven process autom..."},
+  "gatewayagent": {"categories": ["1f", "3b"], "price": 11.5, "lease": 2500, "desc": "Gateway, hub, and endpoint infrastructure namespace. gatewayagent.eth serves as the entry point and routing hub for protocol traffic, API calls, an..."},
   "gemstonevault": {"categories": ["22a", "24e"], "price": 5.5, "lease": 750, "desc": "Premium luxury brand namespace. gemstonevault.eth anchors high-value Web3 brand identity, luxury digital goods, and premium asset positioning in th..."},
   "geospatialdata": {"categories": ["30a", "5e"], "price": 9.5, "lease": 1500, "desc": "Satellite data and infrastructure namespace. geospatialdata.eth manages satellite data streams, space infrastructure coordination, and orbital asse..."},
   "geospatialintelligence": {"categories": ["30a", "5d"], "price": 8.5, "lease": 1000, "desc": "Satellite data and infrastructure namespace. geospatialintelligence.eth manages satellite data streams, space infrastructure coordination, and orbi..."},
@@ -1120,7 +1118,7 @@ const domainData = {
   "hrsuite": {"categories": ["11f", "11a1"], "price": 9.5, "lease": 2250, "desc": "HR and workforce management namespace. hrsuite.eth powers human resources operations, workforce management, and employee administration on Web3 inf..."},
   "hybridexchange": {"categories": ["10b"], "price": 7.5, "lease": 800, "desc": "DEX platform namespace. hybridexchange.eth anchors decentralized exchange operations, swap infrastructure, and on-chain trading platform identity f..."},
   "idaccountability": {"categories": ["6d", "17b", "6e"], "price": 9.5, "lease": 1500, "desc": "Identity verification namespace. idaccountability.eth validates user identities, confirms credential authenticity, and manages verification workflo..."},
-  "identificationagent": {"categories": ["1o", "1f", "6d"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. identificationagent.eth manages pipeline execution, task sequencing, and operational automation for aut..."},
+  "identificationagent": {"categories": ["1o", "1f", "6d"], "price": 8.5, "lease": 1000, "desc": "KYC and compliance identity namespace. identificationagent.eth delivers compliant identity verification, KYC workflows, and regulatory identity inf..."},
   "identityaggregator": {"categories": ["6a", "6f"], "price": 11.5, "lease": 2500, "desc": "Decentralized identity namespace. identityaggregator.eth anchors self-sovereign identity, DID protocols, and Web3 identity management for individua..."},
   "identityattestation": {"categories": ["6b", "6a", "7a"], "price": 9.5, "lease": 1500, "desc": "Credentials and attestations namespace. identityattestation.eth issues, manages, and verifies on-chain credentials, attestations, and verifiable cl..."},
   "identityaudit": {"categories": ["6d"], "price": 7.5, "lease": 800, "desc": "Identity verification namespace. identityaudit.eth validates user identities, confirms credential authenticity, and manages verification workflows ..."},
@@ -1190,7 +1188,7 @@ const domainData = {
   "intentsuite": {"categories": ["8j", "8b", "8i"], "price": 20.0, "lease": 7500, "desc": "Web3 infrastructure namespace for intentsuite.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentralize..."},
   "interchainmessaging": {"categories": ["26b", "13b"], "price": 13.0, "lease": 3500, "desc": "Cross-chain messaging namespace. interchainmessaging.eth enables arbitrary message passing, cross-chain contract calls, and protocol communication ..."},
   "interchainrelay": {"categories": ["26b", "2e"], "price": 11.5, "lease": 2500, "desc": "Cross-chain messaging namespace. interchainrelay.eth enables arbitrary message passing, cross-chain contract calls, and protocol communication acro..."},
-  "interoperabilityagent": {"categories": ["1o", "2e", "1f"], "price": 8.5, "lease": 1000, "desc": "AI workflow and operations agent namespace. interoperabilityagent.eth manages pipeline execution, task sequencing, and operational automation for a..."},
+  "interoperabilityagent": {"categories": ["1o", "2e", "1f"], "price": 9.5, "lease": 1500, "desc": "Bridge protocol namespace. interoperabilityagent.eth powers cross-chain asset transfers, bridge operations, and interoperability infrastructure bet..."},
   "interoperabilitybridge": {"categories": ["2e", "23b"], "price": 8.5, "lease": 1000, "desc": "Cross-chain bridge and interoperability namespace. interoperabilitybridge.eth enables asset transfers, message passing, and protocol interoperabili..."},
   "interoperabilityplatform": {"categories": ["2e"], "price": 7.5, "lease": 800, "desc": "Cross-chain bridge and interoperability namespace. interoperabilityplatform.eth enables asset transfers, message passing, and protocol interoperabi..."},
   "interoperabilitysuite": {"categories": ["2e"], "price": 7.5, "lease": 800, "desc": "Cross-chain bridge and interoperability namespace. interoperabilitysuite.eth enables asset transfers, message passing, and protocol interoperabilit..."},
@@ -1452,28 +1450,27 @@ const domainData = {
   "networkregistry": {"categories": ["6f"], "price": 8.5, "lease": 1000, "desc": "Registry services namespace. networkregistry.eth maintains authoritative on-chain registries for identities, credentials, assets, and protocol part..."},
   "networkresource": {"categories": ["25f", "25b"], "price": 9.5, "lease": 1500, "desc": "Data and bandwidth markets namespace. networkresource.eth enables decentralized bandwidth trading, data marketplace operations, and network resourc..."},
   "networksuite": {"categories": ["2f"], "price": 7.5, "lease": 800, "desc": "Blockchain network services namespace. networksuite.eth manages RPC endpoints, node connectivity, and network infrastructure for decentralized prot..."},
-  "neuralaggreagtor": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuralaggreagtor.eth supports deep learning model operations, neural compute layers, and AI processin..."},
   "NeuralAggregator": {"categories": ["1h"], "price": 10.5, "lease": 2000, "desc": "Neural network and processing infrastructure. NeuralAggregator.eth supports deep learning model operations, neural compute layers, and AI processin..."},
-  "NeuralAudit": {"categories": ["1h"], "price": 8.5, "lease": 1000, "desc": "Neural network and processing infrastructure. NeuralAudit.eth supports deep learning model operations, neural compute layers, and AI processing pip..."},
-  "NeuralBridge": {"categories": ["1h", "2e", "23b"], "price": 10.5, "lease": 2000, "desc": "Neural network and processing infrastructure. NeuralBridge.eth supports deep learning model operations, neural compute layers, and AI processing pi..."},
-  "NeuralChannel": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. NeuralChannel.eth supports deep learning model operations, neural compute layers, and AI processing p..."},
+  "NeuralAudit": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Smart contract security audit namespace. neuralaudit.eth provides audit infrastructure, vulnerability assessment, and security verification for blo..."},
+  "NeuralBridge": {"categories": ["1h", "2e", "23b"], "price": 9.5, "lease": 1500, "desc": "Cross-chain bridge and interoperability namespace. neuralbridge.eth enables asset transfers, message passing, and protocol interoperability across ..."},
+  "NeuralChannel": {"categories": ["1h"], "price": 6.5, "lease": 600, "desc": "Messaging and communication namespace. neuralchannel.eth enables encrypted messaging, decentralized communication, and P2P messaging infrastructure..."},
   "neuralcommander": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuralcommander.eth supports deep learning model operations, neural compute layers, and AI processing..."},
-  "neuralcontroller": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuralcontroller.eth supports deep learning model operations, neural compute layers, and AI processin..."},
-  "neuralcoordinator": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Neural network and processing infrastructure. neuralcoordinator.eth supports deep learning model operations, neural compute layers, and AI processi..."},
+  "neuralcontroller": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Agent coordination and control namespace. neuralcontroller.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across de..."},
+  "neuralcoordinator": {"categories": ["1h"], "price": 11.5, "lease": 2500, "desc": "Agent coordination and control namespace. neuralcoordinator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling across d..."},
   "neuraldirector": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuraldirector.eth supports deep learning model operations, neural compute layers, and AI processing ..."},
   "neuralert": {"categories": ["1h"], "price": 8.5, "lease": 1000, "desc": "Neural network and processing infrastructure. neuralert.eth supports deep learning model operations, neural compute layers, and AI processing pipel..."},
   "neuralexecutor": {"categories": ["3m", "1h"], "price": 15.0, "lease": 5000, "desc": "Executor pattern infrastructure namespace. neuralexecutor.eth handles task execution, contract calls, and automated operations as a core primitive ..."},
-  "neuralgateway": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Neural network and processing infrastructure. neuralgateway.eth supports deep learning model operations, neural compute layers, and AI processing p..."},
-  "NeuralIndexer": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. NeuralIndexer.eth supports deep learning model operations, neural compute layers, and AI processing p..."},
-  "NeuralNode": {"categories": ["1h"], "price": 8.5, "lease": 1000, "desc": "Neural network and processing infrastructure. NeuralNode.eth supports deep learning model operations, neural compute layers, and AI processing pipe..."},
+  "neuralgateway": {"categories": ["1h"], "price": 10.5, "lease": 2000, "desc": "Gateway, hub, and endpoint infrastructure namespace. neuralgateway.eth serves as the entry point and routing hub for protocol traffic, API calls, a..."},
+  "NeuralIndexer": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Data indexing and query namespace. neuralindexer.eth indexes on-chain data, enables efficient querying, and provides structured blockchain data acc..."},
+  "NeuralNode": {"categories": ["1h"], "price": 8.5, "lease": 1000, "desc": "Validator and node infrastructure namespace. neuralnode.eth powers consensus node operations, staking coordination, and network validation across b..."},
   "neuraloperator": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuraloperator.eth supports deep learning model operations, neural compute layers, and AI processing ..."},
   "neuraloptimizer": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. neuraloptimizer.eth supports deep learning model operations, neural compute layers, and AI processing..."},
-  "neuralorchestrator": {"categories": ["1h", "3n"], "price": 13.0, "lease": 3500, "desc": "Neural network and processing infrastructure. neuralorchestrator.eth supports deep learning model operations, neural compute layers, and AI process..."},
+  "neuralorchestrator": {"categories": ["1h", "3n"], "price": 20.0, "lease": 7500, "desc": "Orchestrator pattern infrastructure namespace. neuralorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and control..."},
   "NeuralPipeline": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. NeuralPipeline.eth supports deep learning model operations, neural compute layers, and AI processing ..."},
   "NeuralPlanner": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. NeuralPlanner.eth supports deep learning model operations, neural compute layers, and AI processing p..."},
-  "NeuralResolver": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Neural network and processing infrastructure. NeuralResolver.eth supports deep learning model operations, neural compute layers, and AI processing ..."},
+  "NeuralResolver": {"categories": ["1h"], "price": 10.5, "lease": 2000, "desc": "Registry services namespace. neuralresolver.eth maintains authoritative on-chain registries for identities, credentials, assets, and protocol parti..."},
   "NeuralSentinel": {"categories": ["16q", "1h", "1s"], "price": 13.0, "lease": 3500, "desc": "Web3 infrastructure namespace for NeuralSentinel.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentral..."},
-  "NeuralSettlement": {"categories": ["1h"], "price": 9.5, "lease": 1500, "desc": "Neural network and processing infrastructure. NeuralSettlement.eth supports deep learning model operations, neural compute layers, and AI processin..."},
+  "NeuralSettlement": {"categories": ["1h"], "price": 10.5, "lease": 2000, "desc": "Payment rails and settlement namespace. neuralsettlement.eth manages transaction settlement, payment clearing, and financial settlement infrastruct..."},
   "NeuralWorkflow": {"categories": ["1h"], "price": 7.5, "lease": 800, "desc": "Neural network and processing infrastructure. NeuralWorkflow.eth supports deep learning model operations, neural compute layers, and AI processing ..."},
   "newcarloan": {"categories": ["17c"], "price": 9.5, "lease": 2250, "desc": "Banking and lending platform namespace. newcarloan.eth delivers crypto banking services, on-chain lending infrastructure, and digital banking opera..."},
   "nftledger": {"categories": ["15c"], "price": 5.5, "lease": 750, "desc": "NFT and collectibles namespace. nftledger.eth anchors NFT collection infrastructure, digital collectible management, and on-chain asset ownership f..."},
@@ -1767,8 +1764,8 @@ const domainData = {
   "realworldpayments": {"categories": ["8d", "21c"], "price": 9.5, "lease": 1500, "desc": "Stablecoin and payments namespace. realworldpayments.eth anchors stablecoin infrastructure, payment rails, and stable value transfer systems for We..."},
   "realworldsolutions": {"categories": ["21c", "16a"], "price": 8.5, "lease": 1000, "desc": "RWA infrastructure namespace. realworldsolutions.eth manages real-world asset workflows, tokenization pipelines, and compliant RWA operations for i..."},
   "realworldutility": {"categories": ["21c"], "price": 7.5, "lease": 800, "desc": "RWA infrastructure namespace. realworldutility.eth manages real-world asset workflows, tokenization pipelines, and compliant RWA operations for ins..."},
-  "recommendationengine": {"categories": ["1n", "1g"], "price": 7.5, "lease": 800, "desc": "AI data agent namespace. recommendationengine.eth powers intelligent indexing, on-chain analytics, and data-driven agent operations across decentra..."},
-  "reconciliationagent": {"categories": ["1o", "1f", "8f"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. reconciliationagent.eth manages pipeline execution, task sequencing, and operational automation for aut..."},
+  "recommendationengine": {"categories": ["1n", "1g"], "price": 7.5, "lease": 800, "desc": "Engine and processor infrastructure namespace. recommendationengine.eth powers compute layers, processing pipelines, and runtime execution environm..."},
+  "reconciliationagent": {"categories": ["1o", "1f", "8f"], "price": 8.5, "lease": 1000, "desc": "Payment rails and settlement namespace. reconciliationagent.eth manages transaction settlement, payment clearing, and financial settlement infrastr..."},
   "recordsagent": {"categories": ["6t"], "price": 9.5, "lease": 1500, "desc": "Web3 infrastructure namespace for recordsagent.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decentraliz..."},
   "recordscontroller": {"categories": ["6t", "3r"], "price": 9.5, "lease": 1500, "desc": "Web3 infrastructure namespace for recordscontroller.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decent..."},
   "recordscoordinator": {"categories": ["6t", "1d"], "price": 11.5, "lease": 2500, "desc": "Web3 infrastructure namespace for recordscoordinator.eth. Enables on-chain identity, subdomain issuance, and protocol-level operations across decen..."},
@@ -2010,7 +2007,7 @@ const domainData = {
   "securityworkspace": {"categories": ["9d"], "price": 7.5, "lease": 800, "desc": "Staking security services namespace. securityworkspace.eth provides validator security, DAO security infrastructure, and network protection for sta..."},
   "self-custody": {"categories": ["7d"], "price": 8.5, "lease": 1000, "desc": "Encryption and key management namespace. self-custody.eth manages cryptographic keys, encryption services, and secure key infrastructure for decent..."},
   "senderverified": {"categories": ["6d", "13b", "17b"], "price": 9.5, "lease": 1500, "desc": "Identity verification namespace. senderverified.eth validates user identities, confirms credential authenticity, and manages verification workflows..."},
-  "senseimagic": {"categories": ["1k", "23d"], "price": 13.0, "lease": 3500, "desc": "AGI framework namespace for advanced AI systems. senseimagic.eth anchors artificial general intelligence infrastructure, model coordination, and co..."},
+  "senseimagic": {"categories": ["1k", "23d"], "price": 6.5, "lease": 900, "desc": "Premium luxury brand namespace. senseimagic.eth anchors high-value Web3 brand identity, luxury digital goods, and premium asset positioning in the ..."},
   "sensorprotocol": {"categories": ["25e", "18c"], "price": 8.5, "lease": 1000, "desc": "Environmental sensor DePIN namespace. sensorprotocol.eth coordinates decentralized sensor networks, environmental data collection, and physical mon..."},
   "sensorstreaming": {"categories": ["8h", "5c"], "price": 8.5, "lease": 1000, "desc": "Streaming payment infrastructure namespace. sensorstreaming.eth enables continuous payment streams, real-time revenue distribution, and streaming f..."},
   "sepoliatestnet": {"categories": ["3c", "2c"], "price": 6.5, "lease": 600, "desc": "Testing and debugging infrastructure namespace. sepoliatestnet.eth powers testnet environments, contract debugging tools, and QA infrastructure for..."},
@@ -2028,7 +2025,7 @@ const domainData = {
   "serviceorchestrator": {"categories": ["3n", "1d"], "price": 28.0, "lease": 10000, "desc": "Orchestrator pattern infrastructure namespace. serviceorchestrator.eth coordinates multi-system operations, manages workflow sequencing, and contro..."},
   "settlementapi": {"categories": ["8f"], "price": 10.5, "lease": 2000, "desc": "Payment rails and settlement namespace. settlementapi.eth manages transaction settlement, payment clearing, and financial settlement infrastructure..."},
   "settlementcontroller": {"categories": ["8f", "3r"], "price": 11.5, "lease": 2500, "desc": "Payment rails and settlement namespace. settlementcontroller.eth manages transaction settlement, payment clearing, and financial settlement infrast..."},
-  "settlementcoordinator": {"categories": ["1d", "8f"], "price": 15.0, "lease": 5000, "desc": "Agent coordination and control namespace. settlementcoordinator.eth orchestrates multi-agent systems, dispatches tasks, and manages scheduling acro..."},
+  "settlementcoordinator": {"categories": ["1d", "8f"], "price": 11.5, "lease": 2500, "desc": "Payment rails and settlement namespace. settlementcoordinator.eth manages transaction settlement, payment clearing, and financial settlement infras..."},
   "settlementendpoint": {"categories": ["3p", "3b"], "price": 13.0, "lease": 3500, "desc": "Gateway, hub, and endpoint infrastructure namespace. settlementendpoint.eth serves as the entry point and routing hub for protocol traffic, API cal..."},
   "settlementengine": {"categories": ["8f", "17n", "3o"], "price": 13.0, "lease": 3500, "desc": "Payment rails and settlement namespace. settlementengine.eth manages transaction settlement, payment clearing, and financial settlement infrastruct..."},
   "settlementexecutor": {"categories": ["3m", "1d"], "price": 28.0, "lease": 10000, "desc": "Executor pattern infrastructure namespace. settlementexecutor.eth handles task execution, contract calls, and automated operations as a core primit..."},
@@ -2250,7 +2247,7 @@ const domainData = {
   "tokenstudio": {"categories": ["4a"], "price": 7.5, "lease": 800, "desc": "Smart contract development namespace. tokenstudio.eth anchors contract authoring, Solidity development, and on-chain code management for protocol e..."},
   "tokenverified": {"categories": ["4e"], "price": 8.5, "lease": 1000, "desc": "Contract verification namespace. tokenverified.eth provides on-chain code verification, formal proof services, and contract validation infrastructu..."},
   "traceabilityprotocol": {"categories": ["27a", "16b"], "price": 9.5, "lease": 1500, "desc": "Supply chain provenance namespace. traceabilityprotocol.eth records product provenance, tracks goods on-chain, and verifies supply chain authentici..."},
-  "tradeautonomous": {"categories": ["1f", "8b", "8o"], "price": 10.5, "lease": 2000, "desc": "Autonomous system namespace for Web3. tradeautonomous.eth enables self-executing operations, autonomous decision logic, and agent-driven process au..."},
+  "tradeautonomous": {"categories": ["1f", "8b", "8o"], "price": 7.5, "lease": 800, "desc": "Trading tools namespace. tradeautonomous.eth delivers analytical tools, trading interfaces, and performance analytics for on-chain traders and DeFi..."},
   "tradecompliance": {"categories": ["27d", "16b"], "price": 9.5, "lease": 1500, "desc": "Customs and trade compliance namespace. tradecompliance.eth manages customs documentation, trade compliance workflows, and regulatory clearance for..."},
   "tradeexecutor": {"categories": ["3m", "1d"], "price": 15.0, "lease": 5000, "desc": "Executor pattern infrastructure namespace. tradeexecutor.eth handles task execution, contract calls, and automated operations as a core primitive i..."},
   "tradefinanceprotocol": {"categories": ["27b", "16b", "2a"], "price": 11.5, "lease": 2500, "desc": "Trade finance namespace. tradefinanceprotocol.eth digitizes letters of credit, trade settlement, and financing workflows for cross-border commerce ..."},
@@ -2260,7 +2257,7 @@ const domainData = {
   "tradesettle": {"categories": ["27b", "8f"], "price": 11.5, "lease": 2500, "desc": "Trade finance namespace. tradesettle.eth digitizes letters of credit, trade settlement, and financing workflows for cross-border commerce on blockc..."},
   "tradingsuite": {"categories": ["10e"], "price": 7.5, "lease": 800, "desc": "Trading tools namespace. tradingsuite.eth delivers analytical tools, trading interfaces, and performance analytics for on-chain traders and DeFi pr..."},
   "tradingtools": {"categories": ["10e", "8o"], "price": 8.5, "lease": 1000, "desc": "Trading tools namespace. tradingtools.eth delivers analytical tools, trading interfaces, and performance analytics for on-chain traders and DeFi pr..."},
-  "transactionagent": {"categories": ["1o", "1f", "8f"], "price": 9.5, "lease": 1500, "desc": "AI workflow and operations agent namespace. transactionagent.eth manages pipeline execution, task sequencing, and operational automation for autono..."},
+  "transactionagent": {"categories": ["1o", "1f", "8f"], "price": 8.5, "lease": 1000, "desc": "Payment rails and settlement namespace. transactionagent.eth manages transaction settlement, payment clearing, and financial settlement infrastruct..."},
   "transactionauditor": {"categories": ["5c", "16b"], "price": 7.5, "lease": 800, "desc": "Analytics and dashboard namespace. transactionauditor.eth delivers on-chain analytics, protocol performance dashboards, and data visualization for ..."},
   "transactionendpoint": {"categories": ["3p", "2f", "3b"], "price": 11.5, "lease": 2500, "desc": "Gateway, hub, and endpoint infrastructure namespace. transactionendpoint.eth serves as the entry point and routing hub for protocol traffic, API ca..."},
   "transactionexecutor": {"categories": ["3m", "1d"], "price": 15.0, "lease": 5000, "desc": "Executor pattern infrastructure namespace. transactionexecutor.eth handles task execution, contract calls, and automated operations as a core primi..."},
@@ -2503,343 +2500,1177 @@ const domainData = {
   "zkwasmprover": {"categories": ["7b2", "4e"], "price": 28.0, "lease": 10000, "desc": "zkWasm infrastructure namespace. zkwasmprover.eth enables WebAssembly-based ZK proof generation and zkWasm execution for privacy-preserving decentr..."},
   "zkwasmruntime": {"categories": ["7b2", "2b3"], "price": 13.0, "lease": 3500, "desc": "zkWasm infrastructure namespace. zkwasmruntime.eth enables WebAssembly-based ZK proof generation and zkWasm execution for privacy-preserving decent..."},
   "zkwasmverifier": {"categories": ["7b2", "4e"], "price": 28.0, "lease": 10000, "desc": "zkWasm infrastructure namespace. zkwasmverifier.eth enables WebAssembly-based ZK proof generation and zkWasm execution for privacy-preserving decen..."},
-  "zkwitness": {"categories": ["7b3"], "price": 9.5, "lease": 1500, "desc": "ZK protocol namespace. zkwitness.eth anchors zero-knowledge protocol operations, witness generation, and cryptographic proof infrastructure for Web..."}
+  "zkwitness": {"categories": ["7b3"], "price": 9.5, "lease": 1500, "desc": "ZK protocol namespace. zkwitness.eth anchors zero-knowledge protocol operations, witness generation, and cryptographic proof infrastructure for Web..."},
+  "internationalcompliance": {"categories": ["6h"], "price": 28.0, "lease": 10000, "desc": "Jurisdictional identity namespace. internationalcompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, ena..."},
+  "crossbordercompliance": {"categories": ["6h"], "price": 15.0, "lease": 5000, "desc": "Jurisdictional identity namespace. crossbordercompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabl..."},
+  "multinationalcompliance": {"categories": ["6h"], "price": 28.0, "lease": 10000, "desc": "Jurisdictional identity namespace. multinationalcompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, ena..."},
+  "caymancompliance": {"categories": ["6h"], "price": 20.0, "lease": 7500, "desc": "Jurisdictional identity namespace. caymancompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabling l..."},
+  "caymanaudit": {"categories": ["6h"], "price": 28.0, "lease": 10000, "desc": "Jurisdictional identity namespace. caymanaudit.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabling licens..."},
+  "caymanlicensing": {"categories": ["6h"], "price": 20.0, "lease": 7500, "desc": "Jurisdictional identity namespace. caymanlicensing.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabling li..."},
+  "singaporecompliance": {"categories": ["6h"], "price": 20.0, "lease": 7500, "desc": "Jurisdictional identity namespace. singaporecompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enablin..."},
+  "singaporelicensing": {"categories": ["6h"], "price": 20.0, "lease": 7500, "desc": "Jurisdictional identity namespace. singaporelicensing.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabling..."},
+  "dubaicompliance": {"categories": ["6h"], "price": 20.0, "lease": 7500, "desc": "Jurisdictional identity namespace. dubaicompliance.eth anchors regulatory-compliant identity infrastructure for specific jurisdictions, enabling li..."}
 };
 
 const subcategories = {
   "1": {
-    "1a": {"name": "AI Infrastructure & Models", "count": 21},
-    "1b": {"name": "AI Agent Networks & Registries", "count": 22},
-    "1c": {"name": "Agentic Systems & Operations", "count": 57},
-    "1d": {"name": "Agent Coordination & Control", "count": 131},
-    "1e": {"name": "Agent Marketplaces & Tooling", "count": 10},
-    "1f": {"name": "Autonomous Systems", "count": 97},
-    "1g": {"name": "AI Services & Applications", "count": 21},
-    "1h": {"name": "Neural Networks & Processing", "count": 27},
-    "1k": {"name": "AGI Frameworks", "count": 7},
-    "1m": {"name": "Autonomous Infrastructure Verbs", "count": 3},
-    "1n": {"name": "Agent Types - Data & Analytics", "count": 12},
-    "1o": {"name": "Agent Types - Workflow & Operations", "count": 27},
-    "1p": {"name": "Agent Types - Financial Services", "count": 8},
-    "1q": {"name": "Agent Types - Governance & Access", "count": 9},
-    "1r": {"name": "Agent Types - Messaging & Bridge", "count": 3},
-    "1s": {"name": "Agent Types - Compliance & Security", "count": 18},
-    "1t": {"name": "AI Processing Infrastructure", "count": 5},
-    "1u": {"name": "Curation & Social AI Systems", "count": 2},
-    "1v": {"name": "Coordination Mechanisms", "count": 1},
-    "1w": {"name": "Agentic Consumer Services", "count": 8}
+    "1a": {
+      "name": "AI Infrastructure & Models",
+      "count": 21
+    },
+    "1b": {
+      "name": "AI Agent Networks & Registries",
+      "count": 22
+    },
+    "1c": {
+      "name": "Agentic Systems & Operations",
+      "count": 57
+    },
+    "1d": {
+      "name": "Agent Coordination & Control",
+      "count": 131
+    },
+    "1e": {
+      "name": "Agent Marketplaces & Tooling",
+      "count": 10
+    },
+    "1f": {
+      "name": "Autonomous Systems",
+      "count": 97
+    },
+    "1g": {
+      "name": "AI Services & Applications",
+      "count": 21
+    },
+    "1h": {
+      "name": "Neural Networks & Processing",
+      "count": 27
+    },
+    "1k": {
+      "name": "AGI Frameworks",
+      "count": 7
+    },
+    "1m": {
+      "name": "Autonomous Infrastructure Verbs",
+      "count": 3
+    },
+    "1n": {
+      "name": "Agent Types - Data & Analytics",
+      "count": 12
+    },
+    "1o": {
+      "name": "Agent Types - Workflow & Operations",
+      "count": 27
+    },
+    "1p": {
+      "name": "Agent Types - Financial Services",
+      "count": 8
+    },
+    "1q": {
+      "name": "Agent Types - Governance & Access",
+      "count": 9
+    },
+    "1r": {
+      "name": "Agent Types - Messaging & Bridge",
+      "count": 3
+    },
+    "1s": {
+      "name": "Agent Types - Compliance & Security",
+      "count": 18
+    },
+    "1t": {
+      "name": "AI Processing Infrastructure",
+      "count": 5
+    },
+    "1u": {
+      "name": "Curation & Social AI Systems",
+      "count": 2
+    },
+    "1v": {
+      "name": "Coordination Mechanisms",
+      "count": 1
+    },
+    "1w": {
+      "name": "Agentic Consumer Services",
+      "count": 8
+    }
   },
   "2": {
-    "2a": {"name": "Layer 1 Protocols", "count": 52},
-    "2b": {"name": "Layer 2 Solutions", "count": 27},
-    "2b1": {"name": "Optimistic Rollups", "count": 5},
-    "2b2": {"name": "ZK Rollups & Validity Proofs", "count": 6},
-    "2b3": {"name": "Based Rollups", "count": 35},
-    "2b4": {"name": "Application-Specific L2s", "count": 19},
-    "2b5": {"name": "L2 Infrastructure & Operations", "count": 44},
-    "2b6": {"name": "Rollup-as-a-Service", "count": 4},
-    "2b7": {"name": "Sequencer Services", "count": 10},
-    "2c": {"name": "Validators & Nodes", "count": 64},
-    "2d": {"name": "Consensus & Security", "count": 16},
-    "2e": {"name": "Cross-chain & Bridges", "count": 113},
-    "2f": {"name": "Network Services", "count": 82},
-    "2f1": {"name": "RPC Provider Services", "count": 4},
-    "2g": {"name": "MEV & Block Building", "count": 14},
-    "2h": {"name": "ENSv2 Infrastructure", "count": 28},
-    "2k": {"name": "Censorship Resistance", "count": 3},
-    "2m": {"name": "Account Abstraction", "count": 8},
-    "2b8": {"name": "Data Availability Layer", "count": 6}
+    "2a": {
+      "name": "Layer 1 Protocols",
+      "count": 52
+    },
+    "2b": {
+      "name": "Layer 2 Solutions",
+      "count": 27
+    },
+    "2b1": {
+      "name": "Optimistic Rollups",
+      "count": 5
+    },
+    "2b2": {
+      "name": "ZK Rollups & Validity Proofs",
+      "count": 6
+    },
+    "2b3": {
+      "name": "Based Rollups",
+      "count": 35
+    },
+    "2b4": {
+      "name": "Application-Specific L2s",
+      "count": 19
+    },
+    "2b5": {
+      "name": "L2 Infrastructure & Operations",
+      "count": 44
+    },
+    "2b6": {
+      "name": "Rollup-as-a-Service",
+      "count": 4
+    },
+    "2b7": {
+      "name": "Sequencer Services",
+      "count": 10
+    },
+    "2c": {
+      "name": "Validators & Nodes",
+      "count": 64
+    },
+    "2d": {
+      "name": "Consensus & Security",
+      "count": 16
+    },
+    "2e": {
+      "name": "Cross-chain & Bridges",
+      "count": 113
+    },
+    "2f": {
+      "name": "Network Services",
+      "count": 82
+    },
+    "2f1": {
+      "name": "RPC Provider Services",
+      "count": 4
+    },
+    "2g": {
+      "name": "MEV & Block Building",
+      "count": 14
+    },
+    "2h": {
+      "name": "ENSv2 Infrastructure",
+      "count": 28
+    },
+    "2k": {
+      "name": "Censorship Resistance",
+      "count": 3
+    },
+    "2m": {
+      "name": "Account Abstraction",
+      "count": 8
+    },
+    "2b8": {
+      "name": "Data Availability Layer",
+      "count": 6
+    }
   },
   "3": {
-    "3a": {"name": "SDKs & Libraries", "count": 35},
-    "3b": {"name": "APIs & Gateways", "count": 36},
-    "3c": {"name": "Testing & Debugging", "count": 7},
-    "3d": {"name": "Deployment Tools", "count": 15},
-    "3e": {"name": "Code Development", "count": 17},
-    "3f": {"name": "Developer Workspaces", "count": 14},
-    "3g": {"name": "SDK & Client Management", "count": 3},
-    "3h": {"name": "Workflow & Pipeline Tools", "count": 8},
-    "3k": {"name": "Router Pattern Infrastructure", "count": 47},
-    "3m": {"name": "Executor Pattern Infrastructure", "count": 50},
-    "3n": {"name": "Orchestrator Pattern Infrastructure", "count": 42},
-    "3o": {"name": "Engine & Processor Infrastructure", "count": 23},
-    "3p": {"name": "Gateway, Hub & Endpoint Infra", "count": 36},
-    "3q": {"name": "Handler & Dispatcher Infrastructure", "count": 9},
-    "3r": {"name": "Manager & Controller Infrastructure", "count": 36}
+    "3a": {
+      "name": "SDKs & Libraries",
+      "count": 35
+    },
+    "3b": {
+      "name": "APIs & Gateways",
+      "count": 36
+    },
+    "3c": {
+      "name": "Testing & Debugging",
+      "count": 7
+    },
+    "3d": {
+      "name": "Deployment Tools",
+      "count": 15
+    },
+    "3e": {
+      "name": "Code Development",
+      "count": 17
+    },
+    "3f": {
+      "name": "Developer Workspaces",
+      "count": 14
+    },
+    "3g": {
+      "name": "SDK & Client Management",
+      "count": 3
+    },
+    "3h": {
+      "name": "Workflow & Pipeline Tools",
+      "count": 8
+    },
+    "3k": {
+      "name": "Router Pattern Infrastructure",
+      "count": 47
+    },
+    "3m": {
+      "name": "Executor Pattern Infrastructure",
+      "count": 50
+    },
+    "3n": {
+      "name": "Orchestrator Pattern Infrastructure",
+      "count": 42
+    },
+    "3o": {
+      "name": "Engine & Processor Infrastructure",
+      "count": 23
+    },
+    "3p": {
+      "name": "Gateway, Hub & Endpoint Infra",
+      "count": 36
+    },
+    "3q": {
+      "name": "Handler & Dispatcher Infrastructure",
+      "count": 9
+    },
+    "3r": {
+      "name": "Manager & Controller Infrastructure",
+      "count": 36
+    }
   },
   "4": {
-    "4a": {"name": "Contract Development", "count": 59},
-    "4b": {"name": "Security Audits", "count": 25},
-    "4b1": {"name": "Audit Services by Type", "count": 6},
-    "4c": {"name": "Contract Deployment", "count": 4},
-    "4d": {"name": "Contract Standards", "count": 24},
-    "4e": {"name": "Verification Services", "count": 49},
-    "4f": {"name": "Contract Management & Execution", "count": 8}
+    "4a": {
+      "name": "Contract Development",
+      "count": 59
+    },
+    "4b": {
+      "name": "Security Audits",
+      "count": 25
+    },
+    "4b1": {
+      "name": "Audit Services by Type",
+      "count": 6
+    },
+    "4c": {
+      "name": "Contract Deployment",
+      "count": 4
+    },
+    "4d": {
+      "name": "Contract Standards",
+      "count": 24
+    },
+    "4e": {
+      "name": "Verification Services",
+      "count": 49
+    },
+    "4f": {
+      "name": "Contract Management & Execution",
+      "count": 8
+    }
   },
   "5": {
-    "5a": {"name": "Oracle Networks & Feeds", "count": 31},
-    "5b": {"name": "Data Indexing & Query", "count": 18},
-    "5c": {"name": "Analytics & Dashboards", "count": 35},
-    "5d": {"name": "Data Aggregation", "count": 22},
-    "5e": {"name": "Data Services & APIs", "count": 23},
-    "5f": {"name": "Data Transport Infrastructure", "count": 1},
-    "5g": {"name": "Metrics & Performance Tracking", "count": 1},
-    "5h": {"name": "Index Infrastructure", "count": 3},
-    "5k": {"name": "Oracle Validators & Provers", "count": 2}
+    "5a": {
+      "name": "Oracle Networks & Feeds",
+      "count": 31
+    },
+    "5b": {
+      "name": "Data Indexing & Query",
+      "count": 18
+    },
+    "5c": {
+      "name": "Analytics & Dashboards",
+      "count": 35
+    },
+    "5d": {
+      "name": "Data Aggregation",
+      "count": 22
+    },
+    "5e": {
+      "name": "Data Services & APIs",
+      "count": 23
+    },
+    "5f": {
+      "name": "Data Transport Infrastructure",
+      "count": 1
+    },
+    "5g": {
+      "name": "Metrics & Performance Tracking",
+      "count": 1
+    },
+    "5h": {
+      "name": "Index Infrastructure",
+      "count": 3
+    },
+    "5k": {
+      "name": "Oracle Validators & Provers",
+      "count": 2
+    }
   },
   "6": {
-    "6a": {"name": "Decentralized Identity", "count": 51},
-    "6b": {"name": "Credentials & Attestations", "count": 36},
-    "6c": {"name": "KYC & Compliance Identity", "count": 17},
-    "6d": {"name": "Identity Verification", "count": 45},
-    "6e": {"name": "Reputation Systems", "count": 15},
-    "6f": {"name": "Registry Services", "count": 62},
-    "6g": {"name": "Rights & Access Control", "count": 54},
-    "6h": {"name": "Jurisdictional Identity", "count": 12},
-    "6k": {"name": "Credential Management Systems", "count": 2},
-    "6m": {"name": "Government & Healthcare IDs", "count": 11},
-    "6n": {"name": "Reputation Scoring & Attestation", "count": 2},
-    "6p": {"name": "Trust & Enforcement Infrastructure", "count": 9},
-    "6q": {"name": "Domain-Specific Identity Systems", "count": 3},
-    "6r": {"name": "Domain-Specific Ledgers", "count": 11},
-    "6s": {"name": "Certification & Verification Services", "count": 6}
+    "6a": {
+      "name": "Decentralized Identity",
+      "count": 51
+    },
+    "6b": {
+      "name": "Credentials & Attestations",
+      "count": 36
+    },
+    "6c": {
+      "name": "KYC & Compliance Identity",
+      "count": 17
+    },
+    "6d": {
+      "name": "Identity Verification",
+      "count": 45
+    },
+    "6e": {
+      "name": "Reputation Systems",
+      "count": 15
+    },
+    "6f": {
+      "name": "Registry Services",
+      "count": 62
+    },
+    "6g": {
+      "name": "Rights & Access Control",
+      "count": 54
+    },
+    "6h": {
+      "name": "Jurisdictional Identity",
+      "count": 12
+    },
+    "6k": {
+      "name": "Credential Management Systems",
+      "count": 2
+    },
+    "6m": {
+      "name": "Government & Healthcare IDs",
+      "count": 11
+    },
+    "6n": {
+      "name": "Reputation Scoring & Attestation",
+      "count": 2
+    },
+    "6p": {
+      "name": "Trust & Enforcement Infrastructure",
+      "count": 9
+    },
+    "6q": {
+      "name": "Domain-Specific Identity Systems",
+      "count": 3
+    },
+    "6r": {
+      "name": "Domain-Specific Ledgers",
+      "count": 11
+    },
+    "6s": {
+      "name": "Certification & Verification Services",
+      "count": 6
+    }
   },
   "7": {
-    "7a": {"name": "Zero-Knowledge Proofs", "count": 20},
-    "7b": {"name": "ZK Infrastructure", "count": 3},
-    "7b1": {"name": "zkVM Infrastructure", "count": 9},
-    "7b2": {"name": "zkWasm Infrastructure", "count": 7},
-    "7b3": {"name": "ZK Protocols & General", "count": 28},
-    "7b4": {"name": "zkEVM Infrastructure", "count": 8},
-    "7b5": {"name": "Prover Services & Proof Generation", "count": 12},
-    "7c": {"name": "Privacy Protocols", "count": 20},
-    "7d": {"name": "Encryption & Key Management", "count": 22},
-    "7e": {"name": "Post-Quantum Cryptography", "count": 14},
-    "7f": {"name": "Confidential Computing", "count": 4},
-    "7g": {"name": "RLN Rate-Limit Nullifiers", "count": 3},
-    "7h": {"name": "ZK General Infrastructure", "count": 1},
-    "7k": {"name": "Censorship Resistance & Mempools", "count": 5}
+    "7a": {
+      "name": "Zero-Knowledge Proofs",
+      "count": 20
+    },
+    "7b": {
+      "name": "ZK Infrastructure",
+      "count": 3
+    },
+    "7b1": {
+      "name": "zkVM Infrastructure",
+      "count": 9
+    },
+    "7b2": {
+      "name": "zkWasm Infrastructure",
+      "count": 7
+    },
+    "7b3": {
+      "name": "ZK Protocols & General",
+      "count": 28
+    },
+    "7b4": {
+      "name": "zkEVM Infrastructure",
+      "count": 8
+    },
+    "7b5": {
+      "name": "Prover Services & Proof Generation",
+      "count": 12
+    },
+    "7c": {
+      "name": "Privacy Protocols",
+      "count": 20
+    },
+    "7d": {
+      "name": "Encryption & Key Management",
+      "count": 22
+    },
+    "7e": {
+      "name": "Post-Quantum Cryptography",
+      "count": 14
+    },
+    "7f": {
+      "name": "Confidential Computing",
+      "count": 4
+    },
+    "7g": {
+      "name": "RLN Rate-Limit Nullifiers",
+      "count": 3
+    },
+    "7h": {
+      "name": "ZK General Infrastructure",
+      "count": 1
+    },
+    "7k": {
+      "name": "Censorship Resistance & Mempools",
+      "count": 5
+    }
   },
   "8": {
-    "8a": {"name": "Lending & Borrowing", "count": 29},
-    "8b": {"name": "DEXs & Trading", "count": 38},
-    "8c": {"name": "Liquidity & Yield", "count": 9},
-    "8c1": {"name": "Liquidity Provision", "count": 42},
-    "8c2": {"name": "Yield Farming & Optimization", "count": 14},
-    "8d": {"name": "Stablecoins & Payments", "count": 56},
-    "8e": {"name": "Derivatives & Perpetuals", "count": 8},
-    "8f": {"name": "Payment Rails & Settlement", "count": 77},
-    "8g": {"name": "DeFi Automation & Bots", "count": 22},
-    "8h": {"name": "Streaming Infrastructure", "count": 22},
-    "8i": {"name": "Intents & Order Flow", "count": 20},
-    "8k": {"name": "Intents & Order Flow", "count": 2},
-    "8m": {"name": "Stablecoin Infrastructure", "count": 3},
-    "8n": {"name": "Swap & Collateral Infrastructure", "count": 2},
-    "8o": {"name": "Trading & Market Making", "count": 8},
-    "8p": {"name": "Portfolio & Fund Management", "count": 1},
-    "8q": {"name": "Payment Protocols & P2P", "count": 7},
-    "8r": {"name": "Payment Central Services", "count": 1},
-    "8j": {"name": "Intent Infrastructure", "count": 15}
+    "8a": {
+      "name": "Lending & Borrowing",
+      "count": 29
+    },
+    "8b": {
+      "name": "DEXs & Trading",
+      "count": 38
+    },
+    "8c": {
+      "name": "Liquidity & Yield",
+      "count": 9
+    },
+    "8c1": {
+      "name": "Liquidity Provision",
+      "count": 42
+    },
+    "8c2": {
+      "name": "Yield Farming & Optimization",
+      "count": 14
+    },
+    "8d": {
+      "name": "Stablecoins & Payments",
+      "count": 56
+    },
+    "8e": {
+      "name": "Derivatives & Perpetuals",
+      "count": 8
+    },
+    "8f": {
+      "name": "Payment Rails & Settlement",
+      "count": 77
+    },
+    "8g": {
+      "name": "DeFi Automation & Bots",
+      "count": 22
+    },
+    "8h": {
+      "name": "Streaming Infrastructure",
+      "count": 22
+    },
+    "8i": {
+      "name": "Intents & Order Flow",
+      "count": 20
+    },
+    "8k": {
+      "name": "Intents & Order Flow",
+      "count": 2
+    },
+    "8m": {
+      "name": "Stablecoin Infrastructure",
+      "count": 3
+    },
+    "8n": {
+      "name": "Swap & Collateral Infrastructure",
+      "count": 2
+    },
+    "8o": {
+      "name": "Trading & Market Making",
+      "count": 8
+    },
+    "8p": {
+      "name": "Portfolio & Fund Management",
+      "count": 1
+    },
+    "8q": {
+      "name": "Payment Protocols & P2P",
+      "count": 7
+    },
+    "8r": {
+      "name": "Payment Central Services",
+      "count": 1
+    },
+    "8j": {
+      "name": "Intent Infrastructure",
+      "count": 15
+    }
   },
   "9": {
-    "9a": {"name": "Restaking Protocols", "count": 27},
-    "9b": {"name": "Liquid Restaking", "count": 18},
-    "9c": {"name": "Restaking Infrastructure", "count": 27},
-    "9d": {"name": "Security Services", "count": 15},
-    "9e": {"name": "Slashing Protection", "count": 4},
-    "9f": {"name": "Validator Services", "count": 44},
-    "9g": {"name": "Restaking Coordination", "count": 4},
-    "9h": {"name": "Staking Coordination", "count": 5},
-    "9k": {"name": "Liquidation Infrastructure", "count": 4},
-    "9m": {"name": "Keeper & Health Monitoring", "count": 1}
+    "9a": {
+      "name": "Restaking Protocols",
+      "count": 27
+    },
+    "9b": {
+      "name": "Liquid Restaking",
+      "count": 18
+    },
+    "9c": {
+      "name": "Restaking Infrastructure",
+      "count": 27
+    },
+    "9d": {
+      "name": "Security Services",
+      "count": 15
+    },
+    "9e": {
+      "name": "Slashing Protection",
+      "count": 4
+    },
+    "9f": {
+      "name": "Validator Services",
+      "count": 44
+    },
+    "9g": {
+      "name": "Restaking Coordination",
+      "count": 4
+    },
+    "9h": {
+      "name": "Staking Coordination",
+      "count": 5
+    },
+    "9k": {
+      "name": "Liquidation Infrastructure",
+      "count": 4
+    },
+    "9m": {
+      "name": "Keeper & Health Monitoring",
+      "count": 1
+    }
   },
   "10": {
-    "10a": {"name": "NFT Marketplaces", "count": 2},
-    "10b": {"name": "DEX Platforms", "count": 7},
-    "10c": {"name": "P2P & OTC", "count": 9},
-    "10d": {"name": "Exchange Infrastructure", "count": 11},
-    "10e": {"name": "Trading Tools", "count": 10},
-    "10f": {"name": "ENS Registry & Renewal Infra", "count": 24}
+    "10a": {
+      "name": "NFT Marketplaces",
+      "count": 2
+    },
+    "10b": {
+      "name": "DEX Platforms",
+      "count": 7
+    },
+    "10c": {
+      "name": "P2P & OTC",
+      "count": 9
+    },
+    "10d": {
+      "name": "Exchange Infrastructure",
+      "count": 11
+    },
+    "10e": {
+      "name": "Trading Tools",
+      "count": 10
+    },
+    "10f": {
+      "name": "ENS Registry & Renewal Infra",
+      "count": 24
+    }
   },
   "11": {
-    "11a": {"name": "Enterprise SaaS", "count": 1},
-    "11a1": {"name": "Business SaaS", "count": 58},
-    "11a2": {"name": "Developer SaaS", "count": 8},
-    "11a3": {"name": "Vertical-Specific SaaS", "count": 7},
-    "11b": {"name": "Industry-Specific Suites", "count": 34},
-    "11c": {"name": "Platform Infrastructure", "count": 62},
-    "11c1": {"name": "Cloud Platform Services", "count": 14},
-    "11d": {"name": "Workspace & Collaboration", "count": 14},
-    "11e": {"name": "Business Automation", "count": 49},
-    "11f": {"name": "HR & Workforce Management", "count": 3},
-    "11f1": {"name": "HR Operations & Payroll", "count": 4},
-    "11f2": {"name": "Employee Benefits & Programs", "count": 2},
-    "11g": {"name": "Loyalty & Rewards Programs", "count": 4}
+    "11a": {
+      "name": "Enterprise SaaS",
+      "count": 1
+    },
+    "11a1": {
+      "name": "Business SaaS",
+      "count": 58
+    },
+    "11a2": {
+      "name": "Developer SaaS",
+      "count": 8
+    },
+    "11a3": {
+      "name": "Vertical-Specific SaaS",
+      "count": 7
+    },
+    "11b": {
+      "name": "Industry-Specific Suites",
+      "count": 34
+    },
+    "11c": {
+      "name": "Platform Infrastructure",
+      "count": 62
+    },
+    "11c1": {
+      "name": "Cloud Platform Services",
+      "count": 14
+    },
+    "11d": {
+      "name": "Workspace & Collaboration",
+      "count": 14
+    },
+    "11e": {
+      "name": "Business Automation",
+      "count": 49
+    },
+    "11f": {
+      "name": "HR & Workforce Management",
+      "count": 3
+    },
+    "11f1": {
+      "name": "HR Operations & Payroll",
+      "count": 4
+    },
+    "11f2": {
+      "name": "Employee Benefits & Programs",
+      "count": 2
+    },
+    "11g": {
+      "name": "Loyalty & Rewards Programs",
+      "count": 4
+    }
   },
   "12": {
-    "12a": {"name": "DAO Frameworks", "count": 23},
-    "12b": {"name": "Voting & Proposals", "count": 14},
-    "12c": {"name": "Treasury Management", "count": 10},
-    "12d": {"name": "Governance Tools", "count": 38},
-    "12e": {"name": "Coordination Platforms", "count": 4},
-    "12f": {"name": "Governance Infrastructure", "count": 14},
-    "12g": {"name": "Treasury Coordination", "count": 3},
-    "12h": {"name": "Rules & Membership Systems", "count": 1}
+    "12a": {
+      "name": "DAO Frameworks",
+      "count": 23
+    },
+    "12b": {
+      "name": "Voting & Proposals",
+      "count": 14
+    },
+    "12c": {
+      "name": "Treasury Management",
+      "count": 10
+    },
+    "12d": {
+      "name": "Governance Tools",
+      "count": 38
+    },
+    "12e": {
+      "name": "Coordination Platforms",
+      "count": 4
+    },
+    "12f": {
+      "name": "Governance Infrastructure",
+      "count": 14
+    },
+    "12g": {
+      "name": "Treasury Coordination",
+      "count": 3
+    },
+    "12h": {
+      "name": "Rules & Membership Systems",
+      "count": 1
+    }
   },
   "13": {
-    "13a": {"name": "Social Networks", "count": 9},
-    "13b": {"name": "Messaging & Communication", "count": 25},
-    "13c": {"name": "Community Tools", "count": 13},
-    "13d": {"name": "Content & Publishing", "count": 4}
+    "13a": {
+      "name": "Social Networks",
+      "count": 9
+    },
+    "13b": {
+      "name": "Messaging & Communication",
+      "count": 25
+    },
+    "13c": {
+      "name": "Community Tools",
+      "count": 13
+    },
+    "13d": {
+      "name": "Content & Publishing",
+      "count": 4
+    }
   },
   "14": {
-    "14a": {"name": "Gaming Infrastructure", "count": 19},
-    "14b": {"name": "Metaverse Platforms", "count": 5},
-    "14c": {"name": "Gaming Finance & Assets", "count": 1},
-    "14d": {"name": "Game Development Tools", "count": 1}
+    "14a": {
+      "name": "Gaming Infrastructure",
+      "count": 19
+    },
+    "14b": {
+      "name": "Metaverse Platforms",
+      "count": 5
+    },
+    "14c": {
+      "name": "Gaming Finance & Assets",
+      "count": 1
+    },
+    "14d": {
+      "name": "Game Development Tools",
+      "count": 1
+    }
   },
   "15": {
-    "15a": {"name": "Content Creation & Publishing", "count": 15},
-    "15b": {"name": "IP & Licensing", "count": 3},
-    "15c": {"name": "NFTs & Collectibles", "count": 17},
-    "15d": {"name": "Media Distribution", "count": 6},
-    "15e": {"name": "Creator Tools", "count": 5},
-    "15f": {"name": "Creative AI Tools", "count": 1}
+    "15a": {
+      "name": "Content Creation & Publishing",
+      "count": 15
+    },
+    "15b": {
+      "name": "IP & Licensing",
+      "count": 3
+    },
+    "15c": {
+      "name": "NFTs & Collectibles",
+      "count": 17
+    },
+    "15d": {
+      "name": "Media Distribution",
+      "count": 6
+    },
+    "15e": {
+      "name": "Creator Tools",
+      "count": 5
+    },
+    "15f": {
+      "name": "Creative AI Tools",
+      "count": 1
+    }
   },
   "16": {
-    "16a": {"name": "Enterprise Solutions", "count": 40},
-    "16b": {"name": "Compliance & Regulatory", "count": 135},
-    "16c": {"name": "Enterprise SaaS & Biz Tools", "count": 24},
-    "16d": {"name": "Institutional Finance & Treasury", "count": 9},
-    "16e": {"name": "AML/KYC Services", "count": 22},
-    "16f": {"name": "Press & Communications", "count": 2},
-    "16g": {"name": "AML Infrastructure", "count": 4},
-    "16h": {"name": "KYC Infrastructure", "count": 3},
-    "16k": {"name": "Fintech Compliance", "count": 11},
-    "16m": {"name": "Audit & Verification Infra", "count": 15},
-    "16n": {"name": "Tax & Accounting Infrastructure", "count": 8},
-    "16o": {"name": "Legal Infrastructure", "count": 4},
-    "16p": {"name": "Jurisdictional Compliance", "count": 23},
-    "16q": {"name": "AI-Driven Compliance Systems", "count": 10}
+    "16a": {
+      "name": "Enterprise Solutions",
+      "count": 40
+    },
+    "16b": {
+      "name": "Compliance & Regulatory",
+      "count": 135
+    },
+    "16c": {
+      "name": "Enterprise SaaS & Biz Tools",
+      "count": 24
+    },
+    "16d": {
+      "name": "Institutional Finance & Treasury",
+      "count": 9
+    },
+    "16e": {
+      "name": "AML/KYC Services",
+      "count": 22
+    },
+    "16f": {
+      "name": "Press & Communications",
+      "count": 2
+    },
+    "16g": {
+      "name": "AML Infrastructure",
+      "count": 4
+    },
+    "16h": {
+      "name": "KYC Infrastructure",
+      "count": 3
+    },
+    "16k": {
+      "name": "Fintech Compliance",
+      "count": 11
+    },
+    "16m": {
+      "name": "Audit & Verification Infra",
+      "count": 15
+    },
+    "16n": {
+      "name": "Tax & Accounting Infrastructure",
+      "count": 8
+    },
+    "16o": {
+      "name": "Legal Infrastructure",
+      "count": 4
+    },
+    "16p": {
+      "name": "Jurisdictional Compliance",
+      "count": 23
+    },
+    "16q": {
+      "name": "AI-Driven Compliance Systems",
+      "count": 10
+    }
   },
   "17": {
-    "17a": {"name": "Insurance & Coverage", "count": 22},
-    "17b": {"name": "Risk Management & Fraud", "count": 41},
-    "17c": {"name": "Banking & Lending Platforms", "count": 31},
-    "17d": {"name": "Treasury & Capital Management", "count": 7},
-    "17d1": {"name": "Treasury Operations", "count": 3},
-    "17d2": {"name": "Capital Management", "count": 51},
-    "17e": {"name": "Retirement Plans & Admin", "count": 14},
-    "17e1": {"name": "401k & Defined Contribution", "count": 11},
-    "17e2": {"name": "IRA & Individual Retirement", "count": 4},
-    "17f": {"name": "Benefits Administration", "count": 3},
-    "17g": {"name": "Investment & Asset Management", "count": 25},
-    "17h": {"name": "Risk Infrastructure", "count": 1},
-    "17k": {"name": "Account & Wallet Management", "count": 3},
-    "17m": {"name": "Custody Services", "count": 5},
-    "17n": {"name": "Settlement & Clearing Infra", "count": 4},
-    "17o": {"name": "Banking Operations", "count": 5},
-    "17p": {"name": "Digital Banking Charters", "count": 9}
+    "17a": {
+      "name": "Insurance & Coverage",
+      "count": 22
+    },
+    "17b": {
+      "name": "Risk Management & Fraud",
+      "count": 41
+    },
+    "17c": {
+      "name": "Banking & Lending Platforms",
+      "count": 31
+    },
+    "17d": {
+      "name": "Treasury & Capital Management",
+      "count": 7
+    },
+    "17d1": {
+      "name": "Treasury Operations",
+      "count": 3
+    },
+    "17d2": {
+      "name": "Capital Management",
+      "count": 51
+    },
+    "17e": {
+      "name": "Retirement Plans & Admin",
+      "count": 14
+    },
+    "17e1": {
+      "name": "401k & Defined Contribution",
+      "count": 11
+    },
+    "17e2": {
+      "name": "IRA & Individual Retirement",
+      "count": 4
+    },
+    "17f": {
+      "name": "Benefits Administration",
+      "count": 3
+    },
+    "17g": {
+      "name": "Investment & Asset Management",
+      "count": 25
+    },
+    "17h": {
+      "name": "Risk Infrastructure",
+      "count": 1
+    },
+    "17k": {
+      "name": "Account & Wallet Management",
+      "count": 3
+    },
+    "17m": {
+      "name": "Custody Services",
+      "count": 5
+    },
+    "17n": {
+      "name": "Settlement & Clearing Infra",
+      "count": 4
+    },
+    "17o": {
+      "name": "Banking Operations",
+      "count": 5
+    },
+    "17p": {
+      "name": "Digital Banking Charters",
+      "count": 9
+    }
   },
   "18": {
-    "18a": {"name": "Water Infrastructure", "count": 14},
-    "18a1": {"name": "Water DePIN Systems", "count": 1},
-    "18a2": {"name": "Water Treatment & Compliance", "count": 3},
-    "18b": {"name": "Climate & Carbon Solutions", "count": 4},
-    "18b1": {"name": "Energy DePIN Systems", "count": 6},
-    "18c": {"name": "IoT & Environmental Monitoring", "count": 27},
-    "18c1": {"name": "Air Quality DePIN Systems", "count": 1},
-    "18d": {"name": "Industrial IoT & Supply Chain", "count": 5}
+    "18a": {
+      "name": "Water Infrastructure",
+      "count": 14
+    },
+    "18a1": {
+      "name": "Water DePIN Systems",
+      "count": 1
+    },
+    "18a2": {
+      "name": "Water Treatment & Compliance",
+      "count": 3
+    },
+    "18b": {
+      "name": "Climate & Carbon Solutions",
+      "count": 4
+    },
+    "18b1": {
+      "name": "Energy DePIN Systems",
+      "count": 6
+    },
+    "18c": {
+      "name": "IoT & Environmental Monitoring",
+      "count": 27
+    },
+    "18c1": {
+      "name": "Air Quality DePIN Systems",
+      "count": 1
+    },
+    "18d": {
+      "name": "Industrial IoT & Supply Chain",
+      "count": 5
+    }
   },
   "19": {
-    "19a": {"name": "Medical Infrastructure & Systems", "count": 16},
-    "19b": {"name": "Clinical & Patient Services", "count": 14},
-    "19c": {"name": "Healthcare Compliance & Identity", "count": 9},
-    "19d": {"name": "Healthcare Finance & Benefits", "count": 1}
+    "19a": {
+      "name": "Medical Infrastructure & Systems",
+      "count": 16
+    },
+    "19b": {
+      "name": "Clinical & Patient Services",
+      "count": 14
+    },
+    "19c": {
+      "name": "Healthcare Compliance & Identity",
+      "count": 9
+    },
+    "19d": {
+      "name": "Healthcare Finance & Benefits",
+      "count": 1
+    }
   },
   "20": {
-    "20a": {"name": "Educational Platforms & Learning", "count": 6},
-    "20b": {"name": "Credentials & Verification", "count": 8},
-    "20c": {"name": "Academic Identity & Documentation", "count": 2}
+    "20a": {
+      "name": "Educational Platforms & Learning",
+      "count": 6
+    },
+    "20b": {
+      "name": "Credentials & Verification",
+      "count": 8
+    },
+    "20c": {
+      "name": "Academic Identity & Documentation",
+      "count": 2
+    }
   },
   "21": {
-    "21a": {"name": "Asset Tokenization & Management", "count": 39},
-    "21b": {"name": "Real Estate & Property Tech", "count": 15},
-    "21c": {"name": "RWA Infrastructure & Workflows", "count": 43},
-    "21d": {"name": "Rental & Leasing Infrastructure", "count": 13},
-    "21e": {"name": "Property Management", "count": 1},
-    "21f": {"name": "Transportation & Mobility RWAs", "count": 3}
+    "21a": {
+      "name": "Asset Tokenization & Management",
+      "count": 39
+    },
+    "21b": {
+      "name": "Real Estate & Property Tech",
+      "count": 15
+    },
+    "21c": {
+      "name": "RWA Infrastructure & Workflows",
+      "count": 43
+    },
+    "21d": {
+      "name": "Rental & Leasing Infrastructure",
+      "count": 13
+    },
+    "21e": {
+      "name": "Property Management",
+      "count": 1
+    },
+    "21f": {
+      "name": "Transportation & Mobility RWAs",
+      "count": 3
+    }
   },
   "22": {
-    "22a": {"name": "Luxury & Premium Brands", "count": 20},
-    "22b": {"name": "Suite/Platform Generic Terms", "count": 29},
-    "22c": {"name": "Wealth & Finance Generics", "count": 8}
+    "22a": {
+      "name": "Luxury & Premium Brands",
+      "count": 20
+    },
+    "22b": {
+      "name": "Suite/Platform Generic Terms",
+      "count": 29
+    },
+    "22c": {
+      "name": "Wealth & Finance Generics",
+      "count": 8
+    }
   },
   "23": {
-    "23a": {"name": "AI/Agentic Convergence", "count": 5},
-    "23b": {"name": "Omnichain Infrastructure", "count": 43},
-    "23c": {"name": "Post-Quantum & Advanced Crypto", "count": 7},
-    "23d": {"name": "AGI & Advanced AI Systems", "count": 7},
-    "23e": {"name": "Consumer Crypto & Travel", "count": 10},
-    "23f": {"name": "ERC Standards & New Protocols", "count": 15}
+    "23a": {
+      "name": "AI/Agentic Convergence",
+      "count": 5
+    },
+    "23b": {
+      "name": "Omnichain Infrastructure",
+      "count": 43
+    },
+    "23c": {
+      "name": "Post-Quantum & Advanced Crypto",
+      "count": 7
+    },
+    "23d": {
+      "name": "AGI & Advanced AI Systems",
+      "count": 7
+    },
+    "23e": {
+      "name": "Consumer Crypto & Travel",
+      "count": 10
+    },
+    "23f": {
+      "name": "ERC Standards & New Protocols",
+      "count": 15
+    }
   },
   "24": {
-    "24a": {"name": "Sports & Gaming", "count": 13},
-    "24b": {"name": "Lifestyle & Wellness", "count": 15},
-    "24c": {"name": "Food & Beverage", "count": 11},
-    "24d": {"name": "Automotive & Transportation", "count": 8},
-    "24e": {"name": "Jewelry & Luxury Goods", "count": 22},
-    "24f": {"name": "Brand & Vanity Terms", "count": 33},
-    "24g": {"name": "Transfer Infrastructure", "count": 0},
-    "24h": {"name": "General Utilities", "count": 2}
+    "24a": {
+      "name": "Sports & Gaming",
+      "count": 13
+    },
+    "24b": {
+      "name": "Lifestyle & Wellness",
+      "count": 15
+    },
+    "24c": {
+      "name": "Food & Beverage",
+      "count": 11
+    },
+    "24d": {
+      "name": "Automotive & Transportation",
+      "count": 8
+    },
+    "24e": {
+      "name": "Jewelry & Luxury Goods",
+      "count": 22
+    },
+    "24f": {
+      "name": "Brand & Vanity Terms",
+      "count": 33
+    },
+    "24g": {
+      "name": "Transfer Infrastructure",
+      "count": 0
+    },
+    "24h": {
+      "name": "General Utilities",
+      "count": 2
+    }
   },
   "25": {
-    "25a": {"name": "Compute & Storage DePIN", "count": 10},
-    "25b": {"name": "Wireless & Connectivity DePIN", "count": 5},
-    "25c": {"name": "Mobility & Transportation DePIN", "count": 4},
-    "25d": {"name": "Energy & Power DePIN", "count": 5},
-    "25e": {"name": "Environmental Sensors DePIN", "count": 4},
-    "25f": {"name": "Data & Bandwidth Markets", "count": 4},
-    "25g": {"name": "DePIN Coordination & Tokenomics", "count": 5},
-    "25h": {"name": "Physical Infrastructure Protocols", "count": 15},
-    "25i": {"name": "Aviation & Airspace DePIN", "count": 2}
+    "25a": {
+      "name": "Compute & Storage DePIN",
+      "count": 10
+    },
+    "25b": {
+      "name": "Wireless & Connectivity DePIN",
+      "count": 5
+    },
+    "25c": {
+      "name": "Mobility & Transportation DePIN",
+      "count": 4
+    },
+    "25d": {
+      "name": "Energy & Power DePIN",
+      "count": 5
+    },
+    "25e": {
+      "name": "Environmental Sensors DePIN",
+      "count": 4
+    },
+    "25f": {
+      "name": "Data & Bandwidth Markets",
+      "count": 4
+    },
+    "25g": {
+      "name": "DePIN Coordination & Tokenomics",
+      "count": 5
+    },
+    "25h": {
+      "name": "Physical Infrastructure Protocols",
+      "count": 15
+    },
+    "25i": {
+      "name": "Aviation & Airspace DePIN",
+      "count": 2
+    }
   },
   "26": {
-    "26a": {"name": "Bridge Protocols", "count": 4},
-    "26b": {"name": "Cross-chain Messaging", "count": 10},
-    "26c": {"name": "Chain Abstraction", "count": 3},
-    "26d": {"name": "Omnichain Infrastructure", "count": 17},
-    "26e": {"name": "Cross-chain Liquidity", "count": 6},
-    "26f": {"name": "Interoperability Standards", "count": 4},
-    "26g": {"name": "Cross-chain Identity", "count": 5},
-    "26h": {"name": "Multi-chain Governance", "count": 2}
+    "26a": {
+      "name": "Bridge Protocols",
+      "count": 4
+    },
+    "26b": {
+      "name": "Cross-chain Messaging",
+      "count": 10
+    },
+    "26c": {
+      "name": "Chain Abstraction",
+      "count": 3
+    },
+    "26d": {
+      "name": "Omnichain Infrastructure",
+      "count": 17
+    },
+    "26e": {
+      "name": "Cross-chain Liquidity",
+      "count": 6
+    },
+    "26f": {
+      "name": "Interoperability Standards",
+      "count": 4
+    },
+    "26g": {
+      "name": "Cross-chain Identity",
+      "count": 5
+    },
+    "26h": {
+      "name": "Multi-chain Governance",
+      "count": 2
+    }
   },
   "27": {
-    "27a": {"name": "Supply Chain Tracking & Provenance", "count": 11},
-    "27b": {"name": "Trade Finance & Letters of Credit", "count": 2},
-    "27c": {"name": "Freight & Logistics", "count": 8},
-    "27d": {"name": "Customs & Compliance", "count": 3},
-    "27e": {"name": "Inventory & Warehouse Management", "count": 2},
-    "27f": {"name": "Supplier & Vendor Management", "count": 8}
+    "27a": {
+      "name": "Supply Chain Tracking & Provenance",
+      "count": 11
+    },
+    "27b": {
+      "name": "Trade Finance & Letters of Credit",
+      "count": 2
+    },
+    "27c": {
+      "name": "Freight & Logistics",
+      "count": 8
+    },
+    "27d": {
+      "name": "Customs & Compliance",
+      "count": 3
+    },
+    "27e": {
+      "name": "Inventory & Warehouse Management",
+      "count": 2
+    },
+    "27f": {
+      "name": "Supplier & Vendor Management",
+      "count": 8
+    }
   },
   "28": {
-    "28a": {"name": "Crypto Payments at Point of Sale", "count": 4},
-    "28b": {"name": "E-commerce & Shopping", "count": 6},
-    "28c": {"name": "Consumer Loyalty & Rewards", "count": 4},
-    "28d": {"name": "Consumer Identity & Wallets", "count": 5},
-    "28e": {"name": "Retail Finance & BNPL", "count": 7}
+    "28a": {
+      "name": "Crypto Payments at Point of Sale",
+      "count": 4
+    },
+    "28b": {
+      "name": "E-commerce & Shopping",
+      "count": 6
+    },
+    "28c": {
+      "name": "Consumer Loyalty & Rewards",
+      "count": 4
+    },
+    "28d": {
+      "name": "Consumer Identity & Wallets",
+      "count": 5
+    },
+    "28e": {
+      "name": "Retail Finance & BNPL",
+      "count": 7
+    }
   },
   "29": {
-    "29a": {"name": "AI Model Auditing & Safety", "count": 4},
-    "29b": {"name": "AI Governance & Policy", "count": 8},
-    "29c": {"name": "Responsible AI Infrastructure", "count": 5},
-    "29d": {"name": "AI Transparency & Explainability", "count": 7},
-    "29e": {"name": "AI Risk Assessment", "count": 3}
+    "29a": {
+      "name": "AI Model Auditing & Safety",
+      "count": 4
+    },
+    "29b": {
+      "name": "AI Governance & Policy",
+      "count": 8
+    },
+    "29c": {
+      "name": "Responsible AI Infrastructure",
+      "count": 5
+    },
+    "29d": {
+      "name": "AI Transparency & Explainability",
+      "count": 7
+    },
+    "29e": {
+      "name": "AI Risk Assessment",
+      "count": 3
+    }
   },
   "30": {
-    "30a": {"name": "Satellite Data & Infrastructure", "count": 5},
-    "30b": {"name": "Aerospace DePIN", "count": 4},
-    "30c": {"name": "Scientific Compute & Research", "count": 7},
-    "30d": {"name": "Deep Tech Protocols", "count": 3}
+    "30a": {
+      "name": "Satellite Data & Infrastructure",
+      "count": 5
+    },
+    "30b": {
+      "name": "Aerospace DePIN",
+      "count": 4
+    },
+    "30c": {
+      "name": "Scientific Compute & Research",
+      "count": 7
+    },
+    "30d": {
+      "name": "Deep Tech Protocols",
+      "count": 3
+    }
   }
 };
