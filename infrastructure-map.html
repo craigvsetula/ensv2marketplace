@@ -4,32 +4,44 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ENS Infrastructure Map — ENSv2 Marketplace™</title>
-<meta name="description" content="Visual map of the ENSv2 Marketplace namespace stack — 30 categories, 260+ subcategories, 2,500+ protocol-grade ENS domains organized by infrastructure layer.">
+<meta name="description" content="A curated map of the ENS namespace layer — 2,500+ protocol-grade ENS domains organized across 30 infrastructure verticals. ENSv2 Marketplace™.">
 <link rel="canonical" href="https://www.ensv2marketplace.com/infrastructure-map.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0b0c10;
+  --bg2: #0d0f16;
   --card: #12151d;
   --edge: #1c2230;
-  --text: #e6e6e6;
-  --muted: #9aa0a6;
+  --edge2: #252a3e;
+  --text: #d8dde8;
+  --muted: #7a8299;
   --accent: #b8964f;
-  --accent-dim: rgba(184,150,79,0.12);
-  --accent-glow: rgba(184,150,79,0.25);
-  --layer-l1: #1a2540;
-  --layer-l2: #1a2832;
-  --layer-app: #1f1a2e;
-  --layer-ent: #2a1f1a;
+  --accent-dim: rgba(184,150,79,0.10);
+  --accent-glow: rgba(184,150,79,0.20);
+  --accent-line: rgba(184,150,79,0.35);
+  --green: #3dd68c;
+  --blue: #4fa8ff;
+  --purple: #9b7fff;
+  --teal: #3fd6cc;
+  --red: #ff7f7f;
+  --mono: 'IBM Plex Mono', monospace;
+  --display: 'Syne', sans-serif;
+  --body: 'Inter', sans-serif;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font: 15px/1.6 'Segoe UI', system-ui, -apple-system, sans-serif;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:var(--bg)}
+body{color:var(--text);font-family:var(--body);font-size:15px;line-height:1.6}
 
-/* ── Header (matches site) ── */
+/* NAV */
+nav{background:#0d0f14;border-bottom:1px solid #1a1f2e}
+nav .wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:24px;padding:16px 20px;flex-wrap:wrap}
+nav a{color:#b8c5d6;text-decoration:none;font-weight:600;font-size:15px;transition:color .2s,transform .2s;display:inline-block}
+nav a:hover{color:#fff;transform:translateY(-2px)}
+nav a.active{color:var(--accent)}
+
+/* HEADER */
 header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
 .wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
 header .wrap{display:flex;flex-direction:column;align-items:center}
@@ -40,242 +52,133 @@ header .wrap{display:flex;flex-direction:column;align-items:center}
 .brandblock{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
 .tagline{font-size:18px;color:#dffbff;text-shadow:0 0 12px rgba(109,247,255,.45)}
 
-/* ── Nav (matches site) ── */
-nav { background: #0d0f14; border-bottom: 1px solid #1a1f2e; }
-nav .wrap {
-  max-width: 1200px; margin: 0 auto;
-  display: flex; justify-content: center; align-items: center;
-  gap: 24px; padding: 16px 20px;
+/* HERO */
+.hero{
+  padding:72px 20px 56px;text-align:center;
+  background:radial-gradient(ellipse 70% 50% at 50% 0%, rgba(184,150,79,0.07) 0%, transparent 70%);
+  border-bottom:1px solid var(--edge);position:relative;overflow:hidden;
 }
-nav a {
-  color: #b8c5d6; text-decoration: none; font-weight: 600;
-  font-size: 15px; transition: color 0.2s, transform 0.2s; display: inline-block;
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 30 L60 30 M30 0 L30 60' stroke='%231c2230' stroke-width='0.5'/%3E%3C/svg%3E");
+  opacity:0.5;pointer-events:none;
 }
-nav a:hover { color: #fff; transform: translateY(-2px); }
-nav a.active { color: var(--accent); }
+.hero-eyebrow{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.hero h1{font-family:var(--display);font-size:clamp(30px,5vw,52px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{font-size:17px;color:var(--muted);max-width:600px;margin:0 auto 40px;line-height:1.7}
+.hero-sub strong{color:var(--text)}
+.hero-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-family:var(--mono);font-size:30px;font-weight:700;color:var(--accent)}
+.stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px}
 
-/* ── Hero ── */
-.hero {
-  text-align: center;
-  padding: 64px 20px 48px;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,150,79,0.07) 0%, transparent 70%);
-  border-bottom: 1px solid var(--edge);
-}
-.hero-label {
-  font-size: 11px; font-weight: 700; letter-spacing: 3px;
-  text-transform: uppercase; color: var(--accent);
-  margin-bottom: 16px;
-}
-.hero h1 {
-  font-size: clamp(28px, 5vw, 48px); font-weight: 800;
-  line-height: 1.15; color: #fff; margin-bottom: 16px;
-}
-.hero h1 span { color: var(--accent); }
-.hero p {
-  font-size: 17px; color: var(--muted); max-width: 600px;
-  margin: 0 auto 32px;
-}
-.hero-stats {
-  display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
-}
-.stat { text-align: center; }
-.stat-num { font-size: 28px; font-weight: 800; color: var(--accent); }
-.stat-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+/* SECTION HEADS */
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-eyebrow{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.sec-head h2{font-family:var(--display);font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff}
+.sec-head p{color:var(--muted);font-size:15px;max-width:580px;margin:10px auto 0}
 
-/* ── Stack Diagram ── */
-.stack-section {
-  max-width: 1100px; margin: 0 auto;
-  padding: 56px 20px 16px;
+/* STACK MAP */
+.stack-section{max-width:1100px;margin:0 auto;padding:72px 20px 0}
+.stack-diagram{display:flex;flex-direction:column;gap:4px;position:relative}
+.stack-diagram::before{
+  content:'';position:absolute;left:116px;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,transparent,var(--edge2) 8%,var(--edge2) 92%,transparent);
+  pointer-events:none;
 }
-.stack-section h2 {
-  font-size: 13px; font-weight: 700; letter-spacing: 3px;
-  text-transform: uppercase; color: var(--accent);
-  text-align: center; margin-bottom: 40px;
-}
-.stack {
-  display: flex; flex-direction: column; gap: 6px;
-}
-.stack-row {
-  display: flex; align-items: stretch; gap: 6px; min-height: 60px;
-}
-.stack-label {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 10px; font-weight: 700; letter-spacing: 2px;
-  text-transform: uppercase; color: var(--muted);
-  min-width: 28px; display: flex; align-items: center; justify-content: center;
-  border-right: 2px solid var(--edge);
-  padding-right: 8px;
-}
-.stack-tiles {
-  display: flex; flex-wrap: wrap; gap: 6px; flex: 1; align-content: center;
-}
-.stack-tile {
-  background: var(--card);
-  border: 1px solid var(--edge);
-  border-radius: 6px;
-  padding: 10px 14px;
-  font-size: 13px; font-weight: 600;
-  color: #cdd5e0;
-  cursor: pointer;
-  transition: all 0.2s;
-  display: flex; align-items: center; gap: 8px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.stack-tile:hover {
-  border-color: var(--accent);
-  color: #fff;
-  background: var(--accent-dim);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px var(--accent-glow);
-}
-.stack-tile .tile-icon { font-size: 15px; }
-.stack-tile .tile-count {
-  font-size: 10px; font-weight: 700;
-  background: rgba(255,255,255,0.06);
-  border-radius: 4px; padding: 2px 6px;
-  color: var(--muted); margin-left: auto;
-}
-.stack-tile.s-tier {
-  border-color: rgba(184,150,79,0.4);
-}
-.stack-tile.s-tier .tile-count {
-  background: var(--accent-dim);
-  color: var(--accent);
-}
+.stack-layer{display:flex;align-items:stretch;gap:0;animation:fadeUp .5s ease both}
+.stack-layer:nth-child(1){animation-delay:.05s}
+.stack-layer:nth-child(2){animation-delay:.10s}
+.stack-layer:nth-child(3){animation-delay:.15s}
+.stack-layer:nth-child(4){animation-delay:.20s}
+.stack-layer:nth-child(5){animation-delay:.25s}
+.stack-layer:nth-child(6){animation-delay:.30s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 
-/* Row background tints */
-.row-substrate .stack-tile { background: #0f1520; }
-.row-l1 .stack-tile { background: #101825; }
-.row-l2 .stack-tile { background: #0f1c1f; }
-.row-app .stack-tile { background: #15101e; }
-.row-ent .stack-tile { background: #1a120f; }
+.layer-label{width:116px;min-width:116px;display:flex;align-items:center;justify-content:flex-end;padding-right:20px;position:relative}
+.layer-tag{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);text-align:right}
+.layer-dot{width:9px;height:9px;border-radius:50%;border:2px solid;position:absolute;right:-5px;top:50%;transform:translateY(-50%);background:var(--bg);flex-shrink:0}
+.ld-sub{border-color:var(--accent);box-shadow:0 0 8px var(--accent-glow)}
+.ld-l1{border-color:var(--blue)}
+.ld-l2{border-color:var(--teal)}
+.ld-proto{border-color:var(--purple)}
+.ld-id{border-color:var(--red)}
+.ld-ent{border-color:var(--green)}
 
-/* ── Category Grid ── */
-.grid-section {
-  max-width: 1200px; margin: 0 auto;
-  padding: 64px 20px;
+.layer-content{
+  flex:1;border:1px solid var(--edge);border-left:3px solid;border-radius:0 8px 8px 0;
+  padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px;align-content:center;
+  background:var(--card);transition:box-shadow .2s;margin:3px 0;
 }
-.grid-section > h2 {
-  font-size: 13px; font-weight: 700; letter-spacing: 3px;
-  text-transform: uppercase; color: var(--accent);
-  text-align: center; margin-bottom: 8px;
-}
-.grid-section > p {
-  text-align: center; color: var(--muted); font-size: 15px;
-  margin-bottom: 48px;
-}
-.cat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 16px;
-}
-.cat-card {
-  background: var(--card);
-  border: 1px solid var(--edge);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.cat-card:hover {
-  border-color: rgba(184,150,79,0.35);
-  box-shadow: 0 0 24px rgba(184,150,79,0.08);
-}
-.cat-header {
-  display: flex; align-items: center; gap: 12px;
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--edge);
-  cursor: pointer;
-  user-select: none;
-}
-.cat-icon { font-size: 20px; }
-.cat-title { font-weight: 700; font-size: 15px; color: #fff; flex: 1; }
-.cat-meta { font-size: 12px; color: var(--muted); text-align: right; }
-.cat-meta strong { color: var(--accent); font-size: 16px; display: block; }
-.cat-body { padding: 12px 20px 16px; }
-.sub-list {
-  display: flex; flex-wrap: wrap; gap: 6px;
-}
-.sub-tag {
-  font-size: 12px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 4px;
-  padding: 3px 8px;
-  color: #9aa5b4;
-  transition: all 0.15s;
-}
-.sub-tag:hover {
-  background: var(--accent-dim);
-  border-color: rgba(184,150,79,0.3);
-  color: var(--accent);
-}
-.sub-tag .sub-count {
-  color: rgba(255,255,255,0.3);
-  margin-left: 4px;
-  font-size: 10px;
-}
+.layer-content:hover{box-shadow:0 0 28px rgba(0,0,0,.5)}
+.lc-sub{border-left-color:var(--accent)}
+.lc-l1{border-left-color:var(--blue)}
+.lc-l2{border-left-color:var(--teal)}
+.lc-proto{border-left-color:var(--purple)}
+.lc-id{border-left-color:var(--red)}
+.lc-ent{border-left-color:var(--green)}
 
-/* ── S-tier callout ── */
-.stier-section {
-  max-width: 1100px; margin: 0 auto;
-  padding: 0 20px 64px;
+.ns-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.04);border:1px solid var(--edge2);
+  border-radius:5px;padding:6px 10px;font-size:12px;font-weight:600;color:#b0bac8;
+  text-decoration:none;transition:all .15s;white-space:nowrap;
 }
-.stier-section h2 {
-  font-size: 13px; font-weight: 700; letter-spacing: 3px;
-  text-transform: uppercase; color: var(--accent);
-  text-align: center; margin-bottom: 8px;
-}
-.stier-section p {
-  text-align: center; color: var(--muted); font-size: 15px;
-  margin-bottom: 32px;
-}
-.stier-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-}
-.stier-chip {
-  background: linear-gradient(135deg, rgba(184,150,79,0.1), rgba(184,150,79,0.04));
-  border: 1px solid rgba(184,150,79,0.3);
-  border-radius: 8px;
-  padding: 12px 16px;
-  text-align: center;
-}
-.stier-name {
-  font-size: 14px; font-weight: 700; color: var(--accent);
-  font-family: 'Courier New', monospace;
-}
-.stier-label { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.ns-chip:hover{background:var(--accent-dim);border-color:var(--accent-line);color:#fff;transform:translateY(-1px)}
+.ns-chip .ic{font-size:13px}
+.ns-chip .cnt{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--muted);background:rgba(0,0,0,.3);border-radius:3px;padding:1px 5px}
+.ns-chip.prim{border-color:rgba(184,150,79,0.4);background:rgba(184,150,79,0.06)}
+.ns-chip.prim .cnt{color:var(--accent);background:rgba(184,150,79,0.12)}
 
-/* ── CTA ── */
-.cta-section {
-  text-align: center;
-  padding: 64px 20px;
-  background: linear-gradient(0deg, rgba(184,150,79,0.05) 0%, transparent 100%);
-  border-top: 1px solid var(--edge);
-}
-.cta-section h2 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 12px; }
-.cta-section p { color: var(--muted); font-size: 16px; margin-bottom: 28px; }
-.btn-primary {
-  display: inline-block;
-  background: var(--accent);
-  color: #0b0c10;
-  font-weight: 700; font-size: 15px;
-  padding: 14px 32px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
-}
-.btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+/* NAMESPACE AUTHORITY */
+.authority-section{max-width:1100px;margin:0 auto;padding:80px 20px 0}
+.authority-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.auth-card{background:var(--card);border:1px solid var(--edge);border-radius:10px;padding:20px;position:relative;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.auth-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-line),transparent)}
+.auth-card:hover{border-color:var(--edge2);box-shadow:0 0 32px rgba(184,150,79,0.06)}
+.auth-label{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.auth-label::after{content:'';flex:1;height:1px;background:var(--edge)}
+.auth-names{display:flex;flex-direction:column;gap:6px}
+.auth-name{display:flex;align-items:center;gap:10px;padding:8px 10px;background:rgba(255,255,255,0.025);border:1px solid var(--edge);border-radius:6px}
+.auth-name .ens{font-family:var(--mono);font-size:13px;font-weight:600;color:#e8c97a;flex:1}
+.auth-name .role{font-size:11px;color:var(--muted);white-space:nowrap}
 
-footer {
-  text-align: center;
-  padding: 24px;
-  border-top: 1px solid var(--edge);
-  color: var(--muted);
-  font-size: 13px;
+/* CATEGORY GRID */
+.grid-section{max-width:1200px;margin:0 auto;padding:80px 20px}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+.cat-card{background:var(--card);border:1px solid var(--edge);border-radius:10px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.cat-card:hover{border-color:var(--edge2);box-shadow:0 4px 24px rgba(0,0,0,.4)}
+.cat-header{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--edge)}
+.cat-icon{font-size:18px}
+.cat-title{font-weight:700;font-size:14px;color:#fff;flex:1}
+.cat-count{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--accent);background:var(--accent-dim);border-radius:5px;padding:2px 8px;white-space:nowrap}
+.cat-body{padding:12px 18px 14px}
+.sub-list{display:flex;flex-wrap:wrap;gap:5px}
+.sub-tag{font-size:11px;font-family:var(--mono);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:4px;padding:3px 7px;color:#7a8599;transition:all .15s}
+.sub-tag:hover{background:var(--accent-dim);border-color:var(--accent-line);color:var(--accent)}
+
+/* DIVIDER */
+.spacer{height:1px;background:linear-gradient(90deg,transparent,var(--edge),transparent);margin:0 20px}
+
+/* CTA */
+.cta-section{text-align:center;padding:80px 20px;border-top:1px solid var(--edge);background:radial-gradient(ellipse 60% 80% at 50% 100%,rgba(184,150,79,0.04) 0%,transparent 70%)}
+.cta-section h2{font-family:var(--display);font-size:clamp(24px,3vw,36px);font-weight:800;color:#fff;margin-bottom:12px}
+.cta-section p{color:var(--muted);font-size:16px;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-primary{display:inline-block;background:var(--accent);color:#0b0c10;font-weight:700;font-size:14px;letter-spacing:.5px;padding:14px 32px;border-radius:6px;text-decoration:none;transition:opacity .2s,transform .2s}
+.btn-primary:hover{opacity:.88;transform:translateY(-2px)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--edge);padding:24px 20px;text-align:center}
+footer p{color:var(--muted);font-size:13px;line-height:1.8}
+footer a{color:var(--accent);text-decoration:none}
+
+@media(max-width:640px){
+  .stack-diagram::before{left:70px}
+  .layer-label{width:70px;min-width:70px}
+  .layer-tag{font-size:9px}
+  nav .wrap{gap:14px}
+  nav a{font-size:13px}
 }
 </style>
 </head>
@@ -318,7 +221,7 @@ footer {
             <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
           </div>
           <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">Marketplace</h2>
-          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Official Enterprise-grade Real World utility ENS domains</div>
+          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Curated ENS Infrastructure Namespaces</div>
           <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">ENSv2 Hierarchical Subdomain System Coming 2026</div>
           <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
         </div>
@@ -330,521 +233,614 @@ footer {
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-label">ENSv2 Marketplace™</div>
-  <h1>The <span>ENS Infrastructure</span> Map</h1>
-  <p>2,500+ protocol-grade namespace domains organized by infrastructure layer — from substrate primitives to enterprise applications.</p>
+  <div class="hero-eyebrow">ENS Namespace Registry</div>
+  <h1>The Web3 <em>Infrastructure</em> Layer</h1>
+  <p class="hero-sub">
+    <strong>2,500+ protocol-grade ENS namespaces</strong> organized across 30 infrastructure verticals — from substrate primitives to enterprise applications. Purpose-built for ENSv2 subdomain leasing.
+  </p>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-num">2,500+</div><div class="stat-label">Domains</div></div>
-    <div class="stat"><div class="stat-num">30</div><div class="stat-label">Categories</div></div>
+    <div class="stat"><div class="stat-num">2,500+</div><div class="stat-label">Namespaces</div></div>
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">Verticals</div></div>
     <div class="stat"><div class="stat-num">260+</div><div class="stat-label">Subcategories</div></div>
     <div class="stat"><div class="stat-num">15</div><div class="stat-label">Scoring Tiers</div></div>
   </div>
 </section>
 
-<!-- Stack Diagram -->
+<!-- STACK MAP -->
 <section class="stack-section">
-  <h2>Protocol Stack View</h2>
-  <div class="stack">
+  <div class="sec-head">
+    <div class="sec-eyebrow">System Architecture</div>
+    <h2>Web3 Infrastructure Stack</h2>
+    <p>Every namespace maps to a layer in the protocol stack. This is what we control.</p>
+  </div>
+  <div class="stack-diagram">
 
-    <div class="stack-row row-substrate">
-      <div class="stack-label">Substrate</div>
-      <div class="stack-tiles">
-        <a class="stack-tile s-tier" href="categories.html#2z0"><span class="tile-icon">🌐</span>Layer Root Primitives<span class="tile-count">2z0 · 2</span></a>
-        <a class="stack-tile s-tier" href="categories.html#6p0"><span class="tile-icon">⚖️</span>Enforcement Root Primitives<span class="tile-count">6p0 · 3</span></a>
-        <a class="stack-tile s-tier" href="categories.html#17e0"><span class="tile-icon">🏦</span>IRA Root Primitives<span class="tile-count">17e0 · 3</span></a>
-        <a class="stack-tile s-tier" href="categories.html#21f0"><span class="tile-icon">🚗</span>Mobility Root Primitives<span class="tile-count">21f0 · 2</span></a>
-        <a class="stack-tile s-tier" href="categories.html#2b0"><span class="tile-icon">⚡</span>Based Root Primitives<span class="tile-count">2b0 · 2</span></a>
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">Substrate</div><div class="layer-dot ld-sub"></div></div>
+      <div class="layer-content lc-sub">
+        <a class="ns-chip prim" href="categories.html#2z0"><span class="ic">🌐</span>Layer Root Primitives<span class="cnt">2z0 · 2</span></a>
+        <a class="ns-chip prim" href="categories.html#6p0"><span class="ic">⚖️</span>Enforcement Root Primitives<span class="cnt">6p0 · 3</span></a>
+        <a class="ns-chip prim" href="categories.html#17e0"><span class="ic">🏦</span>IRA Root Primitives<span class="cnt">17e0 · 5</span></a>
+        <a class="ns-chip prim" href="categories.html#21f0"><span class="ic">🚗</span>Mobility Root Primitives<span class="cnt">21f0 · 2</span></a>
+        <a class="ns-chip prim" href="categories.html#2b0"><span class="ic">⚡</span>Based Root Primitives<span class="cnt">2b0 · 2</span></a>
+        <a class="ns-chip prim" href="categories.html#6t"><span class="ic">🔐</span>Auth &amp; Authorization Infra<span class="cnt">6t/6u/6w · 37</span></a>
       </div>
     </div>
 
-    <div class="stack-row row-l1">
-      <div class="stack-label">L1 / Core</div>
-      <div class="stack-tiles">
-        <a class="stack-tile" href="categories.html#2a"><span class="tile-icon">🔗</span>Layer 1 Protocols<span class="tile-count">2a · 16</span></a>
-        <a class="stack-tile" href="categories.html#2c"><span class="tile-icon">🖥️</span>Validators & Nodes<span class="tile-count">2c · 51</span></a>
-        <a class="stack-tile" href="categories.html#2d"><span class="tile-icon">🛡️</span>Consensus & Security<span class="tile-count">2d · 4</span></a>
-        <a class="stack-tile" href="categories.html#2g"><span class="tile-icon">⛏️</span>MEV & Block Building<span class="tile-count">2g · 2</span></a>
-        <a class="stack-tile" href="categories.html#2k"><span class="tile-icon">🔏</span>Censorship Resistance<span class="tile-count">2k · 1</span></a>
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">L1 · Core</div><div class="layer-dot ld-l1"></div></div>
+      <div class="layer-content lc-l1">
+        <a class="ns-chip" href="categories.html#2a"><span class="ic">🔗</span>Layer 1 Protocols<span class="cnt">2a · 16</span></a>
+        <a class="ns-chip" href="categories.html#2c"><span class="ic">🖥️</span>Validators &amp; Nodes<span class="cnt">2c · 51</span></a>
+        <a class="ns-chip" href="categories.html#2d"><span class="ic">🛡️</span>Consensus &amp; Security<span class="cnt">2d · 4</span></a>
+        <a class="ns-chip" href="categories.html#2f"><span class="ic">📡</span>Network Services<span class="cnt">2f · 18</span></a>
+        <a class="ns-chip" href="categories.html#2f1"><span class="ic">🔌</span>RPC Provider Services<span class="cnt">2f1 · 4</span></a>
+        <a class="ns-chip" href="categories.html#2g"><span class="ic">⛏️</span>MEV &amp; Block Building<span class="cnt">2g · 2</span></a>
+        <a class="ns-chip" href="categories.html#2k"><span class="ic">🔏</span>Censorship Resistance<span class="cnt">2k · 1</span></a>
       </div>
     </div>
 
-    <div class="stack-row row-l2">
-      <div class="stack-label">L2 / Bridge</div>
-      <div class="stack-tiles">
-        <a class="stack-tile" href="categories.html#2b"><span class="tile-icon">📦</span>Layer 2 Solutions<span class="tile-count">2b · 23</span></a>
-        <a class="stack-tile" href="categories.html#2b1"><span class="tile-icon">🔁</span>Optimistic Rollups<span class="tile-count">2b1 · 5</span></a>
-        <a class="stack-tile" href="categories.html#2b2"><span class="tile-icon">🔐</span>ZK Rollups<span class="tile-count">2b2 · 6</span></a>
-        <a class="stack-tile" href="categories.html#2b3"><span class="tile-icon">⚡</span>Based Rollups<span class="tile-count">2b3 · 10</span></a>
-        <a class="stack-tile" href="categories.html#2b7"><span class="tile-icon">🔄</span>Sequencer Services<span class="tile-count">2b7 · 9</span></a>
-        <a class="stack-tile" href="categories.html#2e"><span class="tile-icon">🌉</span>Cross-chain & Bridges<span class="tile-count">2e · 33</span></a>
-        <a class="stack-tile" href="categories.html#2m"><span class="tile-icon">🔑</span>Account Abstraction<span class="tile-count">2m · 8</span></a>
-        <a class="stack-tile" href="categories.html#2h"><span class="tile-icon">🏗️</span>ENSv2 Infrastructure<span class="tile-count">2h · 44</span></a>
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">L2 · Bridge</div><div class="layer-dot ld-l2"></div></div>
+      <div class="layer-content lc-l2">
+        <a class="ns-chip" href="categories.html#2b"><span class="ic">📦</span>Layer 2 Solutions<span class="cnt">2b · 23</span></a>
+        <a class="ns-chip" href="categories.html#2b1"><span class="ic">🔁</span>Optimistic Rollups<span class="cnt">2b1 · 5</span></a>
+        <a class="ns-chip" href="categories.html#2b2"><span class="ic">🔐</span>ZK Rollups<span class="cnt">2b2 · 6</span></a>
+        <a class="ns-chip" href="categories.html#2b3"><span class="ic">⚡</span>Based Rollups<span class="cnt">2b3 · 10</span></a>
+        <a class="ns-chip" href="categories.html#2b5"><span class="ic">🏗️</span>L2 Infra &amp; Operations<span class="cnt">2b5 · 20</span></a>
+        <a class="ns-chip" href="categories.html#2b6"><span class="ic">🌊</span>Surge / Rollup-as-a-Service<span class="cnt">2b6 · 10</span></a>
+        <a class="ns-chip" href="categories.html#2b7"><span class="ic">🔄</span>Sequencer Services<span class="cnt">2b7 · 9</span></a>
+        <a class="ns-chip" href="categories.html#2b8"><span class="ic">💾</span>Data Availability Layer<span class="cnt">2b8 · 8</span></a>
+        <a class="ns-chip" href="categories.html#2e"><span class="ic">🌉</span>Cross-chain &amp; Bridges<span class="cnt">2e · 33</span></a>
+        <a class="ns-chip" href="categories.html#2m"><span class="ic">🔑</span>Account Abstraction<span class="cnt">2m · 8</span></a>
+        <a class="ns-chip" href="categories.html#2h"><span class="ic">🏗️</span>ENSv2 Infrastructure<span class="cnt">2h · 44</span></a>
+        <a class="ns-chip" href="categories.html#2p"><span class="ic">🖼️</span>Frame Transaction Infra<span class="cnt">2p · 8</span></a>
       </div>
     </div>
 
-    <div class="stack-row row-app">
-      <div class="stack-label">App Layer</div>
-      <div class="stack-tiles">
-        <a class="stack-tile" href="categories.html#1c"><span class="tile-icon">🤖</span>AI & Agents<span class="tile-count">Cat 1 · 200+</span></a>
-        <a class="stack-tile" href="categories.html#7a"><span class="tile-icon">🔒</span>Privacy & ZK<span class="tile-count">Cat 7 · 120+</span></a>
-        <a class="stack-tile" href="categories.html#8f"><span class="tile-icon">💸</span>Payments & DeFi<span class="tile-count">Cat 8 · 220+</span></a>
-        <a class="stack-tile" href="categories.html#9a"><span class="tile-icon">⛏️</span>Restaking & Staking<span class="tile-count">Cat 9 · 90+</span></a>
-        <a class="stack-tile" href="categories.html#5a"><span class="tile-icon">📊</span>Oracles & Data<span class="tile-count">Cat 5 · 65+</span></a>
-        <a class="stack-tile" href="categories.html#3o"><span class="tile-icon">🛠️</span>Developer Tools<span class="tile-count">Cat 3 · 310+</span></a>
-        <a class="stack-tile" href="categories.html#4a"><span class="tile-icon">📜</span>Smart Contracts<span class="tile-count">Cat 4 · 105+</span></a>
-        <a class="stack-tile" href="categories.html#12a"><span class="tile-icon">🗳️</span>Governance & DAOs<span class="tile-count">Cat 12 · 55+</span></a>
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">Protocol</div><div class="layer-dot ld-proto"></div></div>
+      <div class="layer-content lc-proto">
+        <a class="ns-chip" href="categories.html#1"><span class="ic">🤖</span>AI &amp; Agents<span class="cnt">Cat 1 · 214</span></a>
+        <a class="ns-chip" href="categories.html#7"><span class="ic">🔒</span>Privacy &amp; ZK<span class="cnt">Cat 7 · 118</span></a>
+        <a class="ns-chip" href="categories.html#8"><span class="ic">💸</span>Payments &amp; DeFi<span class="cnt">Cat 8 · 199</span></a>
+        <a class="ns-chip" href="categories.html#9"><span class="ic">⛏️</span>Restaking &amp; Staking<span class="cnt">Cat 9 · 77</span></a>
+        <a class="ns-chip" href="categories.html#5"><span class="ic">📊</span>Oracles &amp; Data<span class="cnt">Cat 5 · 72</span></a>
+        <a class="ns-chip" href="categories.html#3"><span class="ic">🛠️</span>Developer Tools<span class="cnt">Cat 3 · 309</span></a>
+        <a class="ns-chip" href="categories.html#4"><span class="ic">📜</span>Smart Contracts<span class="cnt">Cat 4 · 107</span></a>
+        <a class="ns-chip" href="categories.html#12"><span class="ic">🗳️</span>Governance &amp; DAOs<span class="cnt">Cat 12 · 56</span></a>
+        <a class="ns-chip" href="categories.html#10"><span class="ic">🏪</span>Marketplaces<span class="cnt">Cat 10 · 33</span></a>
+        <a class="ns-chip" href="categories.html#11"><span class="ic">🚀</span>SaaS &amp; Platforms<span class="cnt">Cat 11 · 105</span></a>
+        <a class="ns-chip" href="categories.html#8j"><span class="ic">🎯</span>Intent Infrastructure<span class="cnt">8j · 16</span></a>
       </div>
     </div>
 
-    <div class="stack-row row-ent">
-      <div class="stack-label">Enterprise</div>
-      <div class="stack-tiles">
-        <a class="stack-tile" href="categories.html#6a"><span class="tile-icon">🆔</span>Identity & Credentials<span class="tile-count">Cat 6 · 240+</span></a>
-        <a class="stack-tile" href="categories.html#16b"><span class="tile-icon">🏢</span>Enterprise & Compliance<span class="tile-count">Cat 16 · 130+</span></a>
-        <a class="stack-tile" href="categories.html#17a"><span class="tile-icon">🛡️</span>Finance & Risk<span class="tile-count">Cat 17 · 160+</span></a>
-        <a class="stack-tile" href="categories.html#26a"><span class="tile-icon">🌐</span>Interoperability<span class="tile-count">Cat 26 · 53</span></a>
-        <a class="stack-tile" href="categories.html#21a"><span class="tile-icon">🏛️</span>Real-World Assets<span class="tile-count">Cat 21 · 60+</span></a>
-        <a class="stack-tile" href="categories.html#19a"><span class="tile-icon">⚕️</span>Healthcare<span class="tile-count">Cat 19 · 35</span></a>
-        <a class="stack-tile" href="categories.html#25a"><span class="tile-icon">🔌</span>DePIN<span class="tile-count">Cat 25 · 35+</span></a>
-        <a class="stack-tile" href="categories.html#27a"><span class="tile-icon">📦</span>Supply Chain<span class="tile-count">Cat 27 · 24</span></a>
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">Identity</div><div class="layer-dot ld-id"></div></div>
+      <div class="layer-content lc-id">
+        <a class="ns-chip" href="categories.html#6a"><span class="ic">🆔</span>Decentralized Identity<span class="cnt">6a · 27</span></a>
+        <a class="ns-chip" href="categories.html#6b"><span class="ic">📋</span>Credentials &amp; Attestations<span class="cnt">6b · 16</span></a>
+        <a class="ns-chip" href="categories.html#6d"><span class="ic">✅</span>Identity Verification<span class="cnt">6d · 22</span></a>
+        <a class="ns-chip" href="categories.html#6f"><span class="ic">🏛️</span>Registry Services<span class="cnt">6f · 27</span></a>
+        <a class="ns-chip" href="categories.html#6g"><span class="ic">🔑</span>Rights &amp; Access Control<span class="cnt">6g · 29</span></a>
+        <a class="ns-chip" href="categories.html#6h"><span class="ic">🌍</span>Jurisdictional Identity<span class="cnt">6h · 22</span></a>
+        <a class="ns-chip" href="categories.html#6e"><span class="ic">⭐</span>Reputation Systems<span class="cnt">6e · 10</span></a>
+        <a class="ns-chip" href="categories.html#26g"><span class="ic">🌐</span>Cross-chain Identity<span class="cnt">26g · 5</span></a>
+      </div>
+    </div>
+
+    <div class="stack-layer">
+      <div class="layer-label"><div class="layer-tag">Enterprise</div><div class="layer-dot ld-ent"></div></div>
+      <div class="layer-content lc-ent">
+        <a class="ns-chip" href="categories.html#16"><span class="ic">🏢</span>Enterprise &amp; Compliance<span class="cnt">Cat 16 · 90</span></a>
+        <a class="ns-chip" href="categories.html#17"><span class="ic">🛡️</span>Finance &amp; Risk<span class="cnt">Cat 17 · 145</span></a>
+        <a class="ns-chip" href="categories.html#26"><span class="ic">🌐</span>Cross-chain Interop<span class="cnt">Cat 26 · 53</span></a>
+        <a class="ns-chip" href="categories.html#21"><span class="ic">🏛️</span>Real-World Assets<span class="cnt">Cat 21 · 60+</span></a>
+        <a class="ns-chip" href="categories.html#19"><span class="ic">⚕️</span>Healthcare &amp; BioTech<span class="cnt">Cat 19 · 35</span></a>
+        <a class="ns-chip" href="categories.html#25"><span class="ic">🔌</span>DePIN<span class="cnt">Cat 25 · 32</span></a>
+        <a class="ns-chip" href="categories.html#27"><span class="ic">📦</span>Supply Chain<span class="cnt">Cat 27 · 24</span></a>
+        <a class="ns-chip" href="categories.html#18"><span class="ic">🌍</span>Energy &amp; IoT<span class="cnt">Cat 18 · 33</span></a>
+        <a class="ns-chip" href="categories.html#28"><span class="ic">🛒</span>Consumer &amp; Retail<span class="cnt">Cat 28 · 22</span></a>
+        <a class="ns-chip" href="categories.html#29"><span class="ic">🤖</span>AI Safety<span class="cnt">Cat 29 · 19</span></a>
+        <a class="ns-chip" href="categories.html#30"><span class="ic">🚀</span>Space &amp; Deep Tech<span class="cnt">Cat 30 · 14</span></a>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- S-Tier Root Primitives -->
-<section class="stier-section">
-  <h2>S-Tier Root Primitives</h2>
-  <p>Category-defining monopoly names — the canonical root layer for each vertical.</p>
-  <div class="stier-grid">
-    <div class="stier-chip"><div class="stier-name">infrastructurelayer.eth</div><div class="stier-label">Global Infrastructure Root</div></div>
-    <div class="stier-chip"><div class="stier-name">securitylayer.eth</div><div class="stier-label">Security Layer Root</div></div>
-    <div class="stier-chip"><div class="stier-name">enforcementlayer.eth</div><div class="stier-label">Enforcement Layer Root</div></div>
-    <div class="stier-chip"><div class="stier-name">retirementcrypto.eth</div><div class="stier-label">IRA/Retirement Root</div></div>
-    <div class="stier-chip"><div class="stier-name">mobilityinfrastructure.eth</div><div class="stier-label">Mobility Stack Root</div></div>
-    <div class="stier-chip"><div class="stier-name">ruleenforcement.eth</div><div class="stier-label">Enforcement Purpose Root</div></div>
-    <div class="stier-chip"><div class="stier-name">iralayer.eth</div><div class="stier-label">IRA Layer Primitive</div></div>
-    <div class="stier-chip"><div class="stier-name">mobilitylayer.eth</div><div class="stier-label">Mobility Layer Primitive</div></div>
-    <div class="stier-chip"><div class="stier-name">crosschainaggregator.eth</div><div class="stier-label">Cross-chain Root</div></div>
-    <div class="stier-chip"><div class="stier-name">crosschainrouter.eth</div><div class="stier-label">Cross-chain Router Root</div></div>
-    <div class="stier-chip"><div class="stier-name">corescheduler.eth</div><div class="stier-label">Dispatch Layer Root</div></div>
-    <div class="stier-chip"><div class="stier-name">basedexecution.eth</div><div class="stier-label">Based Rollup Root</div></div>
+<div class="spacer" style="margin-top:60px"></div>
+
+<!-- NAMESPACE AUTHORITY -->
+<section class="authority-section">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Namespace Authority</div>
+    <h2>Core Infrastructure Names</h2>
+    <p>Category-defining primitives — the canonical root namespace for each vertical. These are the names developers build under.</p>
+  </div>
+  <div class="authority-grid">
+
+    <div class="auth-card">
+      <div class="auth-label">Registry &amp; Layer Roots</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">infrastructurelayer.eth</span><span class="role">Global Infra Root</span></div>
+        <div class="auth-name"><span class="ens">securitylayer.eth</span><span class="role">Security Layer Root</span></div>
+        <div class="auth-name"><span class="ens">enforcementlayer.eth</span><span class="role">Enforcement Layer Root</span></div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-label">Execution &amp; Dispatch</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">corescheduler.eth</span><span class="role">Dispatch Layer Root</span></div>
+        <div class="auth-name"><span class="ens">basedexecution.eth</span><span class="role">Based Rollup Root</span></div>
+        <div class="auth-name"><span class="ens">ruleenforcement.eth</span><span class="role">Enforcement Purpose Root</span></div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-label">Cross-chain Routing</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">crosschainaggregator.eth</span><span class="role">Cross-chain Root</span></div>
+        <div class="auth-name"><span class="ens">crosschainrouter.eth</span><span class="role">Router Root</span></div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-label">Finance &amp; Custody</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">retirementcrypto.eth</span><span class="role">IRA / Retirement Root</span></div>
+        <div class="auth-name"><span class="ens">iralayer.eth</span><span class="role">IRA Layer Primitive</span></div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-label">Mobility &amp; Transport</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">mobilityinfrastructure.eth</span><span class="role">Mobility Stack Root</span></div>
+        <div class="auth-name"><span class="ens">mobilitylayer.eth</span><span class="role">Mobility Layer Primitive</span></div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-label">L2 Specialization</div>
+      <div class="auth-names">
+        <div class="auth-name"><span class="ens">gamingl2.eth</span><span class="role">Gaming L2 Root</span></div>
+        <div class="auth-name"><span class="ens">defil2.eth</span><span class="role">DeFi L2 Root</span></div>
+        <div class="auth-name"><span class="ens">usadata.eth</span><span class="role">US Data Infrastructure</span></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- Full Category Grid -->
+<div class="spacer" style="margin-top:64px"></div>
+
+<!-- ALL 30 CATEGORIES -->
 <section class="grid-section">
-  <h2>All 30 Categories</h2>
-  <p>Every vertical in the ENSv2 Marketplace namespace — click any subcategory to explore.</p>
+  <div class="sec-head">
+    <div class="sec-eyebrow">All 30 Verticals</div>
+    <h2>Complete Namespace Catalog</h2>
+    <p>Every vertical in the ENSv2 Marketplace registry with subcategory codes — organized by infrastructure function.</p>
+  </div>
   <div class="cat-grid">
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🤖</span>
-        <span class="cat-title">AI & Agents</span>
-        <div class="cat-meta"><strong>200+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🤖</span><span class="cat-title">AI &amp; Agents</span><span class="cat-count">214 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">AI Infrastructure<span class="sub-count">1a</span></span>
-        <span class="sub-tag">Agent Networks<span class="sub-count">1b</span></span>
-        <span class="sub-tag">Agentic Systems<span class="sub-count">1c</span></span>
-        <span class="sub-tag">Agent Coordination<span class="sub-count">1d</span></span>
-        <span class="sub-tag">Agent Marketplaces<span class="sub-count">1e</span></span>
-        <span class="sub-tag">Autonomous Systems<span class="sub-count">1f</span></span>
-        <span class="sub-tag">AI Services<span class="sub-count">1g</span></span>
-        <span class="sub-tag">Neural Networks<span class="sub-count">1h</span></span>
-        <span class="sub-tag">AGI Frameworks<span class="sub-count">1k</span></span>
-        <span class="sub-tag">Agent Types (×8)<span class="sub-count">1n–1s</span></span>
-        <span class="sub-tag">AI Processing<span class="sub-count">1t</span></span>
-        <span class="sub-tag">Consumer AI<span class="sub-count">1w</span></span>
+        <span class="sub-tag">AI Infrastructure &amp; Models · 1a</span>
+        <span class="sub-tag">Agent Networks &amp; Registries · 1b</span>
+        <span class="sub-tag">Agentic Systems &amp; Operations · 1c</span>
+        <span class="sub-tag">Agent Coordination &amp; Control · 1d</span>
+        <span class="sub-tag">Agent Marketplaces &amp; Tooling · 1e</span>
+        <span class="sub-tag">Autonomous Systems · 1f</span>
+        <span class="sub-tag">AI Services &amp; Applications · 1g</span>
+        <span class="sub-tag">Neural Networks &amp; Processing · 1h</span>
+        <span class="sub-tag">AGI Frameworks · 1k</span>
+        <span class="sub-tag">Agent Types — Data &amp; Analytics · 1n</span>
+        <span class="sub-tag">Agent Types — Workflow &amp; Ops · 1o</span>
+        <span class="sub-tag">Agent Types — Financial · 1p</span>
+        <span class="sub-tag">Agent Types — Governance · 1q</span>
+        <span class="sub-tag">Agent Types — Compliance · 1s</span>
+        <span class="sub-tag">Agentic Consumer Services · 1w</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🔗</span>
-        <span class="cat-title">Blockchain Infrastructure</span>
-        <div class="cat-meta"><strong>330+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🔗</span><span class="cat-title">Blockchain Infrastructure</span><span class="cat-count">285 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Layer 1<span class="sub-count">2a</span></span>
-        <span class="sub-tag">Layer 2<span class="sub-count">2b</span></span>
-        <span class="sub-tag">Based Root Primitives<span class="sub-count">2b0</span></span>
-        <span class="sub-tag">Optimistic Rollups<span class="sub-count">2b1</span></span>
-        <span class="sub-tag">ZK Rollups<span class="sub-count">2b2</span></span>
-        <span class="sub-tag">Based Rollups<span class="sub-count">2b3</span></span>
-        <span class="sub-tag">L2 Infra<span class="sub-count">2b5</span></span>
-        <span class="sub-tag">Sequencers<span class="sub-count">2b7</span></span>
-        <span class="sub-tag">Validators & Nodes<span class="sub-count">2c</span></span>
-        <span class="sub-tag">Cross-chain & Bridges<span class="sub-count">2e</span></span>
-        <span class="sub-tag">ENSv2 Infrastructure<span class="sub-count">2h</span></span>
-        <span class="sub-tag">Account Abstraction<span class="sub-count">2m</span></span>
-        <span class="sub-tag">Frame Transactions<span class="sub-count">2p</span></span>
-        <span class="sub-tag">Layer Root Primitives<span class="sub-count">2z0</span></span>
+        <span class="sub-tag">Layer 1 Protocols · 2a</span>
+        <span class="sub-tag">Layer 2 Solutions · 2b</span>
+        <span class="sub-tag">Optimistic Rollups · 2b1</span>
+        <span class="sub-tag">ZK Rollups · 2b2</span>
+        <span class="sub-tag">Based Rollups · 2b3</span>
+        <span class="sub-tag">App-Specific L2s · 2b4</span>
+        <span class="sub-tag">L2 Infra &amp; Operations · 2b5</span>
+        <span class="sub-tag">Surge / Rollup-as-a-Service · 2b6</span>
+        <span class="sub-tag">Sequencer Services · 2b7</span>
+        <span class="sub-tag">Data Availability Layer · 2b8</span>
+        <span class="sub-tag">Validators &amp; Nodes · 2c</span>
+        <span class="sub-tag">Consensus &amp; Security · 2d</span>
+        <span class="sub-tag">Cross-chain &amp; Bridges · 2e</span>
+        <span class="sub-tag">Network Services · 2f</span>
+        <span class="sub-tag">RPC Provider Services · 2f1</span>
+        <span class="sub-tag">MEV &amp; Block Building · 2g</span>
+        <span class="sub-tag">ENSv2 Infrastructure · 2h</span>
+        <span class="sub-tag">Censorship Resistance · 2k</span>
+        <span class="sub-tag">Account Abstraction · 2m</span>
+        <span class="sub-tag">Frame Transaction Infra · 2p</span>
+        <span class="sub-tag">Based Root Primitives · 2b0</span>
+        <span class="sub-tag">Layer Root Primitives · 2z0</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🛠️</span>
-        <span class="cat-title">Developer Tools & Frameworks</span>
-        <div class="cat-meta"><strong>310+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🛠️</span><span class="cat-title">Developer Tools &amp; Frameworks</span><span class="cat-count">309 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">SDKs & Libraries<span class="sub-count">3a</span></span>
-        <span class="sub-tag">APIs & Gateways<span class="sub-count">3b</span></span>
-        <span class="sub-tag">Testing & Debug<span class="sub-count">3c</span></span>
-        <span class="sub-tag">Deployment Tools<span class="sub-count">3d</span></span>
-        <span class="sub-tag">Router Pattern<span class="sub-count">3k · 48</span></span>
-        <span class="sub-tag">Executor Pattern<span class="sub-count">3m · 40</span></span>
-        <span class="sub-tag">Orchestrator Pattern<span class="sub-count">3n · 35</span></span>
-        <span class="sub-tag">Engine & Processor<span class="sub-count">3o · 74</span></span>
-        <span class="sub-tag">Gateway & Hub<span class="sub-count">3p</span></span>
-        <span class="sub-tag">Handler & Dispatcher<span class="sub-count">3q</span></span>
-        <span class="sub-tag">Manager & Controller<span class="sub-count">3r</span></span>
+        <span class="sub-tag">SDKs &amp; Libraries · 3a</span>
+        <span class="sub-tag">APIs &amp; Gateways · 3b</span>
+        <span class="sub-tag">Testing &amp; Debugging · 3c</span>
+        <span class="sub-tag">Deployment Tools · 3d</span>
+        <span class="sub-tag">Code Development · 3e</span>
+        <span class="sub-tag">Developer Workspaces · 3f</span>
+        <span class="sub-tag">Workflow &amp; Pipeline Tools · 3h</span>
+        <span class="sub-tag">Router Pattern Infra · 3k</span>
+        <span class="sub-tag">Executor Pattern Infra · 3m</span>
+        <span class="sub-tag">Orchestrator Pattern Infra · 3n</span>
+        <span class="sub-tag">Engine &amp; Processor Infra · 3o</span>
+        <span class="sub-tag">Gateway, Hub &amp; Endpoint Infra · 3p</span>
+        <span class="sub-tag">Handler &amp; Dispatcher Infra · 3q</span>
+        <span class="sub-tag">Manager &amp; Controller Infra · 3r</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">📜</span>
-        <span class="cat-title">Smart Contracts & Security</span>
-        <div class="cat-meta"><strong>105+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">📜</span><span class="cat-title">Smart Contracts &amp; Security</span><span class="cat-count">107 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Contract Development<span class="sub-count">4a · 45</span></span>
-        <span class="sub-tag">Security Audits<span class="sub-count">4b</span></span>
-        <span class="sub-tag">Contract Deployment<span class="sub-count">4c</span></span>
-        <span class="sub-tag">Contract Standards<span class="sub-count">4d</span></span>
-        <span class="sub-tag">Verification Services<span class="sub-count">4e</span></span>
-        <span class="sub-tag">Contract Management<span class="sub-count">4f</span></span>
+        <span class="sub-tag">Contract Development · 4a</span>
+        <span class="sub-tag">Security Audits · 4b</span>
+        <span class="sub-tag">Audit Services by Type · 4b1</span>
+        <span class="sub-tag">Contract Deployment · 4c</span>
+        <span class="sub-tag">Contract Standards · 4d</span>
+        <span class="sub-tag">Verification Services · 4e</span>
+        <span class="sub-tag">Contract Management &amp; Execution · 4f</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">📊</span>
-        <span class="cat-title">Data, Oracles & Analytics</span>
-        <div class="cat-meta"><strong>65+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">📊</span><span class="cat-title">Data, Oracles &amp; Analytics</span><span class="cat-count">72 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Oracle Networks<span class="sub-count">5a · 22</span></span>
-        <span class="sub-tag">Data Indexing<span class="sub-count">5b</span></span>
-        <span class="sub-tag">Analytics<span class="sub-count">5c</span></span>
-        <span class="sub-tag">Data Aggregation<span class="sub-count">5d</span></span>
-        <span class="sub-tag">Data Services<span class="sub-count">5e</span></span>
-        <span class="sub-tag">Oracle Validators<span class="sub-count">5k</span></span>
-        <span class="sub-tag">Prediction Infra<span class="sub-count">5m</span></span>
+        <span class="sub-tag">Oracle Networks &amp; Feeds · 5a</span>
+        <span class="sub-tag">Data Indexing &amp; Query · 5b</span>
+        <span class="sub-tag">Analytics &amp; Dashboards · 5c</span>
+        <span class="sub-tag">Data Aggregation · 5d</span>
+        <span class="sub-tag">Data Services &amp; APIs · 5e</span>
+        <span class="sub-tag">Oracle Validators &amp; Provers · 5k</span>
+        <span class="sub-tag">Prediction Infrastructure · 5m</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🆔</span>
-        <span class="cat-title">Identity & Credentials</span>
-        <div class="cat-meta"><strong>240+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🆔</span><span class="cat-title">Identity &amp; Credentials</span><span class="cat-count">188 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Decentralized Identity<span class="sub-count">6a</span></span>
-        <span class="sub-tag">Credentials<span class="sub-count">6b</span></span>
-        <span class="sub-tag">KYC & Compliance<span class="sub-count">6c</span></span>
-        <span class="sub-tag">Identity Verification<span class="sub-count">6d</span></span>
-        <span class="sub-tag">Reputation Systems<span class="sub-count">6e</span></span>
-        <span class="sub-tag">Registry Services<span class="sub-count">6f</span></span>
-        <span class="sub-tag">Access Control<span class="sub-count">6g</span></span>
-        <span class="sub-tag">Jurisdictional ID<span class="sub-count">6h</span></span>
-        <span class="sub-tag">Enforcement Root<span class="sub-count">6p0</span></span>
-        <span class="sub-tag">Certification<span class="sub-count">6s</span></span>
-        <span class="sub-tag">Auth & AuthZ<span class="sub-count">6w</span></span>
+        <span class="sub-tag">Decentralized Identity · 6a</span>
+        <span class="sub-tag">Credentials &amp; Attestations · 6b</span>
+        <span class="sub-tag">KYC &amp; Compliance Identity · 6c</span>
+        <span class="sub-tag">Identity Verification · 6d</span>
+        <span class="sub-tag">Reputation Systems · 6e</span>
+        <span class="sub-tag">Registry Services · 6f</span>
+        <span class="sub-tag">Rights &amp; Access Control · 6g</span>
+        <span class="sub-tag">Jurisdictional Identity · 6h</span>
+        <span class="sub-tag">Trust &amp; Enforcement Infra · 6p</span>
+        <span class="sub-tag">Enforcement Root Primitives · 6p0</span>
+        <span class="sub-tag">Auth &amp; Authorization Infra · 6t/6u/6w</span>
+        <span class="sub-tag">Certification &amp; Verification · 6s</span>
+        <span class="sub-tag">Domain-Specific Identity · 6q/6r</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🔒</span>
-        <span class="cat-title">Privacy, Security & ZK</span>
-        <div class="cat-meta"><strong>120+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🔒</span><span class="cat-title">Privacy, Security &amp; ZK</span><span class="cat-count">118 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Zero-Knowledge Proofs<span class="sub-count">7a</span></span>
-        <span class="sub-tag">ZK Infrastructure<span class="sub-count">7b</span></span>
-        <span class="sub-tag">zkVM<span class="sub-count">7b1</span></span>
-        <span class="sub-tag">zkWasm<span class="sub-count">7b2</span></span>
-        <span class="sub-tag">ZK Protocols<span class="sub-count">7b3</span></span>
-        <span class="sub-tag">zkEVM<span class="sub-count">7b4</span></span>
-        <span class="sub-tag">Prover Services<span class="sub-count">7b5</span></span>
-        <span class="sub-tag">Privacy Protocols<span class="sub-count">7c</span></span>
-        <span class="sub-tag">Encryption & Keys<span class="sub-count">7d</span></span>
-        <span class="sub-tag">Post-Quantum Crypto<span class="sub-count">7e</span></span>
-        <span class="sub-tag">Confidential Compute<span class="sub-count">7f</span></span>
-        <span class="sub-tag">RLN Nullifiers<span class="sub-count">7g</span></span>
+        <span class="sub-tag">Zero-Knowledge Proofs · 7a</span>
+        <span class="sub-tag">zkVM Infrastructure · 7b1</span>
+        <span class="sub-tag">zkWasm Infrastructure · 7b2</span>
+        <span class="sub-tag">ZK Protocols &amp; General · 7b3</span>
+        <span class="sub-tag">zkEVM Infrastructure · 7b4</span>
+        <span class="sub-tag">Prover Services · 7b5</span>
+        <span class="sub-tag">Privacy Protocols · 7c</span>
+        <span class="sub-tag">Encryption &amp; Key Management · 7d</span>
+        <span class="sub-tag">Post-Quantum Cryptography · 7e</span>
+        <span class="sub-tag">Confidential Computing · 7f</span>
+        <span class="sub-tag">RLN Rate-Limit Nullifiers · 7g</span>
+        <span class="sub-tag">Censorship Resistance &amp; Mempools · 7k</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">💸</span>
-        <span class="cat-title">Payments, Finance & DeFi</span>
-        <div class="cat-meta"><strong>220+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">💸</span><span class="cat-title">Payments, Finance &amp; DeFi</span><span class="cat-count">199 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Lending & Borrowing<span class="sub-count">8a</span></span>
-        <span class="sub-tag">DEXs & Trading<span class="sub-count">8b</span></span>
-        <span class="sub-tag">Liquidity & Yield<span class="sub-count">8c</span></span>
-        <span class="sub-tag">Stablecoins<span class="sub-count">8d</span></span>
-        <span class="sub-tag">Derivatives<span class="sub-count">8e</span></span>
-        <span class="sub-tag">Payment Rails<span class="sub-count">8f · 49</span></span>
-        <span class="sub-tag">DeFi Automation<span class="sub-count">8g</span></span>
-        <span class="sub-tag">Streaming Infra<span class="sub-count">8h</span></span>
-        <span class="sub-tag">Intents & Order Flow<span class="sub-count">8j</span></span>
-        <span class="sub-tag">Stablecoin Infra<span class="sub-count">8m</span></span>
+        <span class="sub-tag">Lending &amp; Borrowing · 8a</span>
+        <span class="sub-tag">DEXs &amp; Trading · 8b</span>
+        <span class="sub-tag">Liquidity Provision · 8c1</span>
+        <span class="sub-tag">Yield Farming &amp; Optimization · 8c2</span>
+        <span class="sub-tag">Stablecoins &amp; Payments · 8d</span>
+        <span class="sub-tag">Derivatives &amp; Perpetuals · 8e</span>
+        <span class="sub-tag">Payment Rails &amp; Settlement · 8f</span>
+        <span class="sub-tag">DeFi Automation &amp; Bots · 8g</span>
+        <span class="sub-tag">Streaming Infrastructure · 8h</span>
+        <span class="sub-tag">Intent Infrastructure · 8j</span>
+        <span class="sub-tag">Stablecoin Infrastructure · 8m</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">⛏️</span>
-        <span class="cat-title">Restaking, Staking & Slashing</span>
-        <div class="cat-meta"><strong>90+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">⛏️</span><span class="cat-title">Restaking, Staking &amp; Slashing</span><span class="cat-count">77 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Restaking Protocols<span class="sub-count">9a</span></span>
-        <span class="sub-tag">Liquid Restaking<span class="sub-count">9b</span></span>
-        <span class="sub-tag">Restaking Infra<span class="sub-count">9c · 32</span></span>
-        <span class="sub-tag">Security Services<span class="sub-count">9d</span></span>
-        <span class="sub-tag">Slashing Protection<span class="sub-count">9e</span></span>
-        <span class="sub-tag">Validator Services<span class="sub-count">9f</span></span>
-        <span class="sub-tag">Restaking Coordination<span class="sub-count">9g</span></span>
-        <span class="sub-tag">Liquidation Infra<span class="sub-count">9k</span></span>
+        <span class="sub-tag">Restaking Protocols · 9a</span>
+        <span class="sub-tag">Liquid Restaking · 9b</span>
+        <span class="sub-tag">Restaking Infrastructure · 9c</span>
+        <span class="sub-tag">Security Services · 9d</span>
+        <span class="sub-tag">Slashing Protection · 9e</span>
+        <span class="sub-tag">Validator Services · 9f</span>
+        <span class="sub-tag">Restaking Coordination · 9g</span>
+        <span class="sub-tag">Staking Coordination · 9h</span>
+        <span class="sub-tag">Liquidation Infrastructure · 9k</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🏪</span>
-        <span class="cat-title">Marketplaces & Exchanges</span>
-        <div class="cat-meta"><strong>32</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🏪</span><span class="cat-title">Marketplaces &amp; Exchanges</span><span class="cat-count">33 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">NFT Marketplaces<span class="sub-count">10a</span></span>
-        <span class="sub-tag">DEX Platforms<span class="sub-count">10b</span></span>
-        <span class="sub-tag">P2P & OTC<span class="sub-count">10c</span></span>
-        <span class="sub-tag">Exchange Infra<span class="sub-count">10d</span></span>
-        <span class="sub-tag">Trading Tools<span class="sub-count">10e</span></span>
-        <span class="sub-tag">Domain Marketplaces<span class="sub-count">10f</span></span>
+        <span class="sub-tag">NFT Marketplaces · 10a</span>
+        <span class="sub-tag">DEX Platforms · 10b</span>
+        <span class="sub-tag">P2P &amp; OTC · 10c</span>
+        <span class="sub-tag">Exchange Infrastructure · 10d</span>
+        <span class="sub-tag">Trading Tools · 10e</span>
+        <span class="sub-tag">ENS Registry &amp; Renewal Infra · 10f</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🚀</span>
-        <span class="cat-title">SaaS, Suites & Platforms</span>
-        <div class="cat-meta"><strong>105+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🚀</span><span class="cat-title">SaaS, Suites &amp; Platforms</span><span class="cat-count">105 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Enterprise SaaS<span class="sub-count">11a1</span></span>
-        <span class="sub-tag">Industry Suites<span class="sub-count">11b</span></span>
-        <span class="sub-tag">Platform Infra<span class="sub-count">11c</span></span>
-        <span class="sub-tag">Cloud Platforms<span class="sub-count">11c1</span></span>
-        <span class="sub-tag">Workspace & Collab<span class="sub-count">11d</span></span>
-        <span class="sub-tag">Business Automation<span class="sub-count">11e · 28</span></span>
-        <span class="sub-tag">HR & Workforce<span class="sub-count">11f</span></span>
-        <span class="sub-tag">Loyalty Programs<span class="sub-count">11g</span></span>
+        <span class="sub-tag">Business SaaS · 11a1</span>
+        <span class="sub-tag">Developer SaaS · 11a2</span>
+        <span class="sub-tag">Vertical-Specific SaaS · 11a3</span>
+        <span class="sub-tag">Industry-Specific Suites · 11b</span>
+        <span class="sub-tag">Platform Infrastructure · 11c</span>
+        <span class="sub-tag">Cloud Platform Services · 11c1</span>
+        <span class="sub-tag">Workspace &amp; Collaboration · 11d</span>
+        <span class="sub-tag">Business Automation · 11e</span>
+        <span class="sub-tag">HR &amp; Workforce Management · 11f</span>
+        <span class="sub-tag">HR Operations &amp; Payroll · 11f1</span>
+        <span class="sub-tag">Employee Benefits · 11f2</span>
+        <span class="sub-tag">Loyalty &amp; Rewards · 11g</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🗳️</span>
-        <span class="cat-title">Governance, DAOs & Coordination</span>
-        <div class="cat-meta"><strong>55+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🗳️</span><span class="cat-title">Governance, DAOs &amp; Coordination</span><span class="cat-count">56 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">DAO Frameworks<span class="sub-count">12a</span></span>
-        <span class="sub-tag">Voting & Proposals<span class="sub-count">12b</span></span>
-        <span class="sub-tag">Treasury Management<span class="sub-count">12c</span></span>
-        <span class="sub-tag">Governance Tools<span class="sub-count">12d</span></span>
-        <span class="sub-tag">Governance Infra<span class="sub-count">12f</span></span>
-        <span class="sub-tag">Treasury Coordination<span class="sub-count">12g</span></span>
+        <span class="sub-tag">DAO Frameworks · 12a</span>
+        <span class="sub-tag">Voting &amp; Proposals · 12b</span>
+        <span class="sub-tag">Treasury Management · 12c</span>
+        <span class="sub-tag">Governance Tools · 12d</span>
+        <span class="sub-tag">Governance Infrastructure · 12f</span>
+        <span class="sub-tag">Treasury Coordination · 12g</span>
+        <span class="sub-tag">Rules &amp; Membership Systems · 12h</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🏢</span>
-        <span class="cat-title">Enterprise, Compliance & Legal</span>
-        <div class="cat-meta"><strong>130+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">👥</span><span class="cat-title">Social, Messaging &amp; Community</span><span class="cat-count">33 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Enterprise Solutions<span class="sub-count">16a</span></span>
-        <span class="sub-tag">Compliance & Regulatory<span class="sub-count">16b · 29</span></span>
-        <span class="sub-tag">AML/KYC Services<span class="sub-count">16e</span></span>
-        <span class="sub-tag">AML Infra<span class="sub-count">16g</span></span>
-        <span class="sub-tag">KYC Infra<span class="sub-count">16h</span></span>
-        <span class="sub-tag">Audit & Verification<span class="sub-count">16m</span></span>
-        <span class="sub-tag">Tax & Accounting<span class="sub-count">16n</span></span>
-        <span class="sub-tag">Legal Infra<span class="sub-count">16o</span></span>
-        <span class="sub-tag">AI Compliance<span class="sub-count">16q</span></span>
-        <span class="sub-tag">Banking Charters<span class="sub-count">16r</span></span>
-        <span class="sub-tag">Regulatory Infra<span class="sub-count">16s</span></span>
+        <span class="sub-tag">Social Networks · 13a</span>
+        <span class="sub-tag">Messaging &amp; Communication · 13b</span>
+        <span class="sub-tag">Community Tools · 13c</span>
+        <span class="sub-tag">Content &amp; Publishing · 13d</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🛡️</span>
-        <span class="cat-title">Finance, Insurance & Risk</span>
-        <div class="cat-meta"><strong>160+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🎮</span><span class="cat-title">Gaming, Metaverse &amp; XR</span><span class="cat-count">23 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Insurance & Coverage<span class="sub-count">17a</span></span>
-        <span class="sub-tag">Risk & Fraud<span class="sub-count">17b</span></span>
-        <span class="sub-tag">Banking & Lending<span class="sub-count">17c</span></span>
-        <span class="sub-tag">Capital Management<span class="sub-count">17d2 · 39</span></span>
-        <span class="sub-tag">Retirement Plans<span class="sub-count">17e</span></span>
-        <span class="sub-tag">IRA Root Primitives<span class="sub-count">17e0</span></span>
-        <span class="sub-tag">IRA Platforms<span class="sub-count">17e2</span></span>
-        <span class="sub-tag">Investment & Assets<span class="sub-count">17g</span></span>
-        <span class="sub-tag">Custody Services<span class="sub-count">17m</span></span>
-        <span class="sub-tag">Digital Banking<span class="sub-count">17p</span></span>
+        <span class="sub-tag">Gaming Infrastructure · 14a</span>
+        <span class="sub-tag">Metaverse Platforms · 14b</span>
+        <span class="sub-tag">Gaming Finance &amp; Assets · 14c</span>
+        <span class="sub-tag">Game Development Tools · 14d</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🌍</span>
-        <span class="cat-title">Energy, Climate & IoT</span>
-        <div class="cat-meta"><strong>33</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🎬</span><span class="cat-title">Media, Content &amp; IP</span><span class="cat-count">38 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Water Infrastructure<span class="sub-count">18a</span></span>
-        <span class="sub-tag">IoT & Environmental<span class="sub-count">18c</span></span>
-        <span class="sub-tag">Industrial IoT<span class="sub-count">18d</span></span>
+        <span class="sub-tag">Content Creation &amp; Publishing · 15a</span>
+        <span class="sub-tag">IP &amp; Licensing · 15b</span>
+        <span class="sub-tag">NFTs &amp; Collectibles · 15c</span>
+        <span class="sub-tag">Media Distribution · 15d</span>
+        <span class="sub-tag">Creator Tools · 15e</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">⚕️</span>
-        <span class="cat-title">Healthcare & BioTech</span>
-        <div class="cat-meta"><strong>35</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🏢</span><span class="cat-title">Enterprise, Compliance &amp; Legal</span><span class="cat-count">90 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Medical Infra<span class="sub-count">19a · 15</span></span>
-        <span class="sub-tag">Clinical Services<span class="sub-count">19b · 13</span></span>
-        <span class="sub-tag">Healthcare Compliance<span class="sub-count">19c</span></span>
+        <span class="sub-tag">Enterprise Solutions · 16a</span>
+        <span class="sub-tag">Compliance &amp; Regulatory · 16b</span>
+        <span class="sub-tag">Enterprise SaaS &amp; Biz Tools · 16c</span>
+        <span class="sub-tag">Institutional Finance &amp; Treasury · 16d</span>
+        <span class="sub-tag">AML/KYC Services · 16e</span>
+        <span class="sub-tag">AML Infrastructure · 16g</span>
+        <span class="sub-tag">KYC Infrastructure · 16h</span>
+        <span class="sub-tag">Fintech Compliance · 16k</span>
+        <span class="sub-tag">Audit &amp; Verification Infra · 16m</span>
+        <span class="sub-tag">Tax &amp; Accounting Infra · 16n</span>
+        <span class="sub-tag">Legal Infrastructure · 16o</span>
+        <span class="sub-tag">AI-Driven Compliance · 16q</span>
+        <span class="sub-tag">Digital Banking Charters · 16r</span>
+        <span class="sub-tag">Regulatory Infrastructure · 16s</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🏛️</span>
-        <span class="cat-title">Real-World Assets</span>
-        <div class="cat-meta"><strong>60+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🛡️</span><span class="cat-title">Finance, Insurance &amp; Risk</span><span class="cat-count">145 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Asset Tokenization<span class="sub-count">21a</span></span>
-        <span class="sub-tag">Real Estate<span class="sub-count">21b</span></span>
-        <span class="sub-tag">RWA Infra<span class="sub-count">21c</span></span>
-        <span class="sub-tag">Rental & Leasing<span class="sub-count">21d</span></span>
-        <span class="sub-tag">Mobility RWAs<span class="sub-count">21f</span></span>
-        <span class="sub-tag">Mobility Root<span class="sub-count">21f0</span></span>
-        <span class="sub-tag">Ownership Transfer<span class="sub-count">21g</span></span>
+        <span class="sub-tag">Insurance &amp; Coverage · 17a</span>
+        <span class="sub-tag">Risk Management &amp; Fraud · 17b</span>
+        <span class="sub-tag">Banking &amp; Lending Platforms · 17c</span>
+        <span class="sub-tag">Capital Management · 17d2</span>
+        <span class="sub-tag">Retirement Plans &amp; Admin · 17e</span>
+        <span class="sub-tag">401k &amp; Defined Contribution · 17e1</span>
+        <span class="sub-tag">IRA &amp; Individual Retirement · 17e2</span>
+        <span class="sub-tag">IRA Root Primitives · 17e0</span>
+        <span class="sub-tag">Benefits Administration · 17f</span>
+        <span class="sub-tag">Investment &amp; Asset Management · 17g</span>
+        <span class="sub-tag">Custody Services · 17m</span>
+        <span class="sub-tag">Digital Banking Charters · 17p</span>
+        <span class="sub-tag">AI-Driven Risk &amp; Compliance · 17q</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🌐</span>
-        <span class="cat-title">Cross-chain & Interoperability</span>
-        <div class="cat-meta"><strong>53</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🌍</span><span class="cat-title">Energy, Climate &amp; IoT</span><span class="cat-count">33 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Bridge Protocols<span class="sub-count">26a</span></span>
-        <span class="sub-tag">Cross-chain Messaging<span class="sub-count">26b</span></span>
-        <span class="sub-tag">Chain Abstraction<span class="sub-count">26c</span></span>
-        <span class="sub-tag">Omnichain Infra<span class="sub-count">26d · 16</span></span>
-        <span class="sub-tag">Cross-chain Liquidity<span class="sub-count">26e</span></span>
-        <span class="sub-tag">Interop Standards<span class="sub-count">26f</span></span>
-        <span class="sub-tag">Cross-chain Identity<span class="sub-count">26g</span></span>
+        <span class="sub-tag">Water Infrastructure · 18a</span>
+        <span class="sub-tag">Water Treatment &amp; Compliance · 18a2</span>
+        <span class="sub-tag">IoT &amp; Environmental Monitoring · 18c</span>
+        <span class="sub-tag">Air Quality DePIN · 18c1</span>
+        <span class="sub-tag">Industrial IoT &amp; Supply Chain · 18d</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🔌</span>
-        <span class="cat-title">DePIN</span>
-        <div class="cat-meta"><strong>35+</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">⚕️</span><span class="cat-title">Healthcare &amp; BioTech</span><span class="cat-count">35 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Compute & Storage<span class="sub-count">25a</span></span>
-        <span class="sub-tag">Mobility DePIN<span class="sub-count">25c</span></span>
-        <span class="sub-tag">Energy & Power<span class="sub-count">25d</span></span>
-        <span class="sub-tag">Environmental Sensors<span class="sub-count">25e</span></span>
-        <span class="sub-tag">Data & Bandwidth<span class="sub-count">25f</span></span>
-        <span class="sub-tag">DePIN Coordination<span class="sub-count">25g</span></span>
-        <span class="sub-tag">Physical Infra<span class="sub-count">25h · 12</span></span>
-        <span class="sub-tag">Aviation & Airspace<span class="sub-count">25i</span></span>
+        <span class="sub-tag">Medical Infrastructure &amp; Systems · 19a</span>
+        <span class="sub-tag">Clinical &amp; Patient Services · 19b</span>
+        <span class="sub-tag">Healthcare Compliance &amp; Identity · 19c</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🤖</span>
-        <span class="cat-title">AI Safety & Alignment</span>
-        <div class="cat-meta"><strong>19</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🎓</span><span class="cat-title">Education &amp; Credentials</span><span class="cat-count">7 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">AI Model Auditing<span class="sub-count">29a</span></span>
-        <span class="sub-tag">AI Governance<span class="sub-count">29b</span></span>
-        <span class="sub-tag">Responsible AI<span class="sub-count">29c</span></span>
-        <span class="sub-tag">AI Transparency<span class="sub-count">29d · 7</span></span>
-        <span class="sub-tag">AI Risk Assessment<span class="sub-count">29e</span></span>
+        <span class="sub-tag">Educational Platforms &amp; Learning · 20a</span>
+        <span class="sub-tag">Credentials &amp; Verification · 20b</span>
+        <span class="sub-tag">Academic Identity &amp; Documentation · 20c</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🚀</span>
-        <span class="cat-title">Space & Deep Tech</span>
-        <div class="cat-meta"><strong>14</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🏛️</span><span class="cat-title">Real-World Assets</span><span class="cat-count">60+ names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Satellite Data<span class="sub-count">30a · 5</span></span>
-        <span class="sub-tag">Scientific Compute<span class="sub-count">30c · 7</span></span>
-        <span class="sub-tag">Deep Tech Protocols<span class="sub-count">30d</span></span>
+        <span class="sub-tag">Asset Tokenization &amp; Management · 21a</span>
+        <span class="sub-tag">Real Estate &amp; Property Tech · 21b</span>
+        <span class="sub-tag">RWA Infrastructure &amp; Workflows · 21c</span>
+        <span class="sub-tag">Rental &amp; Leasing Infrastructure · 21d</span>
+        <span class="sub-tag">Property Management · 21e</span>
+        <span class="sub-tag">Transportation &amp; Mobility RWAs · 21f</span>
+        <span class="sub-tag">Mobility Root Primitives · 21f0</span>
+        <span class="sub-tag">Ownership Transfer · 21g</span>
+        <span class="sub-tag">Ownership Layer Primitives · 21h</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">📦</span>
-        <span class="cat-title">Supply Chain & Trade Finance</span>
-        <div class="cat-meta"><strong>24</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">💎</span><span class="cat-title">Generic Premium Brand Words</span><span class="cat-count">29 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Supply Chain Tracking<span class="sub-count">27a</span></span>
-        <span class="sub-tag">Trade Finance<span class="sub-count">27b</span></span>
-        <span class="sub-tag">Freight & Logistics<span class="sub-count">27c</span></span>
-        <span class="sub-tag">Customs & Compliance<span class="sub-count">27d</span></span>
-        <span class="sub-tag">Inventory<span class="sub-count">27e</span></span>
-        <span class="sub-tag">Supplier Management<span class="sub-count">27f</span></span>
+        <span class="sub-tag">Luxury &amp; Premium Brands · 22a</span>
+        <span class="sub-tag">Suite / Platform Generics · 22b</span>
+        <span class="sub-tag">Wealth &amp; Finance Generics · 22c</span>
       </div></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-header">
-        <span class="cat-icon">🛒</span>
-        <span class="cat-title">Consumer & Retail Web3</span>
-        <div class="cat-meta"><strong>21</strong>names</div>
-      </div>
+      <div class="cat-header"><span class="cat-icon">🔬</span><span class="cat-title">Experimental &amp; Emerging</span><span class="cat-count">6 names</span></div>
       <div class="cat-body"><div class="sub-list">
-        <span class="sub-tag">Crypto POS Payments<span class="sub-count">28a</span></span>
-        <span class="sub-tag">E-commerce<span class="sub-count">28b</span></span>
-        <span class="sub-tag">Consumer Loyalty<span class="sub-count">28c</span></span>
-        <span class="sub-tag">Consumer Identity<span class="sub-count">28d</span></span>
-        <span class="sub-tag">Retail Finance<span class="sub-count">28e</span></span>
+        <span class="sub-tag">AI / Agentic Convergence · 23a</span>
+        <span class="sub-tag">Consumer Crypto &amp; Travel · 23e</span>
+        <span class="sub-tag">ERC Standards &amp; New Protocols · 23f</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">📦</span><span class="cat-title">Miscellaneous &amp; Lifestyle</span><span class="cat-count">3 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Automotive &amp; Transportation · 24d</span>
+        <span class="sub-tag">Brand &amp; Vanity Terms · 24f</span>
+        <span class="sub-tag">General Utilities · 24h</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🔌</span><span class="cat-title">DePIN</span><span class="cat-count">32 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Compute &amp; Storage DePIN · 25a</span>
+        <span class="sub-tag">Mobility &amp; Transportation DePIN · 25c</span>
+        <span class="sub-tag">Energy &amp; Power DePIN · 25d</span>
+        <span class="sub-tag">Environmental Sensors DePIN · 25e</span>
+        <span class="sub-tag">Data &amp; Bandwidth Markets · 25f</span>
+        <span class="sub-tag">DePIN Coordination &amp; Tokenomics · 25g</span>
+        <span class="sub-tag">Physical Infrastructure Protocols · 25h</span>
+        <span class="sub-tag">Aviation &amp; Airspace DePIN · 25i</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🌐</span><span class="cat-title">Cross-chain &amp; Interoperability</span><span class="cat-count">53 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Bridge Protocols · 26a</span>
+        <span class="sub-tag">Cross-chain Messaging · 26b</span>
+        <span class="sub-tag">Chain Abstraction · 26c</span>
+        <span class="sub-tag">Omnichain Infrastructure · 26d</span>
+        <span class="sub-tag">Cross-chain Liquidity · 26e</span>
+        <span class="sub-tag">Interoperability Standards · 26f</span>
+        <span class="sub-tag">Cross-chain Identity · 26g</span>
+        <span class="sub-tag">Multi-chain Governance · 26h</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🚢</span><span class="cat-title">Supply Chain &amp; Trade Finance</span><span class="cat-count">24 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Supply Chain Tracking &amp; Provenance · 27a</span>
+        <span class="sub-tag">Trade Finance &amp; Letters of Credit · 27b</span>
+        <span class="sub-tag">Freight &amp; Logistics · 27c</span>
+        <span class="sub-tag">Customs &amp; Compliance · 27d</span>
+        <span class="sub-tag">Inventory &amp; Warehouse Management · 27e</span>
+        <span class="sub-tag">Supplier &amp; Vendor Management · 27f</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🛒</span><span class="cat-title">Consumer &amp; Retail Web3</span><span class="cat-count">22 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Crypto Payments at Point of Sale · 28a</span>
+        <span class="sub-tag">E-commerce &amp; Shopping · 28b</span>
+        <span class="sub-tag">Consumer Loyalty &amp; Rewards · 28c</span>
+        <span class="sub-tag">Consumer Identity &amp; Wallets · 28d</span>
+        <span class="sub-tag">Retail Finance &amp; BNPL · 28e</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🛡️</span><span class="cat-title">AI Safety &amp; Alignment</span><span class="cat-count">19 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">AI Model Auditing &amp; Safety · 29a</span>
+        <span class="sub-tag">AI Governance &amp; Policy · 29b</span>
+        <span class="sub-tag">Responsible AI Infrastructure · 29c</span>
+        <span class="sub-tag">AI Transparency &amp; Explainability · 29d</span>
+        <span class="sub-tag">AI Risk Assessment · 29e</span>
+      </div></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-header"><span class="cat-icon">🚀</span><span class="cat-title">Space &amp; Deep Tech</span><span class="cat-count">14 names</span></div>
+      <div class="cat-body"><div class="sub-list">
+        <span class="sub-tag">Satellite Data &amp; Infrastructure · 30a</span>
+        <span class="sub-tag">Scientific Compute &amp; Research · 30c</span>
+        <span class="sub-tag">Deep Tech Protocols · 30d</span>
       </div></div>
     </div>
 
@@ -853,15 +849,15 @@ footer {
 
 <!-- CTA -->
 <section class="cta-section">
-  <h2>Ready to Lease a Namespace?</h2>
-  <p>Contact us to discuss subdomain leasing rates, custom arrangements, and enterprise agreements.</p>
+  <h2>Lease a Namespace</h2>
+  <p>Enterprise subdomain leasing on ENSv2. Contact us to discuss rates, custom arrangements, and protocol integrations.</p>
   <a href="contact.html" class="btn-primary">Get in Touch →</a>
 </section>
 
 <footer>
   <div class="wrap" style="max-width:900px;margin:0 auto;text-align:center">
     <h3 style="color:var(--accent);margin:0 0 16px">ENSv2 Marketplace™</h3>
-    <p style="color:var(--muted);line-height:1.7;margin:0 0 20px">Premium ENS domain marketplace. All domains secured by Ledger hardware wallets.</p>
+    <p style="color:var(--muted);line-height:1.7;margin:0 0 20px">Curated ENS infrastructure namespaces. All domains registered on Ethereum L1 and secured by Ledger hardware wallets.</p>
     <p style="color:var(--muted);font-size:13px">&copy; 2026 ENSv2 Marketplace™ &middot; All ENS domains registered on Ethereum L1 &middot; <a href="#" onclick="this.href='mailto:ensv2marketplace@outlook.com'" style="color:var(--accent);text-decoration:none">Contact Us</a></p>
   </div>
 </footer>
