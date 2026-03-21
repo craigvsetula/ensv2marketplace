@@ -4,9 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Roadmap | ENSv2 Marketplace™</title>
-<meta name="description" content="ENSv2 Marketplace™ roadmap: ENSv2 migration, subdomain leasing infrastructure, and real-world utility expansion.">
+<meta name="description" content="ENSv2 Marketplace™ roadmap: building the curated ENS infrastructure namespace registry for enterprise subdomain leasing.">
 <style>
-:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#b8964f; --premium:#c0c0c0; --premiumDark:#8c8c8c; --brandFrom:#5bb1ff; --brandTo:#8b5cf6; --glow:#6df7ff; }
+:root{ --bg:#0b0c10; --card:#12151d; --edge:#1c2230; --text:#e6e6e6; --muted:#9aa0a6; --accent:#b8964f; --green:#22c55e; }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
@@ -20,12 +20,10 @@ nav a.active{color:var(--accent);font-weight:700}
 header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
 .wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
 header .wrap{display:flex;flex-direction:column;align-items:center}
-
 .badge{display:flex;align-items:center;gap:8px;background:#141a1f;border:1px solid #22304a;color:#fff;padding:6px 10px;border-radius:999px}
-.badge .check{display:inline-block;width:18px;height:18px;border-radius:50%;background:#22c55e;position:relative}
+.badge .check{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--green);position:relative}
 .badge .check:after{content:'';position:absolute;left:3px;top:3px;width:9px;height:5px;border:2px solid #0b0c10;border-top:none;border-right:none;transform:rotate(-45deg)}
 .badge .vbold{font-weight:800}
-
 .brandblock{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
 .tagline{font-size:18px;color:#dffbff;text-shadow:0 0 12px rgba(109,247,255,.45)}
 
@@ -41,24 +39,27 @@ main .wrap{max-width:900px}
 .content-section li{margin-bottom:8px}
 .content-section strong{color:var(--accent)}
 
-footer{background:var(--card);border-top:1px solid var(--edge);padding:40px 20px;margin-top:60px}
-footer .wrap{max-width:900px;text-align:center}
-footer h3{color:var(--accent);margin:0 0 16px}
-footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
-
 .phase-card{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:30px;margin-bottom:30px}
-.phase-card.complete{border-color:#22c55e}
-.phase-card.active{border-color:#22c55e;background:linear-gradient(135deg,rgba(34,197,94,0.1),rgba(184,150,79,0.05))}
-.phase-card.future{border-color:var(--accent);opacity:0.85}
+.phase-card.complete{border-color:var(--green)}
+.phase-card.active{border-color:var(--green);background:linear-gradient(135deg,rgba(34,197,94,0.07),rgba(184,150,79,0.04))}
+.phase-card.future{border-color:var(--accent);opacity:0.88}
 
-.phase-badge{display:inline-block;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:15px;background:linear-gradient(135deg,#b8964f,#9a7a3f);color:#fff}
+.phase-badge{display:inline-block;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:15px;letter-spacing:.5px}
+.phase-badge.done{background:linear-gradient(135deg,#16803c,#15803c);color:#fff}
+.phase-badge.now{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff}
+.phase-badge.next{background:linear-gradient(135deg,#b8964f,#9a7a3f);color:#fff}
+.phase-badge.future{background:#1c2230;color:var(--muted);border:1px solid var(--edge)}
 
-.phase-title{font-size:1.6rem;font-weight:700;color:#fff;margin:0 0 15px}
-
+.phase-title{font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 15px}
 .phase-card ul{color:var(--text);line-height:1.8;margin:0 0 15px;padding-left:25px}
 .phase-card li{margin-bottom:8px}
 .phase-card strong{color:var(--accent)}
 .phase-card p{color:var(--text);line-height:1.8;margin:0 0 15px}
+
+footer{background:var(--card);border-top:1px solid var(--edge);padding:40px 20px;margin-top:60px}
+footer .wrap{max-width:900px;text-align:center}
+footer h3{color:var(--accent);margin:0 0 16px}
+footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 </style>
 <link rel="canonical" href="https://www.ensv2marketplace.com/roadmap.html" />
 </head>
@@ -69,6 +70,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
     <a href="index.html">Home</a>
     <a href="featured.html">Featured Names</a>
     <a href="suites.html">Ontological Sets</a>
+    <a href="infrastructure-map.html">Infrastructure Map</a>
     <a href="subdomain-leasing.html">Subdomain Leasing</a>
     <a href="faq.html">FAQ</a>
     <a href="mission.html">Mission</a>
@@ -98,7 +100,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
             <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
           </div>
           <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">Marketplace</h2>
-          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Official Enterprise-grade Real World utility ENS domains</div>
+          <div style="font-size:22px;color:#b8964f;font-weight:700;margin-top:12px">Curated ENS Infrastructure Namespaces</div>
           <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">ENSv2 Hierarchical Subdomain System Coming 2026</div>
           <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
         </div>
@@ -113,66 +115,83 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 
   <div class="content-section">
     <h2>&#128640; Roadmap</h2>
-    <p>ENSv2 Marketplace™ is building the infrastructure for real-world utility ENS domains. Our focus: subdomain leasing, enterprise adoption, and expanding beyond crypto into mainstream business applications.</p>
+    <p>ENSv2 Marketplace™ is building the curated ENS infrastructure namespace registry — a purpose-built, single-operator portfolio of 2,500+ protocol-grade names organized for enterprise subdomain leasing when ENSv2 launches on Ethereum L1.</p>
+    <p>This is a <strong>curated registry, not an open marketplace</strong>. Every name is hand-selected, scored, categorized, and prepared for lease. That quality control is the product.</p>
   </div>
 
+  <!-- PHASE 1 — DONE -->
   <div class="phase-card complete">
-    <span class="phase-badge">&#9989; Completed</span>
-    <h3 class="phase-title">Phase 1: Foundation (2025)</h3>
+    <span class="phase-badge done">&#9989; Complete</span>
+    <h3 class="phase-title">Phase 1 — Foundation (2025)</h3>
     <ul>
-      <li><strong>Built 2,500+ domain portfolio</strong> &mdash; Premium real-world utility ENS domains across infrastructure categories</li>
-      <li><strong>Hardware wallet security</strong> &mdash; All domains secured on Ledger with verified ownership</li>
-      <li><strong>Brand establishment</strong> &mdash; ensv2marketplace.com website and ecosystem presence</li>
-      <li><strong>Strategic focus areas</strong> &mdash; AI/Agents, DeFi, Validators, RWA, Infrastructure, Compliance</li>
+      <li><strong>2,500+ namespace portfolio built</strong> &mdash; Protocol-grade ENS names across 30 infrastructure verticals, acquired at $5/name with strict selection criteria</li>
+      <li><strong>30-category taxonomy developed</strong> &mdash; 260+ subcategories with a 1&ndash;15 scoring algorithm covering tier labels and lease rate pricing</li>
+      <li><strong>Hardware wallet security</strong> &mdash; All names secured on Ledger Nano with verified ownership. Recovered from an early malware incident; security practices hardened</li>
+      <li><strong>Brand &amp; trademark established</strong> &mdash; ENSv2 Marketplace™ registered with the USPTO. ensv2marketplace.com live across 12 pages</li>
+      <li><strong>Python tooling built</strong> &mdash; Custom scorer, category matcher, description generator, and analytics workbook covering the full portfolio</li>
+      <li><strong>ENSv2 architecture research</strong> &mdash; Confirmed February 2026: ENSv2 stays on Ethereum L1 with a new roles system replacing the old fuses model</li>
     </ul>
   </div>
 
+  <!-- PHASE 2 — ACTIVE -->
   <div class="phase-card active">
-    <span class="phase-badge">&#9889; Active Now</span>
-    <h3 class="phase-title">Phase 2: Marketplace Operations &amp; Brand Evolution (2026)</h3>
-    <p>Currently operating as a fully functional ENS storefront with proven infrastructure:</p>
+    <span class="phase-badge now">&#9889; Active Now &mdash; 2026</span>
+    <h3 class="phase-title">Phase 2 — On-Chain Registry Completion</h3>
+    <p>The current focus is setting all 6 on-chain ENS text records for every name in the portfolio &mdash; completing the registry infrastructure that makes the namespace catalog machine-readable and lease-ready.</p>
     <ul>
-      <li><strong>Live marketplace operations</strong> &mdash; BuyETHaddress.com running smoothly with 2,500+ domains available</li>
-      <li><strong>Manual subdomain leasing</strong> &mdash; Direct leasing arrangements for clients who need custom subdomains now</li>
-      <li><strong>OpenSea integration</strong> &mdash; Seamless domain sales through established marketplace infrastructure</li>
-      <li><strong>Brand transition</strong> &mdash; Evolving from BuyETHaddress to ENSv2 Marketplace™ for broader market positioning</li>
-      <li><strong>Professional storefront</strong> &mdash; Proven capabilities in domain management, client relations, and transactions</li>
-      <li><strong>Ready for ENSv2</strong> &mdash; Infrastructure in place to immediately deploy automated leasing when ENSv2 launches. ENSv2 stays on Ethereum L1 &mdash; confirmed February 2026</li>
+      <li><strong>On-chain text records</strong> &mdash; Setting 6 records per name across all 2,500+ names via Ledger. ~50&ndash;70 names per day. ETA late April 2026</li>
+      <li><strong>Infrastructure map launched</strong> &mdash; New visual stack map showing all 30 verticals organized by protocol layer, with namespace authority section highlighting core primitives</li>
+      <li><strong>Ongoing S-tier acquisition</strong> &mdash; Continuing to identify and register category-defining primitive names as they surface</li>
+      <li><strong>Subdomain leasing available now</strong> &mdash; Manual direct leasing arrangements for enterprises who need custom subdomains before ENSv2 automated infrastructure launches</li>
     </ul>
   </div>
 
+  <!-- PHASE 3 — NEXT -->
   <div class="phase-card future">
-    <span class="phase-badge">&#128302; Coming Soon</span>
-    <h3 class="phase-title">Phase 3: ENSv2 Migration &amp; Automated Leasing (Q2&ndash;Q3 2026)</h3>
-    <p>When ENSv2 launches on Ethereum L1 (no separate L2 &mdash; ENS announced February 2026 it is staying on mainnet), we&rsquo;ll scale operations:</p>
+    <span class="phase-badge next">&#128205; Next &mdash; Late April / May 2026</span>
+    <h3 class="phase-title">Phase 3 — Registry Architecture Upgrade</h3>
+    <p>Once all on-chain records are set, two internal architecture projects will modernize the platform:</p>
     <ul>
-      <li><strong>ENSv2 migration</strong> &mdash; Leverage ENSv2&rsquo;s hierarchical registries on Ethereum L1 with 99% lower gas costs from Ethereum&rsquo;s own scaling improvements</li>
-      <li><strong>Automated subdomain leasing</strong> &mdash; Deploy smart contract-based leasing with stablecoin payments from any EVM chain</li>
-      <li><strong>Trustless infrastructure</strong> &mdash; Self-service leasing with on-chain roles system replacing old fuses model &mdash; verifiable guarantees, no bridging required</li>
-      <li><strong>Ontological Set packages</strong> &mdash; Shared registry architectures enabling powerful multi-name subdomain structures for enterprise clients</li>
+      <li><strong>Terminology refresh</strong> &mdash; Site-wide language update across all 12 pages: categories become verticals, subcategories become segments. Positions the registry correctly for a developer and enterprise audience</li>
+      <li><strong>Schema registry redesign</strong> &mdash; Replace the current organic code system with a hierarchical dot-notation schema that mirrors ENSv2 subdomain paths (e.g. <code>INFRA.BLOCKCHAIN.L2.BASED</code>). Makes the catalog machine-readable and directly maps to lease structures</li>
+      <li><strong>Enterprise outreach begins</strong> &mdash; Direct outreach to Web3 protocols, DAOs, and enterprise teams who are candidates for subdomain lease agreements</li>
     </ul>
   </div>
 
+  <!-- PHASE 4 — ENSv2 LAUNCH -->
   <div class="phase-card future">
-    <span class="phase-badge">&#128302; Future</span>
-    <h3 class="phase-title">Phase 4: Real-World Utility Expansion (2026&ndash;2027)</h3>
+    <span class="phase-badge future">&#128302; ENSv2 Launch &mdash; Mid 2026</span>
+    <h3 class="phase-title">Phase 4 — Automated Subdomain Leasing</h3>
+    <p>When ENSv2 launches on Ethereum L1, the registry transitions to fully automated lease infrastructure:</p>
     <ul>
-      <li><strong>Enterprise partnerships</strong> &mdash; Onboard businesses needing Web3 identity infrastructure</li>
-      <li><strong>Cross-industry domains</strong> &mdash; Expand beyond crypto into healthcare, finance, logistics, education</li>
-      <li><strong>Domain marketplace</strong> &mdash; Allow other real-world utility domain owners to list and lease</li>
-      <li><strong>API integration</strong> &mdash; Enable platforms to integrate ENS subdomain leasing directly</li>
-      <li><strong>Bulk leasing</strong> &mdash; Corporate packages for companies needing multiple subdomains</li>
+      <li><strong>ENSv2 migration</strong> &mdash; Migrate all names to ENSv2 hierarchical registries on Ethereum L1, leveraging the new roles system for trustless subdomain management</li>
+      <li><strong>Automated leasing contracts</strong> &mdash; Smart contract-based subdomain leasing with stablecoin payments accepted from any EVM chain. No bridging required</li>
+      <li><strong>Self-service leasing portal</strong> &mdash; Enterprises browse the registry, select a namespace, and deploy a subdomain lease directly on-chain with verifiable guarantees</li>
+      <li><strong>First lease agreements closed</strong> &mdash; Convert outreach pipeline from Phase 3 into signed on-chain lease arrangements</li>
     </ul>
   </div>
 
+  <!-- PHASE 5 — SCALE -->
+  <div class="phase-card future">
+    <span class="phase-badge future">&#128302; Scale &mdash; 2027</span>
+    <h3 class="phase-title">Phase 5 — Enterprise Scale &amp; API Integration</h3>
+    <ul>
+      <li><strong>API access</strong> &mdash; Enable protocols and platforms to query the registry and integrate subdomain leasing directly into their own products</li>
+      <li><strong>Bulk enterprise packages</strong> &mdash; Corporate lease arrangements covering multiple subdomains across related verticals with volume pricing</li>
+      <li><strong>Cross-industry expansion</strong> &mdash; Target non-crypto enterprise adoption: healthcare, finance, logistics, legal — industries with identity and credentialing infrastructure needs</li>
+      <li><strong>20-year renewal guarantees</strong> &mdash; Formalize long-term lease agreements backed by the guaranteed renewal commitment already offered to lessees</li>
+    </ul>
+  </div>
+
+  <!-- PRINCIPLES -->
   <div class="content-section">
-    <h3>Strategic Principles</h3>
+    <h3>Operating Principles</h3>
     <ul>
-      <li><strong>Real-world utility first</strong> &mdash; Focus on domains that solve actual business problems</li>
-      <li><strong>Enterprise ready</strong> &mdash; Professional infrastructure for serious adoption</li>
-      <li><strong>Subdomain leasing</strong> &mdash; Recurring revenue model with affordable access</li>
-      <li><strong>Quality over quantity</strong> &mdash; Curated portfolio, not speculative flips</li>
-      <li><strong>Beyond crypto</strong> &mdash; Bringing ENS to mainstream businesses and industries</li>
+      <li><strong>Curated, not open</strong> &mdash; Every name in the registry is hand-selected. Quality control is the product. No third-party listings</li>
+      <li><strong>Infrastructure first</strong> &mdash; Names that solve real protocol, identity, and enterprise problems &mdash; not speculation or lifestyle brands</li>
+      <li><strong>Lease, don't sell</strong> &mdash; Recurring revenue model. Subdomains leased at rates tied to tier scoring ($750&ndash;$10,000/yr). Parent names are never sold</li>
+      <li><strong>Single operator, maximum security</strong> &mdash; All names held on Ledger hardware wallet by one verified operator. No shared custody, no delegation risk</li>
+      <li><strong>Built for ENSv2</strong> &mdash; The entire portfolio was architected around the hierarchical subdomain system ENSv2 is delivering on Ethereum L1</li>
     </ul>
   </div>
 
@@ -182,8 +201,8 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <footer>
   <div class="wrap">
     <h3>ENSv2 Marketplace™</h3>
-    <p>Premium ENS domain marketplace. All domains secured by Ledger hardware wallets.</p>
-    <p style="font-size:13px">&copy; 2025 ensv2marketplace.eth - All ENS names verified and secured</p>
+    <p>Curated ENS infrastructure namespaces. All domains secured by Ledger hardware wallets.</p>
+    <p style="font-size:13px">&copy; 2026 ENSv2 Marketplace™ &middot; All ENS domains registered on Ethereum L1 &middot; <a href="#" onclick="this.href='mailto:ensv2marketplace@outlook.com'" style="color:var(--accent);text-decoration:none">Contact Us</a></p>
   </div>
 </footer>
 
