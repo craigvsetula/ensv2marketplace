@@ -653,6 +653,8 @@ Object.keys(domainData).forEach(name => {
   cards.push(card);
 });
 
+const subcategories = {};
+
 document.querySelectorAll('.main-cat').forEach(catEl => {
   catEl.addEventListener('click', () => {
     document.querySelectorAll('.main-cat').forEach(c => c.classList.remove('active'));
