@@ -1,15 +1,17 @@
 # ENSv2 Marketplace™
 ### The Authoritative Real World Utility ENS Domain Portfolio
 
-**[ensv2marketplace.com](https://www.ensv2marketplace.com)** | Built by the BuyETHAddress vision
+**[ensv2marketplace.com](https://www.ensv2marketplace.com)** | Built by Craig Vsetula
 
 ---
 
 ## What This Is
 
-ENSv2 Marketplace is the first ENS domain portfolio built around a formal ontology and taxonomy — a structured classification system that organizes 2,100+ .eth names into 30 categories and 275 subcategories mapped to real-world industries, protocol primitives, and infrastructure verticals.
+ENSv2 Marketplace™ is the first ENS domain portfolio built around a formal ontology and taxonomy — a structured classification system that organizes 2,500+ .eth names into 30 categories and 260+ subcategories mapped to real-world industries, protocol primitives, and infrastructure verticals.
 
 Every name is chosen for real-world utility across Web3, DeFi, AI infrastructure, digital identity, and enterprise applications. No emojis. No speculation. Infrastructure only.
+
+**Lease-only model.** Parent domains are never sold. Subdomains lease annually at rates from $400–$15,000/year based on the parent name's tier score.
 
 ---
 
@@ -18,11 +20,11 @@ Every name is chosen for real-world utility across Web3, DeFi, AI infrastructure
 The **[ENS Ontology](https://www.ensv2marketplace.com/ens-ontology.html)** is the first published, structured classification system for ENS domain names.
 
 - **30 top-level categories** spanning AI, blockchain infrastructure, identity, DeFi, compliance, DePIN, and more
-- **275 subcategories** — each mapped to a real-world industry or protocol function
-- **2,100+ domains classified** — every name assigned deterministically, not subjectively
+- **260+ subcategories** — each mapped to a real-world industry or protocol function
+- **2,500+ domains classified** — every name assigned deterministically, not subjectively
 - **Machine-readable semantic layer** for AI agents, protocol routing, and automated systems
 
-The ontology is the semantic backbone of the marketplace. It powers discovery, pricing, bundling, agent routing, and protocol classification across the entire ENS namespace.
+The ontology is the semantic backbone of the registry. It powers discovery, pricing, bundling, agent routing, and protocol classification across the entire ENS namespace.
 
 ### Category Clusters
 
@@ -39,7 +41,7 @@ The ontology is the semantic backbone of the marketplace. It powers discovery, p
 
 ## The ENS Taxonomy
 
-The **[30-Category, 275-Subcategory Taxonomy](https://www.ensv2marketplace.com/pricing-guide.html)** is the classification backbone of the portfolio.
+The **[30-Category, 260+ Subcategory Taxonomy](https://www.ensv2marketplace.com/pricing-guide.html)** is the classification backbone of the portfolio.
 
 Each subcategory defines a specific function within a vertical. Domain assignment is deterministic — driven by what the name does, not what it sounds like.
 
@@ -68,7 +70,7 @@ The **[ENS Pricing Guide](https://www.ensv2marketplace.com/pricing-guide.html)**
 
 | # | Question | YES | NO |
 |---|---|---|---|
-| 1 | Does this name define a category or vertical? | Start at $9k+ list | Start lower |
+| 1 | Does this name define a category or vertical? | Start at score 10+ | Start lower |
 | 2 | Would a serious enterprise or protocol pay for this identity? | Add commercial premium | Keep in utility range |
 | 3 | Can this name power subdomains at scale? | Lease value multiplies | Value in name only |
 | 4 | Is this tied to an active narrative (AI, ZK, RWA, ENSv2)? | Add narrative premium | Stable pricing |
@@ -76,13 +78,20 @@ The **[ENS Pricing Guide](https://www.ensv2marketplace.com/pricing-guide.html)**
 
 ### Pricing Tiers (Summary)
 
-| ETH Range | Annual Lease | Tier |
-|---|---|---|
-| 0.00 – 0.99 ETH | $50 – $100/yr | Utility / Novelty |
-| 1.00 – 4.99 ETH | $200 – $500/yr | Protocol Infrastructure |
-| 5.00 – 9.99 ETH | $600 – $1,000/yr | Enterprise Grade |
-| 10.00 – 14.99 ETH | $1,200 – $1,500/yr | Ecosystem Level |
-| 15.00+ ETH | $2,500 – $10,000+/yr | Category Monopoly |
+| Score | Base Lease/yr | Transferable Rights (1.5×) | Tier |
+|---|---|---|---|
+| 4 | $400 | $600 | Solid Single-Use Utility |
+| 5 | $500 | $750 | Useful Infrastructure |
+| 6 | $600 | $900 | Good Infrastructure |
+| 7 | $800 | $1,200 | Premium Utility |
+| 8 | $1,000 | $1,500 | Strong Infrastructure |
+| 9 | $1,500 | $2,250 | Enterprise Infrastructure |
+| 10 | $2,000 | $3,000 | Premium Enterprise |
+| 11 | $2,500 | $3,750 | Protocol-Level Primitive |
+| 12 | $3,500 | $5,250 | Category-Defining |
+| 13 | $5,000 | $7,500 | Near-Monopoly Vertical |
+| 14 | $7,500 | $11,250 | Top Infrastructure Primitive |
+| 15 | $10,000 | $15,000 | Category Monopoly |
 
 Full pricing chart and scoring methodology: **[ENS Pricing Guide](https://www.ensv2marketplace.com/pricing-guide.html)**
 
@@ -90,16 +99,17 @@ Full pricing chart and scoring methodology: **[ENS Pricing Guide](https://www.en
 
 ## Protocol Primitives
 
-The highest-scoring names in the portfolio — Score 13–15, Category Monopoly tier.
+The highest-scoring names in the portfolio — Score 15, Category Monopoly tier. 297 names at this tier.
 
 | Type | Examples |
 |---|---|
 | Orchestration | `agentorchestrator.eth`, `bridgeorchestrator.eth`, `capitalorchestrator.eth` |
-| Identity | `federal-id.eth`, `national-id.eth`, `stateid.eth`, `ensv2resolver.eth` |
-| ZK & Proofs | `asicprover.eth`, `zkengine.eth`, `proofaggregator.eth` |
-| Execution | `basedexecutor.eth`, `basedorchestrator.eth`, `rolluporchestrator.eth` |
-| Cross-chain | `bridgeorchestrator.eth`, `omnichainhub.eth`, `interopengine.eth` |
-| Compliance | `auditengine.eth`, `amlsystem.eth`, `bermudaaudit.eth` |
+| Identity | `federal-id.eth`, `national-id.eth`, `stateid.eth`, `govid.eth` |
+| ZK & Proofs | `asicprover.eth`, `zkvmprover.eth`, `zkwasmprover.eth`, `nodeprover.eth` |
+| Execution | `basedexecutor.eth`, `basedorchestrator.eth`, `zkvmexecutor.eth` |
+| Cross-chain | `bridgeorchestrator.eth`, `crosschainorchestrator.eth`, `omnichainbridge.eth` |
+| Compliance | `bermudaaudit.eth`, `charterprotocol.eth`, `regulatoryprotocol.eth` |
+| Ownership/RWA | `ownershipcoordinator.eth`, `ownershipengine.eth`, `ownershiplayer.eth` |
 
 ---
 
@@ -109,6 +119,7 @@ ENSv2 deploys exclusively on **Ethereum Layer 1** — Namechain (L2) was cancele
 
 - Gas costs dropped 99% — from ~$5 to under $0.05 per registration
 - Each .eth name gets its own smart contract registry
+- New roles system replaces the old fuses model — granular permissions at resolver, name, or record level
 - Subdomain leasing is viable today, not someday
 - No bridging, no external gateways, no L2 trust assumptions
 - Names scoring 7+ are subdomain infrastructure plays right now
@@ -118,16 +129,19 @@ ENSv2 deploys exclusively on **Ethereum Layer 1** — Namechain (L2) was cancele
 ## Roadmap
 
 **Phase 1 — Portfolio & Ontology** ✅  
-Built 2,100+ domain portfolio. Published the ENS Ontology (30 categories, 275 subcategories). Secured all names on Ledger hardware wallets.
+Built 2,500+ domain portfolio. Published the ENS Ontology (30 categories, 260+ subcategories). Secured all names on Ledger hardware wallets. ENSv2 Marketplace™ trademark registered (USPTO serial 99524052).
 
-**Phase 2 — Marketplace Operations** 🔄  
-Live marketplace at ensv2marketplace.com. Manual subdomain leasing. OpenSea integration. ENSv2 Marketplace™ brand established.
+**Phase 2 — On-Chain Registry Completion** 🔄 *(Active — 2026)*  
+Setting 6 on-chain ENS text records per name across the full portfolio (~50–70 names/day). Infrastructure Map launched. Ongoing S-tier acquisition. Manual subdomain leasing available now.
 
-**Phase 3 — ENSv2 Migration & Automated Leasing** 🔜  
-Smart contract-based subdomain leasing. Stablecoin pricing. Self-service platform with on-chain guarantees.
+**Phase 3 — Registry Architecture Upgrade** 🔜 *(Late April / May 2026)*  
+Terminology refresh (categories → verticals, subcategories → segments). Schema registry redesign using hierarchical dot-notation mirroring ENSv2 subdomain paths. Enterprise outreach begins.
 
-**Phase 4 — Real-World Utility Expansion** 🔜  
-Enterprise partnerships. Cross-industry expansion. API integration for platforms.
+**Phase 4 — ENSv2 Migration & Automated Leasing** 🔜 *(Mid 2026)*  
+Smart contract-based subdomain leasing. Stablecoin pricing from any EVM chain. Self-service portal with on-chain guarantees.
+
+**Phase 5 — Enterprise Scale & API Integration** 🔜 *(2027)*  
+API access, bulk enterprise packages, cross-industry expansion, 20-year renewal guarantees formalized.
 
 ---
 
@@ -135,17 +149,19 @@ Enterprise partnerships. Cross-industry expansion. API integration for platforms
 
 | Page | Description |
 |---|---|
-| [Home](https://www.ensv2marketplace.com/index.html) | Full 2,100+ domain portfolio with search and filtering |
-| [Featured Names](https://www.ensv2marketplace.com/featured.html) | 15 Score-15 Category Monopoly names |
-| [Suites](https://www.ensv2marketplace.com/suites.html) | 28 infrastructure suites ranked by lease value |
-| [ENS Ontology](https://www.ensv2marketplace.com/ens-ontology.html) | The authoritative ENS classification system |
-| [Pricing Guide](https://www.ensv2marketplace.com/pricing-guide.html) | 15-tier scoring framework and ENS taxonomy |
-| [Subdomain Leasing](https://www.ensv2marketplace.com/subdomain-leasing.html) | How subdomain leasing works |
-| [Mission](https://www.ensv2marketplace.com/mission.html) | Real World Utility philosophy |
+| [Home](https://www.ensv2marketplace.com/index.html) | Full 2,500+ domain portfolio with search and category filtering |
+| [Featured Names](https://www.ensv2marketplace.com/featured.html) | All 297 Score-15 Category Monopoly names — live from portfolio |
+| [Ontological Sets](https://www.ensv2marketplace.com/suites.html) | 30 infrastructure sets ranked by lease value — live from portfolio |
+| [Infrastructure Map](https://www.ensv2marketplace.com/infrastructure-map.html) | Visual protocol stack map across all 30 verticals |
+| [Subdomain Leasing](https://www.ensv2marketplace.com/subdomain-leasing.html) | How subdomain leasing works, full pricing table |
+| [FAQ](https://www.ensv2marketplace.com/faq.html) | Frequently asked questions |
+| [Mission](https://www.ensv2marketplace.com/mission.html) | Real World Utility philosophy and trust |
 | [Roadmap](https://www.ensv2marketplace.com/roadmap.html) | Development phases |
-| [About](https://www.ensv2marketplace.com/about.html) | Founder story |
+| [About](https://www.ensv2marketplace.com/about.html) | Founder story — Craig Vsetula |
 | [Consignment](https://www.ensv2marketplace.com/consignment.html) | 50/50 revenue share program |
-| [Resources](https://www.ensv2marketplace.com/resources.html) | ENS ecosystem links |
+| [Resources](https://www.ensv2marketplace.com/resources.html) | ENS ecosystem links and tools |
+| [Pricing Guide](https://www.ensv2marketplace.com/pricing-guide.html) | 15-tier scoring framework and ENS taxonomy |
+| [ENS Ontology](https://www.ensv2marketplace.com/ens-ontology.html) | The authoritative ENS classification system |
 
 ---
 
@@ -155,7 +171,7 @@ Enterprise partnerships. Cross-industry expansion. API integration for platforms
 |---|---|
 | 🌐 Website | [ensv2marketplace.com](https://www.ensv2marketplace.com) |
 | 📧 Email | ensv2marketplace@outlook.com |
-| 🛒 OpenSea | Active listings under BuyETHAddress / ensv2marketplace |
+| ™ Trademark | USPTO Serial No. 99524052 |
 
 ---
 
