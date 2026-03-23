@@ -44,7 +44,7 @@ nav a.active{color:var(--accent)}
 /* HEADER */
 header{background:#0b0c10;border-bottom:1px solid #161c27;padding-top:30px}
 .wrap{max-width:1200px;margin:0 auto;padding:18px 20px}
-header .wrap{display:flex;flex-direction:column;align-items:center}
+header .wrap{display:flex;flex-direction:column;align-items:center;position:relative}
 .badge{display:flex;align-items:center;gap:8px;background:#141a1f;border:1px solid #22304a;color:#fff;padding:6px 10px;border-radius:999px}
 .badge .check{display:inline-block;width:18px;height:18px;border-radius:50%;background:#22c55e;position:relative}
 .badge .check:after{content:'';position:absolute;left:3px;top:3px;width:9px;height:5px;border:2px solid #0b0c10;border-top:none;border-right:none;transform:rotate(-45deg)}
@@ -207,14 +207,14 @@ footer a{color:var(--accent);text-decoration:none}
 <header>
   <div class="wrap">
     <div class="brandblock">
-      <div style="position:relative;text-align:center">
-        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:-100px;top:50px">
-          <span class="check"></span>
-          <div>
-            <div class="vbold">Verified</div>
-            <div style="color:#ffffff">Secured by Ledger</div>
-          </div>
+      <div class="badge" title="Hardware wallet protected" style="position:absolute;right:20px;top:20px">
+        <span class="check"></span>
+        <div>
+          <div class="vbold">Verified</div>
+          <div style="color:#ffffff">Secured by Ledger</div>
         </div>
+      </div>
+      <div style="position:relative;text-align:center">
         <div>
           <div style="display:inline-block;position:relative">
             <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:8rem;letter-spacing:0.5px;color:#b8964f;margin:0">ENSv2<sup style="font-size:2rem;vertical-align:text-top;margin-left:2px;color:#b8964f">™</sup></h1>
