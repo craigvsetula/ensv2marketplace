@@ -651,6 +651,19 @@ Object.keys(domainData).forEach(name => {
 
 const subcategories = {};
 
+// Build subcategories from domainData
+Object.keys(domainData).forEach(name => {
+  const cats = domainData[name].categories || [];
+  cats.forEach(code => {
+    const main = extractMainCategory(code);
+    if (!main) return;
+    if (!/^\d+[a-z]/i.test(code)) return;
+    if (!subcategories[main]) subcategories[main] = {};
+    if (!subcategories[main][code]) subcategories[main][code] = { name: code, count: 0 };
+    subcategories[main][code].count++;
+  });
+});
+
 document.querySelectorAll('.main-cat').forEach(catEl => {
   catEl.addEventListener('click', () => {
     document.querySelectorAll('.main-cat').forEach(c => c.classList.remove('active'));
