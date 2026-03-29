@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ENSv2 Marketplace™ - Real World ENS Utility Domains</title>
-<meta name="description" content="Real world utility ENS marketplace with over 2,500 domains. Lease official Ethereum Name Service names for DeFi, AI, Layer2, validators, staking and blockchain infrastructure.">
+<meta name="description" content="Curated ENS infrastructure namespace registry. 2,608 protocol-grade .eth domains across 30 verticals, organized for enterprise subdomain leasing on Ethereum L1.">
 <meta name="keywords" content="ENS domains, ENSv2 marketplace, real world utility ENS, buy ENS domains, lease ENS domains, ENS subdomain leasing, Ethereum Name Service, Web3 domains, blockchain infrastructure domains, AI agent domains" /><meta name="keywords" content="real world utility ENS domains, ENS marketplace, buy ENS domains, lease ENS domains, ENS names for sale, Ethereum Name Service, ENSv2, subdomain leasing, hierarchical subdomains, ens.tools, AI agent domains, DeFi domains, blockchain domains, Web3 domains, ETH domains, ENS names, official ENS, ENS valuation, ENS investment, Layer2 domains, validator domains, staking domains, infrastructure domains, decentralized domains, ethereum domains, RWA domains, crypto domains, ENS subdomains, agentic domains, ZK domains">
 
 <!-- Open Graph / Facebook -->
@@ -471,6 +472,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
         </div>
       </div>
       <div class="tagline">The curated namespace registry for Web3 infrastructure.</div>
+      <div style="margin:10px 0 6px;font-size:15px;color:#b8964f;font-weight:600">&#128231; <a href="#" onclick="this.href='mailto:ensv2marketplace@outlook.com'" style="color:#b8964f;text-decoration:none">ensv2marketplace@outlook.com</a></div>
       <div class="cta">
         <div style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap">
           <a href="https://opensea.io/ensv2marketplace.eth" target="_blank" rel="noopener noreferrer" style="background:#6c757d;border-color:#5a6268">View All on OpenSea</a>
@@ -542,7 +544,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <!-- SUBCATEGORY BUTTONS (Hidden by default, shown when main cat clicked) -->
   <div class="sub-cats" id="subCats"></div>
   
-  <div class="count">Showing <strong id="cardCount">2608</strong> of <strong>2608</strong> names</div>
+  <div class="count">Showing <strong id="cardCount">0</strong> of <strong id="totalCount">0</strong> names</div>
   
   <section class="cards-grid" id="cardGrid"></section>
 </div>
@@ -648,6 +650,9 @@ Object.keys(domainData).forEach(name => {
   grid.appendChild(card);
   cards.push(card);
 });
+
+document.getElementById("totalCount").textContent = cards.length;
+document.getElementById("cardCount").textContent = cards.length;
 
 const SUB_LABELS = {
   "1a": "AI Infrastructure & Models",
