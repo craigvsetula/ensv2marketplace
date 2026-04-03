@@ -2633,4 +2633,6 @@ const domainData = {
   "contractguardian": {"categories": ["4e"], "price": 10.5, "lease": 2000, "desc": "Guardian namespace for smart contract oversight, automated defense, and security enforcement. contractguardian.eth anchors the contract guardian layer for protocol security ops."},
   "upgradeprotocol": {"categories": ["4d"], "price": 20.0, "lease": 7500, "desc": "Protocol namespace for smart contract upgrade standards, proxy patterns, and migration ops. upgradeprotocol.eth anchors the upgrade protocol layer for contract evolution."},
   "derivativesprotocol": {"categories": ["8e"], "price": 20.0, "lease": 7500, "desc": "Protocol namespace for on-chain derivatives standards, structured product specs, and ops. derivativesprotocol.eth anchors the derivatives protocol layer for decentralized markets."},
+  "clientupgrade": {"categories": ["4d"], "price": 10.5, "lease": 2000, "desc": "Upgrade namespace for Ethereum client upgrades, hard fork coordination, and migration. clientupgrade.eth anchors the client upgrade layer for execution and consensus client ops."},
+  "networkupgrade": {"categories": ["4d"], "price": 10.5, "lease": 2000, "desc": "Upgrade namespace for Ethereum network-wide upgrades, hard fork activation, and protocol ops. networkupgrade.eth anchors the network upgrade layer for canonical protocol evolution."},
 };
