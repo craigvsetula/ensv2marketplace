@@ -7,7 +7,7 @@
 
 ## What This Is
 
-ENSv2 Marketplace™ is the first ENS domain portfolio built around a formal ontology and taxonomy — a structured classification system that organizes 2,500+ .eth names into 30 categories and 260+ subcategories mapped to real-world industries, protocol primitives, and infrastructure verticals.
+ENSv2 Marketplace™ is the first ENS domain portfolio built around a formal ontology and taxonomy — a structured classification system that organizes 2,649 .eth names into 15 verticals and 170+ segments mapped to real-world industries, protocol primitives, and infrastructure verticals.
 
 Every name is chosen for real-world utility across Web3, DeFi, AI infrastructure, digital identity, and enterprise applications. No emojis. No speculation. Infrastructure only.
 
@@ -19,9 +19,9 @@ Every name is chosen for real-world utility across Web3, DeFi, AI infrastructure
 
 The **[ENS Ontology](https://www.ensv2marketplace.com/ens-ontology.html)** is the first published, structured classification system for ENS domain names.
 
-- **30 top-level categories** spanning AI, blockchain infrastructure, identity, DeFi, compliance, DePIN, and more
-- **260+ subcategories** — each mapped to a real-world industry or protocol function
-- **2,500+ domains classified** — every name assigned deterministically, not subjectively
+- **15 top-level verticals** spanning AI, blockchain infrastructure, identity, DeFi, compliance, DePIN, and more
+- **170+ segments** — each mapped to a real-world industry or protocol function
+- **2,649 domains classified** — every name assigned deterministically, not subjectively
 - **Machine-readable semantic layer** for AI agents, protocol routing, and automated systems
 
 The ontology is the semantic backbone of the registry. It powers discovery, pricing, bundling, agent routing, and protocol classification across the entire ENS namespace.
@@ -129,7 +129,7 @@ ENSv2 deploys exclusively on **Ethereum Layer 1** — Namechain (L2) was cancele
 ## Roadmap
 
 **Phase 1 — Portfolio & Ontology** ✅  
-Built 2,500+ domain portfolio. Published the ENS Ontology (30 categories, 260+ subcategories). Secured all names on Ledger hardware wallets. ENSv2 Marketplace™ trademark registered (USPTO serial 99524052).
+Built 2,649 domain portfolio. Published the ENS Ontology (15 verticals, 170+ segments). Secured all names on Ledger hardware wallets. ENSv2 Marketplace™ trademark registered (USPTO serial 99524052).
 
 **Phase 2 — On-Chain Registry Completion** 🔄 *(Active — 2026)*  
 Setting 6 on-chain ENS text records per name across the full portfolio (~50–70 names/day). Infrastructure Map launched. Ongoing S-tier acquisition. Manual subdomain leasing available now.
@@ -149,10 +149,10 @@ API access, bulk enterprise packages, cross-industry expansion, 20-year renewal 
 
 | Page | Description |
 |---|---|
-| [Home](https://www.ensv2marketplace.com/index.html) | Full 2,500+ domain portfolio with search and category filtering |
+| [Home](https://www.ensv2marketplace.com/index.html) | Full 2,649 domain portfolio with search and category filtering |
 | [Featured Names](https://www.ensv2marketplace.com/featured.html) | All 297 Score-15 Category Monopoly names — live from portfolio |
-| [Ontological Sets](https://www.ensv2marketplace.com/suites.html) | 30 infrastructure sets ranked by lease value — live from portfolio |
-| [Infrastructure Map](https://www.ensv2marketplace.com/infrastructure-map.html) | Visual protocol stack map across all 30 verticals |
+| [Ontological Sets](https://www.ensv2marketplace.com/suites.html) | 15 infrastructure verticals ranked by lease value — live from portfolio |
+| [Infrastructure Map](https://www.ensv2marketplace.com/infrastructure-map.html) | Visual protocol stack map across all 15 verticals |
 | [Subdomain Leasing](https://www.ensv2marketplace.com/subdomain-leasing.html) | How subdomain leasing works, full pricing table |
 | [FAQ](https://www.ensv2marketplace.com/faq.html) | Frequently asked questions |
 | [Mission](https://www.ensv2marketplace.com/mission.html) | Real World Utility philosophy and trust |

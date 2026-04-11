@@ -138,30 +138,28 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 10px}
 
 <script src="domain-data.js"></script>
 <script>
-const CAT_LABELS = {
-  '1':'🤖 AI & Agents','2':'🔗 Blockchain Infrastructure','3':'🛠️ Developer Tools',
-  '4':'📜 Smart Contracts','5':'📊 Data & Oracles','6':'🆔 Identity & Credentials',
-  '7':'🔒 Privacy & ZK','8':'💸 Payments & DeFi','9':'⛏️ Restaking & Staking',
-  '10':'🏪 Marketplaces','11':'🚀 SaaS & Platforms','12':'🗳️ Governance & DAOs',
-  '13':'👥 Social & Messaging','14':'🎮 Gaming & Metaverse','15':'🎬 Media & IP',
-  '16':'🏢 Enterprise & Compliance','17':'🛡️ Finance & Risk','18':'🌍 Energy & IoT',
-  '19':'⚕️ Healthcare','20':'🎓 Education','21':'🏛️ Real-World Assets',
-  '22':'💎 Premium Brand','23':'🔬 Experimental','24':'📦 Miscellaneous',
-  '25':'🔌 DePIN','26':'🌐 Cross-chain','27':'🚢 Supply Chain',
-  '28':'🛒 Consumer & Retail','29':'⚖️ AI Safety','30':'🌌 Space & Deep Tech'
+const VERT_LABELS = {
+  'CHAIN':    '🔗 Blockchain & Protocol Infrastructure',
+  'AI':       '🤖 Artificial Intelligence & Agents',
+  'DEV':      '🛠️ Developer Tools & Frameworks',
+  'SECURITY': '🔒 Security, Privacy & ZK',
+  'CONTRACT': '📜 Smart Contracts & Standards',
+  'IDENTITY': '🆔 Identity, Auth & Credentials',
+  'DATA':     '📊 Data, Oracles & Analytics',
+  'DEFI':     '💸 Decentralized Finance & Payments',
+  'FINTECH':  '🛡️ Traditional Finance, Insurance & Risk',
+  'STAKING':  '⛏️ Staking, Restaking & Validators',
+  'GOV':      '🗳️ Governance, DAOs & Coordination',
+  'COMPLY':   '🏢 Compliance, Legal & Enterprise',
+  'PLATFORM': '🚀 SaaS, Platforms & Business',
+  'ASSETS':   '🏛️ Real-World Assets & Physical Infrastructure',
+  'CONSUMER': '🛒 Social, Gaming, Media & Retail',
 };
 
-function extractMain(code) {
-  const m = code.match(/^(\d+)/);
-  return m ? m[1] : null;
-}
-
-function getCatLabel(cats) {
-  for (const c of cats) {
-    const main = extractMain(c);
-    if (main && CAT_LABELS[main]) return CAT_LABELS[main];
-  }
-  return '🔵 Portfolio';
+function getVertLabel(vertical) {
+  if (!vertical) return '🔵 Portfolio';
+  const top = vertical.split('.')[0];
+  return VERT_LABELS[top] || vertical;
 }
 
 function formatLease(n) {
@@ -175,12 +173,12 @@ const featured = Object.entries(domainData)
 
 // Update hero count
 document.getElementById('heroSubtext').textContent =
-  `${featured.length} top 1% infrastructure names. $10,000–$15,000/year subdomain lease · Hover any card to see details and lease.`;
+  `${featured.length} top-tier infrastructure names. $10,000–$15,000/year subdomain lease · Hover any card to see details and lease.`;
 
 const grid = document.getElementById('cardGrid');
 
 featured.forEach(([name, data]) => {
-  const catLabel = getCatLabel(data.categories);
+  const catLabel = getVertLabel(data.vertical);
   const leaseStr = formatLease(data.lease);
   const desc = data.desc || '';
 
@@ -206,13 +204,13 @@ featured.forEach(([name, data]) => {
     </div>
   `;
   card.addEventListener('click', () => {
-    window.location.href = `mailto:ensv2marketplace@outlook.com?subject=${name}.eth`;
+    window.location.href = `mailto:info@ensv2marketplace.com?subject=${name}.eth`;
   });
   grid.appendChild(card);
 });
 
 function showLeasePopup(amount) {
-  alert('Leasing Coming Soon!\n\nSubdomain leasing will be available as soon as ENSv2 launches on Ethereum L1.\n\nIf you are interested in this name, please contact us and we will get it set up for you.\n\nensv2marketplace@outlook.com');
+  alert('Leasing Coming Soon!\n\nSubdomain leasing will be available as soon as ENSv2 launches on Ethereum L1.\n\nIf you are interested in this name, please contact us and we will get it set up for you.\n\ninfo@ensv2marketplace.com');
 }
 </script>
 </body>
