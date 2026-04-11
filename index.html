@@ -427,7 +427,7 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <div class="wrap" style="display:grid;grid-template-columns:280px 1fr 280px;gap:20px;align-items:start;max-width:1600px;margin:0 auto">
     
     <!-- LEFT COLUMN - First 8 verticals -->
-    <div>
+    <div style="display:flex;flex-direction:column;gap:6px;padding-top:80px">
       <span class="main-cat active" data-cat="all" data-count="2649" style="font-size:13px;padding:8px 10px;justify-content:flex-start">🔵 All (2,649)</span>
       <span class="main-cat" data-cat="CHAIN" data-count="366" style="font-size:13px;padding:8px 10px;justify-content:flex-start">🔗 Blockchain & Protocol Infrastructure (366)</span>
       <span class="main-cat" data-cat="AI" data-count="258" style="font-size:13px;padding:8px 10px;justify-content:flex-start">🤖 Artificial Intelligence & Agents (258)</span>
@@ -438,8 +438,50 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
       <span class="main-cat" data-cat="DATA" data-count="80" style="font-size:13px;padding:8px 10px;justify-content:flex-start">📊 Data, Oracles & Analytics (80)</span>
       <span class="main-cat" data-cat="DEFI" data-count="232" style="font-size:13px;padding:8px 10px;justify-content:flex-start">💸 Decentralized Finance & Payments (232)</span>
     </div>
+    
+    <!-- CENTER COLUMN - Header content -->
+    <div class="brandblock">
+      <div style="position:relative;text-align:center">
+        <div class="badge" title="Hardware wallet protected" style="position:absolute;right:-100px;top:50px">
+          <span class="check"></span>
+          <div>
+            <div class="vbold">Verified</div>
+            <div style="color:#ffffff">Secured by Ledger</div>
+          </div>
+        </div>
+        <div>
+          <div style="display:inline-block;position:relative">
+            <h1 style="font-family:'Inter',sans-serif;font-weight:700;font-size:8rem;letter-spacing:0.5px;color:#b8964f;margin:0">
+              ENSv2<sup style="font-size:2rem;vertical-align:text-top;margin-left:2px;color:#b8964f">™</sup>
+            </h1>
+            <div style="position:absolute;bottom:20px;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#b8964f,transparent)"></div>
+          </div>
+          <h2 style="font-family:'Inter',sans-serif;font-weight:700;font-size:4rem;letter-spacing:0.5px;color:#9aa0a6;margin:-25px 0 0 0">
+            Marketplace
+          </h2>
+          <div style="font-size:28px;color:#b8964f;font-weight:700;margin-top:12px">Curated ENS Infrastructure Namespace Registry</div>
+          <div style="font-size:18px;color:#b8964f;font-weight:700;margin-top:8px">ENSv2 Hierarchical Subdomain System Coming 2026</div>
+          <div style="font-size:18px;color:#6c757d;font-weight:700;margin-top:12px">Never Connect Your Wallet Here!</div>
+        </div>
+      </div>
+      <div class="tagline">The curated namespace registry for Web3 infrastructure.</div>
+      <div style="margin:10px 0 6px;font-size:15px;color:#b8964f;font-weight:600">&#128231; <a href="/cdn-cgi/l/email-protection#d7beb9b1b897b2b9a4a1e5bab6a5bcb2a3a7bbb6b4b2f9b4b8ba" style="color:#b8964f;text-decoration:none"><span class="__cf_email__" data-cfemail="1f767179705f7a716c692d727e6d747a6b6f737e7c7a317c7072">[email&#160;protected]</span></a></div>
+      <div class="cta">
+        <div style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap">
+          <a href="https://opensea.io/ensv2marketplace.eth" target="_blank" rel="noopener noreferrer" style="background:#6c757d;border-color:#5a6268">View All on OpenSea</a>
+          <a href="https://etherscan.io/address/ensv2marketplace.eth" target="_blank" rel="noopener noreferrer" style="background:#6c757d;border-color:#5a6268">Verify Ownership</a>
+        </div>
+      </div>
+      <div style="margin:20px 0;max-width:500px;width:100%">
+        <div style="position:relative">
+          <input type="text" id="domainSearch" placeholder="Search for a domain..." style="width:100%;padding:12px 16px;border-radius:10px;border:2px solid #1c2230;background:#12151d;color:#e6e6e6;font-size:15px;font-weight:600" />
+          <div id="searchResults" style="display:none;position:absolute;top:100%;left:0;right:0;margin-top:8px;background:#12151d;border:1px solid #1c2230;border-radius:10px;padding:16px;z-index:100;box-shadow:0 8px 24px rgba(0,0,0,0.5)"></div>
+        </div>
+      </div>
+    </div>
+    
     <!-- RIGHT COLUMN - Last 7 verticals -->
-    <div>
+    <div style="display:flex;flex-direction:column;gap:6px;padding-top:80px">
       <span class="main-cat" data-cat="FINTECH" data-count="164" style="font-size:13px;padding:8px 10px;justify-content:flex-start">🛡️ Traditional Finance, Insurance & Risk (164)</span>
       <span class="main-cat" data-cat="STAKING" data-count="85" style="font-size:13px;padding:8px 10px;justify-content:flex-start">⛏️ Staking, Restaking & Validators (85)</span>
       <span class="main-cat" data-cat="GOV" data-count="58" style="font-size:13px;padding:8px 10px;justify-content:flex-start">🗳️ Governance, DAOs & Coordination (58)</span>

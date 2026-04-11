@@ -125,8 +125,8 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
   <div class="wrap">
 
     <div style="text-align:center;margin-bottom:30px">
-      <h2 style="color:var(--accent);font-size:2rem;margin:0 0 10px">30 Ontological Sets — Ranked Hottest First</h2>
-      <p style="color:var(--muted);font-size:16px;margin:0">Top 12 domains per category by lease value. All names score 7+ on the real-world utility framework. <a href="pricing-guide.html" style="color:var(--accent)">View Pricing Guide →</a></p>
+      <h2 style="color:var(--accent);font-size:2rem;margin:0 0 10px">15 Vertical Namespace Sets — Ranked by Lease Value</h2>
+      <p style="color:var(--muted);font-size:16px;margin:0">Top 12 names per vertical by lease value. All names score 7+ on the real-world utility framework. <a href="pricing-guide.html" style="color:var(--accent)">View Pricing Guide →</a></p>
       <div class="last-updated" style="color:var(--muted);font-size:13px;font-style:italic;margin:8px 0 0">Live data — updates automatically with portfolio</div>
     </div>
 
@@ -148,36 +148,21 @@ footer p{color:var(--muted);line-height:1.7;margin:0 0 20px}
 <script src="domain-data.js"></script>
 <script>
 const CATEGORIES = [
-  { num: 1,  emoji: '🤖', name: 'AI & Agents',                      desc: 'Orchestrators, coordinators, agentic execution, and autonomous system infrastructure.' },
-  { num: 2,  emoji: '🔗', name: 'Blockchain Infrastructure',         desc: 'Core L1/L2 infrastructure, ENSv2, validators, sequencers, and network primitives.' },
-  { num: 3,  emoji: '🛠️', name: 'Developer Tools & Frameworks',      desc: 'Orchestrators, executors, routers, engines, and full-stack developer infrastructure.' },
-  { num: 4,  emoji: '📜', name: 'Smart Contracts & Security',        desc: 'Contract verification, auditing, security monitoring, and on-chain standards.' },
-  { num: 5,  emoji: '📊', name: 'Data, Oracles & Analytics',         desc: 'Price feeds, oracle networks, data aggregation, and analytics infrastructure.' },
-  { num: 6,  emoji: '🆔', name: 'Identity & Credentials',            desc: 'Decentralized identity, verifiable credentials, KYC/AML, and registry systems.' },
-  { num: 7,  emoji: '🔒', name: 'Privacy, Security & ZK',            desc: 'Zero-knowledge proofs, ZK infrastructure, encryption, and post-quantum cryptography.' },
-  { num: 8,  emoji: '💸', name: 'Payments, Finance & DeFi',          desc: 'Intent infrastructure, payment rails, DEX, liquidity, and settlement systems.' },
-  { num: 9,  emoji: '⛏️', name: 'Restaking & Staking',              desc: 'Restaking protocols, liquid staking, validator coordination, and slashing protection.' },
-  { num: 10, emoji: '🏪', name: 'Marketplaces & Exchanges',          desc: 'ENS registry, OTC markets, exchange infrastructure, and trading tools.' },
-  { num: 11, emoji: '🚀', name: 'SaaS, Suites & Platforms',          desc: 'Enterprise SaaS, automation suites, platform infrastructure, and business tools.' },
-  { num: 12, emoji: '🗳️', name: 'Governance, DAOs & Coordination',  desc: 'DAO frameworks, treasury coordination, voting infrastructure, and governance tools.' },
-  { num: 13, emoji: '👥', name: 'Social, Messaging & Community',     desc: 'Decentralized social, secure messaging, community, and communication protocols.' },
-  { num: 14, emoji: '🎮', name: 'Gaming, Metaverse & XR',            desc: 'Web3 gaming infrastructure, metaverse platforms, and gaming finance systems.' },
-  { num: 15, emoji: '🎬', name: 'Media, Content & IP',               desc: 'IP rights, NFT infrastructure, content registries, and creator tools.' },
-  { num: 16, emoji: '🏢', name: 'Enterprise, Compliance & Legal',    desc: 'Regulatory compliance, AML, KYC, jurisdictional identity, and enterprise solutions.' },
-  { num: 17, emoji: '🛡️', name: 'Finance, Insurance & Risk',        desc: 'Risk management, insurance, banking, capital management, and custody services.' },
-  { num: 18, emoji: '🌍', name: 'Energy, Climate & IoT',             desc: 'IoT monitoring, energy systems, climate infrastructure, and industrial supply chain.' },
-  { num: 19, emoji: '⚕️', name: 'Healthcare & BioTech',             desc: 'Medical records, clinical systems, healthcare compliance, and patient identity.' },
-  { num: 20, emoji: '🎓', name: 'Education & Credentials',           desc: 'Academic credentials, learning platforms, and educational verification systems.' },
-  { num: 21, emoji: '🏛️', name: 'Real-World Assets',               desc: 'Asset tokenization, real estate, RWA workflows, and rental infrastructure.' },
-  { num: 22, emoji: '💎', name: 'Generic Premium Brand Words',       desc: 'High-value single-concept premium brand names for Web3 protocol positioning.' },
-  { num: 23, emoji: '🔬', name: 'Experimental & Emerging',           desc: 'Omnichain, ERC standards, AI/agentic convergence, and cutting-edge protocols.' },
-  { num: 24, emoji: '📦', name: 'Miscellaneous & Lifestyle',         desc: 'Consumer lifestyle, community, and general-purpose ENS infrastructure names.' },
-  { num: 25, emoji: '🔌', name: 'DePIN',                             desc: 'Decentralized physical infrastructure — compute, energy, mobility, and sensors.' },
-  { num: 26, emoji: '🌐', name: 'Cross-chain & Interoperability',    desc: 'Bridge protocols, omnichain agents, cross-chain messaging, and chain abstraction.' },
-  { num: 27, emoji: '🚢', name: 'Supply Chain & Trade',              desc: 'Trade finance, logistics, shipment tracking, customs, and supplier systems.' },
-  { num: 28, emoji: '🛒', name: 'Consumer & Retail Web3',            desc: 'Crypto payments at POS, BNPL, e-commerce, consumer loyalty, and retail finance.' },
-  { num: 29, emoji: '⚖️', name: 'AI Safety & Alignment',            desc: 'AI governance, model auditing, responsible AI, transparency, and risk assessment.' },
-  { num: 30, emoji: '🌌', name: 'Space & Deep Tech',                 desc: 'Satellite data, aerospace DePIN, scientific compute, and deep tech protocols.' }
+  { key: 'CHAIN',    emoji: '🔗', name: 'Blockchain & Protocol Infrastructure', desc: 'Core L1/L2 infrastructure, ENSv2, validators, sequencers, and network primitives.' },
+  { key: 'AI',       emoji: '🤖', name: 'Artificial Intelligence & Agents',      desc: 'Orchestrators, coordinators, agentic execution, AI safety, and autonomous systems.' },
+  { key: 'DEV',      emoji: '🛠️', name: 'Developer Tools & Frameworks',          desc: 'Orchestrators, executors, routers, engines, gateways, and full-stack developer infrastructure.' },
+  { key: 'SECURITY', emoji: '🔒', name: 'Security, Privacy & ZK',                desc: 'Zero-knowledge proofs, ZK infrastructure, encryption, and post-quantum cryptography.' },
+  { key: 'CONTRACT', emoji: '📜', name: 'Smart Contracts & Standards',            desc: 'Contract verification, auditing, security monitoring, and on-chain standards.' },
+  { key: 'IDENTITY', emoji: '🆔', name: 'Identity, Auth & Credentials',           desc: 'Decentralized identity, verifiable credentials, KYC/AML, and registry systems.' },
+  { key: 'DATA',     emoji: '📊', name: 'Data, Oracles & Analytics',              desc: 'Price feeds, oracle networks, data aggregation, and analytics infrastructure.' },
+  { key: 'DEFI',     emoji: '💸', name: 'Decentralized Finance & Payments',       desc: 'Intent infrastructure, payment rails, DEX, liquidity, and settlement systems.' },
+  { key: 'FINTECH',  emoji: '🛡️', name: 'Traditional Finance, Insurance & Risk', desc: 'Risk management, insurance, banking, capital management, and custody services.' },
+  { key: 'STAKING',  emoji: '⛏️', name: 'Staking, Restaking & Validators',       desc: 'Restaking protocols, liquid staking, validator coordination, and slashing protection.' },
+  { key: 'GOV',      emoji: '🗳️', name: 'Governance, DAOs & Coordination',       desc: 'DAO frameworks, treasury coordination, voting infrastructure, and governance tools.' },
+  { key: 'COMPLY',   emoji: '🏢', name: 'Compliance, Legal & Enterprise',         desc: 'Regulatory compliance, AML, KYC, jurisdictional identity, and enterprise solutions.' },
+  { key: 'PLATFORM', emoji: '🚀', name: 'SaaS, Platforms & Business',             desc: 'Enterprise SaaS, automation suites, platform infrastructure, and business tools.' },
+  { key: 'ASSETS',   emoji: '🏛️', name: 'Real-World Assets & Physical Infrastructure', desc: 'Asset tokenization, real estate, DePIN, IoT, energy, space, and supply chain.' },
+  { key: 'CONSUMER', emoji: '🛒', name: 'Social, Gaming, Media & Retail',         desc: 'Decentralized social, gaming, media, creator tools, and consumer Web3 applications.' },
 ];
 
 function extractMain(code) {
@@ -189,11 +174,10 @@ function formatLease(n) {
   return '$' + n.toLocaleString() + '/yr';
 }
 
-// Build suite data for each category
+// Build suite data for each vertical
 const suites = CATEGORIES.map(cat => {
-  const catStr = String(cat.num);
   const matches = Object.entries(domainData)
-    .filter(([, v]) => v.categories.some(c => extractMain(c) === catStr))
+    .filter(([, v]) => v.vertical && v.vertical.split('.')[0] === cat.key)
     .map(([name, v]) => ({ name, lease: v.lease || 0 }))
     .sort((a, b) => b.lease - a.lease);
 
